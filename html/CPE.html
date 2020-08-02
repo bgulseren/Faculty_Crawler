@@ -1,0 +1,1463 @@
+<!DOCTYPE html>
+<html dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# " class=" js svg no-touchevents cssanimations csstransitions" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8"><script src="CPE_files/nr-1173.js"></script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"2f1f7a5441",applicationID:"300377436"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1173.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<meta name="title" content="Faculty members | Department of Chemical &amp; Petroleum Engineering | Schulich School of Engineering">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:site_name" content="Schulich School of Engineering">
+<link rel="canonical" href="http://schulich.ucalgary.ca/chemical-petroleum/faculty-members">
+<meta property="og:type" content="article">
+<meta name="description" content="Department of Chemical and Petroleum Engineering">
+<meta property="og:url" content="http://schulich.ucalgary.ca/chemical-petroleum/faculty-members">
+<meta property="og:title" content="Faculty members | Department of Chemical &amp; Petroleum Engineering">
+<meta property="og:description" content="Department of Chemical and Petroleum Engineering">
+<meta property="og:image" content="http://schulich.ucalgary.ca/modules/ucalgary/ucws_common/ucws_core/images/ucalgary-horizontal-rgb.jpg">
+<meta property="og:image:secure_url" content="https://schulich.ucalgary.ca/modules/ucalgary/ucws_common/ucws_core/images/ucalgary-horizontal-rgb.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="article:modified_time" content="2019-10-28 13:34:13">
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)">
+<meta name="MobileOptimized" content="width">
+<meta name="HandheldFriendly" content="true">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>div#sliding-popup, div#sliding-popup .eu-cookie-withdraw-banner, .eu-cookie-withdraw-tab {background: #0779bf} div#sliding-popup.eu-cookie-withdraw-wrapper { background: transparent; } #sliding-popup h1, #sliding-popup h2, #sliding-popup h3, #sliding-popup p, #sliding-popup label, #sliding-popup div, .eu-cookie-compliance-more-button, .eu-cookie-compliance-secondary-button, .eu-cookie-withdraw-tab { color: #ffffff;} .eu-cookie-withdraw-tab { border-color: #ffffff;}</style>
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="theme-color" content="#FFFFFF">
+<link rel="shortcut icon" href="https://schulich.ucalgary.ca/themes/ucalgary/ucws_theme/favicon.ico" type="image/vnd.microsoft.icon">
+<link rel="apple-touch-icon" type="image/png" sizes="180x180" href="https://schulich.ucalgary.ca/themes/ucalgary/ucws_theme/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://schulich.ucalgary.ca/themes/ucalgary/ucws_theme/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://schulich.ucalgary.ca/themes/ucalgary/ucws_theme/favicon-16x16.png">
+<link rel="manifest" href="https://schulich.ucalgary.ca/themes/ucalgary/ucws_theme/site.webmanifest">
+<link rel="revision" href="http://schulich.ucalgary.ca/chemical-petroleum/faculty-members">
+<script>window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overlays=[];a2a_config.templates={};a2a_config.icon_color = "transparent,white";
+a2a_config.templates.email = {
+    subject: "Checkout this Basic page from Schulich School of Engineering",
+    body: "Faculty members | Department of Chemical &amp; Petroleum Engineering\n${link}"
+};
+</script>
+
+          <title>Faculty members | Department of Chemical &amp; Petroleum Engineering | Schulich School of Engineering | University of Calgary</title>
+    
+          <script>
+        window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+        ga('create', 'UA-173139-1', 'auto');
+        ga('send', 'pageview');
+      </script>
+      <script async="" src="CPE_files/analytics.js"></script>
+    
+    <link rel="stylesheet" media="all" href="CPE_files/css_Zkj0eIgRXkFQHirKiP2a6eGc4j0qMjI1p3o_Dy3Cif4.css">
+<link rel="stylesheet" media="screen" href="CPE_files/css_V5ajyT68o7ZIHJvYQCzncZ8OrtQvNRXmZYIi8IZkYMg.css">
+<link rel="stylesheet" media="print" href="CPE_files/css_Kup_TYjyDhK6eAIxngbEdmP9v5c_VQg-Q2l_19AJ6fs.css">
+<link rel="stylesheet" media="screen" href="CPE_files/css_su8h6UvDb_DTdz3vYx7hexgWjH9X25X7L56eZFFZr7M.css">
+<link rel="stylesheet" media="all" href="CPE_files/css__tMDpGWIFfSH1JfmsEO_sjmdyFE8SUbjkxkRAHwCWws.css">
+<link rel="stylesheet" media="screen" href="CPE_files/css_m_kXykWRP1_Z1Or7jBRDKpWmctlGkrwCiB9BVakKGts.css">
+<link rel="stylesheet" media="all" href="CPE_files/css_sgwrULgZCAOxDWWbFnL3_fmBAys0Z-39fTvlUt3Rh6M.css">
+<link rel="stylesheet" media="screen" href="CPE_files/css_U238Trh9ILI6AhdrSXhC6XCadsz-KEhjLJVAB-HhFZ8.css">
+<link rel="stylesheet" media="print" href="CPE_files/css__m8jUKdbQ9dTcd9jMoNm6Nz9d3M9vfuuoW9IY-B1ZTM.css">
+<link rel="stylesheet" media="all" href="CPE_files/css_lbf_YR52ynnNYIma9JIVb4I8Jv1TkgzX9o-v5STZcO4.css">
+<link rel="stylesheet" media="screen" href="CPE_files/css_jNK2G7onBweVl28GtkUxfAAsAvb5D5RDQk3igbGpFwk.css">
+<link rel="stylesheet" media="all" href="CPE_files/css_hmugpMWzX_-rWCUUTSAhxMvDJqH3QZeQXXHSXytqWto.css">
+
+    
+<!--[if lte IE 8]>
+<script src="/sites/default/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<![endif]-->
+
+  </head>
+  <body class="group-menu sub-group-menu pre-footer site-alert">
+        <a href="#content" class="visually-hidden focusable skip-link">
+      Skip to main content
+    </a>
+    
+          
+<header class="container-fluid"><div id="global-alert" class="row gold-back">
+  <div class="container">
+    <div class="row button">
+      <div class="col-sm-12">
+        <div class="btn-toolbar">
+          <div class="btn-group">
+            <a id="alert-toggle" class="btn btn-rounded" type="button" data-ucws-analytics-toggle="" data-ucws-analytics-category="Site Alert" data-ucws-analytics-label="COVID-19 update: New COVID-19 communications protocols, campus non-medical mask protocol" data-ucws-analytics-off-class="btn-tab">
+              <span class="sr-only">Hide Site Alert Message</span>
+              <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row content" style="display: block;">
+      <div class="col-sm-12">
+        <div class="alert-icon">
+          <span class="glyphicon glyphicon-alert"></span>
+        </div>
+        <div class="alert-message">
+          <p class="h3">
+            <span class="message">COVID-19 update: New COVID-19 communications protocols, campus non-medical mask protocol</span>
+            <span class="link"><a href="https://ucalgary.ca/risk/emergency-management/covid-19-response" rel="nofollow" target="_blank" data-ucws-analytics-click="" data-ucws-analytics-category="Site Alert" data-ucws-analytics-label="COVID-19 update: New COVID-19 communications protocols, campus non-medical mask protocol" data-ucws-analytics-action="Link Click">Learn more</a></span>
+          </p>
+        </div>
+        <div class="alert-timestamp">
+          <p>
+            <span class="date">July 29, 2020</span>
+            <span class="time">16:47:39</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+        
+    
+    
+    
+        
+  <div id="toolbox" class="row red-back">
+    <div id="redline"><div></div></div>
+    <div class="container">
+      <div class="row button">
+        <div class="col-sm-12">
+                    <div id="desktop-search" class="row">
+            <div class="col-sm-12">
+              <form id="search-desktop" name="search-desktop" role="form" action="/sitesearch" data-ucws-analytics-search="" data-ucws-analytics-category="On-site search">
+                <input type="hidden" name="m" value="">
+                <div class="btn-toolbar">
+                  <div class="btn-group search-field">
+                    <div class="input-group input-group-sm">
+                      <input id="uc-desktop-global-search-field" name="as_q" data-ucws-analytics-search-input="" type="text" autocomplete="off" class="form-control" placeholder="Search UCalgary">
+                      <span class="input-group-btn">
+                        <button id="uc-desktop-global-search-submit" class="btn btn-default" type="submit" data-ucws-analytics-search-submit="">
+                          <span class="sr-only">Search</span>
+                          <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="btn-group">
+                    <button id="toolbox-toggle" class="btn btn-rounded btn-tab" type="button" data-ucws-analytics-toggle="" data-ucws-analytics-category="Toolbox" data-ucws-analytics-label="http://schulich.ucalgary.ca/chemical-petroleum/faculty-members" data-ucws-analytics-off-class="btn-tab">
+                      <span class="sr-only">Toggle Toolbox</span>
+                      <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row content">
+        <div class="col-sm-12">
+                    <div id="mobile-search" class="row">
+            <div class="col-sm-12">
+              <form id="search-mobile" name="search-mobile" role="form" action="/sitesearch" data-ucws-analytics-search="" data-ucws-analytics-category="On-site search">
+                <input type="hidden" name="m" value="">
+                <div class="btn-toolbar">
+                  <div class="btn-group search-field">
+                    <div class="input-group input-group-sm">
+                      <input id="uc-mobile-global-search-field" name="as_q" data-ucws-analytics-search-input="" type="text" autocomplete="off" class="form-control show-toolbox" placeholder="Search UCalgary" tabindex="-1">
+                      <span class="input-group-btn">
+                        <button id="uc-mobile-global-search-submit" class="btn btn-default" type="submit" data-ucws-analytics-search-submit="">
+                          <span class="sr-only">Search</span>
+                          <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+                    <div id="quicklinks" class="row">
+            <div class="col-sm-12 col-md-4 logins">
+                                            <ul>
+                                       <li>
+                      <a href="https://my.ucalgary.ca/" target="_blank" rel="noopener noreferrer">My UCalgary</a>
+                    </li>
+                                       <li>
+                      <a href="https://office365.ucalgary.ca/" target="_blank" rel="noopener noreferrer">Webmail</a>
+                    </li>
+                                       <li>
+                      <a href="https://www.ucalgary.ca/it/" target="_blank" rel="noopener noreferrer">IT</a>
+                    </li>
+                                       <li>
+                      <a href="https://d2l.ucalgary.ca/" target="_blank" rel="noopener noreferrer">D2L</a>
+                    </li>
+                                       <li>
+                      <a href="https://www.ucalgary.ca/iriss/" target="_blank" rel="noopener noreferrer">IRISS</a>
+                    </li>
+                                       <li>
+                      <a href="https://myfacilities.ucalgary.ca/" target="_blank" rel="noopener noreferrer">ARCHIBUS</a>
+                    </li>
+                                  </ul>
+                          </div>
+            <div class="col-sm-12 col-md-8 links">
+                                            <ul>
+                                                                                                      <li>
+                        <a href="https://www.ucalgary.ca/hr/" target="_blank" rel="noopener noreferrer">HR</a>
+                      </li>
+                                                                                                                          <li>
+                        <a href="https://library.ucalgary.ca/" target="_blank" rel="noopener noreferrer">Library</a>
+                      </li>
+                                                                                                                          <li>
+                        <a href="https://www.godinos.com/" target="_blank" rel="noopener noreferrer">Go Dinos</a>
+                      </li>
+                                                                                                                          <li>
+                        <a href="https://csprd.my.ucalgary.ca/psp/csprd/EMPLOYEE/SA/c/COMMUNITY_ACCESS.CLASS_SEARCH.GBL?public=yes/" target="_blank" rel="noopener noreferrer">Class Schedule</a>
+                      </li>
+                                                                                                                          <li>
+                        <a href="https://contacts.ucalgary.ca/" target="_blank" rel="noopener noreferrer">UCalgary Directory</a>
+                      </li>
+                                                                                                                          <li>
+                        <a href="https://conted.ucalgary.ca/" target="_blank" rel="noopener noreferrer">Continuing Education</a>
+                      </li>
+                                                                                                                          <li>
+                        <a href="https://careers.ucalgary.ca/" target="_blank" rel="noopener noreferrer">Careers</a>
+                      </li>
+                                                                                                                          <li>
+                        <a href="https://www.calgarybookstore.ca/" target="_blank" rel="noopener noreferrer">Bookstore</a>
+                      </li>
+                                                                                                                          <li>
+                        <a href="https://www.ucalgary.ca/activeliving/" target="_blank" rel="noopener noreferrer">Active Living</a>
+                      </li>
+                                                                                                                          <li>
+                        <a href="https://www.ucalgary.ca/pubs/calendar/" target="_blank" rel="noopener noreferrer">Academic Calendar</a>
+                      </li>
+                                                                                                                          <li>
+                        <a href="https://www.ucalgary.ca/map/" target="_blank" rel="noopener noreferrer">UCalgary Maps</a>
+                      </li>
+                                                                                                                          <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+                          Faculty Websites <span class="glyphicon glyphicon-chevron"></span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                          <li class="close-dropdown">
+                            <span class="sr-only">Close Faculty Websites List</span>
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="notice">Viewing: <span>Faculty Websites</span></span>
+                          </li>
+                                                      <li>
+                              <a href="https://cumming.ucalgary.ca/" target="_blank" rel="noopener noreferrer">Cumming School of Medicine</a>
+                            </li>
+                                                      <li>
+                              <a href="https://arts.ucalgary.ca/" target="_blank" rel="noopener noreferrer">Faculty of Arts</a>
+                            </li>
+                                                      <li>
+                              <a href="https://grad.ucalgary.ca/" target="_blank" rel="noopener noreferrer">Faculty of Graduate Studies</a>
+                            </li>
+                                                      <li>
+                              <a href="https://www.ucalgary.ca/knes/" target="_blank" rel="noopener noreferrer">Faculty of Kinesiology</a>
+                            </li>
+                                                      <li>
+                              <a href="https://law.ucalgary.ca/" target="_blank" rel="noopener noreferrer">Faculty of Law</a>
+                            </li>
+                                                      <li>
+                              <a href="https://nursing.ucalgary.ca/" target="_blank" rel="noopener noreferrer">Faculty of Nursing</a>
+                            </li>
+                                                      <li>
+                              <a href="https://www.ucalgary.edu.qa/" target="_blank" rel="noopener noreferrer">Faculty of Nursing (Qatar)</a>
+                            </li>
+                                                      <li>
+                              <a href="https://science.ucalgary.ca/" target="_blank" rel="noopener noreferrer">Faculty of Science</a>
+                            </li>
+                                                      <li>
+                              <a href="https://fsw.ucalgary.ca/" target="_blank" rel="noopener noreferrer">Faculty of Social Work</a>
+                            </li>
+                                                      <li>
+                              <a href="https://vet.ucalgary.ca/" target="_blank" rel="noopener noreferrer">Faculty of Veterinary Medicine</a>
+                            </li>
+                                                      <li>
+                              <a href="https://haskayne.ucalgary.ca/" target="_blank" rel="noopener noreferrer">Haskayne School of Business</a>
+                            </li>
+                                                      <li>
+                              <a href="https://sapl.ucalgary.ca/" target="_blank" rel="noopener noreferrer">School of Architecture, Planning and Landscape</a>
+                            </li>
+                                                      <li>
+                              <a href="https://schulich.ucalgary.ca/">Schulich School of Engineering</a>
+                            </li>
+                                                      <li>
+                              <a href="https://werklund.ucalgary.ca/" target="_blank" rel="noopener noreferrer">Werklund School of Education</a>
+                            </li>
+                                                  </ul>
+                      </li>
+                                                      </ul>
+                          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+      
+  <div id="navigation" class="row group sub-group">
+    <div class="uc-logo-container">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="uc-logo">
+                              <a href="https://www.ucalgary.ca/" target="_blank" rel="noopener noreferrer"><img src="CPE_files/UCalgary.svg"></a>                           </div>
+          </div>
+        </div>
+      </div>
+    </div>
+          <div class="uc-nav-container">
+        <div class="container">
+                                <div class="row division">
+              <div class="col-sm-12">
+
+                                  <ul class="identity">
+                                                              <li class="group">
+                                                  <a href="https://schulich.ucalgary.ca/">Schulich School of Engineering</a>                                               </li>
+                                                                                  <li class="sub-group">
+                                                  Department of Chemical &amp; Petroleum Engineering
+                                              </li>
+                                      </ul>
+                
+              </div>
+            </div>
+                    <div class="row menus">
+            <div class="col-sm-12">
+              <div class="uc-nav">
+                <div id="uc-menu" class="uc-menuwrapper">
+                  <button type="button" id="hamburger" class="uc-trigger hamburger hamburger-htx" data-ucws-analytics-toggle="" data-ucws-analytics-category="Menu" data-ucws-analytics-label="Hamburger" data-ucws-analytics-on-class="is-active">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="glyphicon glyphicon-menu-hamburger"></span>
+                  </button>
+                      
+
+  
+                
+                                                                        
+                                                                        
+                                                                        
+              
+    
+    <ul class="level1 uc-menu current">
+
+      
+      
+      
+      
+      
+        
+        
+        
+        
+          
+                                    <li class="uc-mainmenu children" id="menu-item-1">
+            <a href="#" data-ucws-analytics-toggle="" data-ucws-analytics-category="Menu" data-ucws-analytics-action="Open" data-ucws-analytics-label="Programs" data-ucws-analytics-on-class="uc-active-menu" data-ucws-analytics-element="#menu-item-1">Programs</a>
+
+          
+          
+          
+            
+              
+                
+                                                                        
+                                                                        
+        
+    
+    <ul class="level2 uc-submenu tabbed"><li class="uc-back"><a href="#" data-ucws-analytics-click="" data-ucws-analytics-category="Menu" data-ucws-analytics-action="Back" data-ucws-analytics-label="Programs">Programs</a></li>
+
+      
+                            <li class="overview">
+                <a href="https://schulich.ucalgary.ca/chemical-petroleum/programs" data-drupal-link-system-path="node/159">Programs</a>
+              </li>
+            
+      
+      
+      
+      
+        
+        
+        
+        
+          
+                                    <li class="children" id="menu-item-1-1">
+            <a href="#" data-ucws-analytics-toggle="" data-ucws-analytics-category="Menu" data-ucws-analytics-action="Open" data-ucws-analytics-label="Undergraduate" data-ucws-analytics-on-class="uc-active-menu" data-ucws-analytics-element="#menu-item-1-1">Undergraduate</a>
+
+          
+          
+          
+            
+              
+                
+                                                                                                                  
+    
+    <ul class="level3 uc-submenu overview-link"><li class="uc-back"><a href="#" data-ucws-analytics-click="" data-ucws-analytics-category="Menu" data-ucws-analytics-action="Back" data-ucws-analytics-label="Undergraduate">Undergraduate</a></li>
+
+      
+                            <li class="overview">
+                <a href="https://schulich.ucalgary.ca/chemical-petroleum/programs/undergraduate" data-drupal-link-system-path="node/160">Undergraduate</a>
+              </li>
+            
+      
+      
+      
+      
+        
+        
+        
+        
+          <li>
+                                <a href="https://schulich.ucalgary.ca/future-students/undergraduate/programs/bsc-chemical-engineering" data-drupal-link-system-path="node/167">BSc Chemical Engineering</a>
+                                        
+        
+        </li>
+
+      
+        
+        
+        
+        
+          <li>
+                                <a href="https://schulich.ucalgary.ca/future-students/undergraduate/programs/bsc-oil-gas-engineering" data-drupal-link-system-path="node/169">BSc Oil &amp; Gas Engineering</a>
+                                        
+        
+        </li>
+
+      
+        
+        
+        
+        
+          <li>
+                                <a href="https://schulich.ucalgary.ca/future-students/undergraduate/programs/bsc-energy-engineering" data-drupal-link-system-path="node/168">BSc Energy Engineering</a>
+                                        
+        
+        </li>
+
+      
+      
+    </ul>
+  
+
+          
+        
+        </li>
+
+      
+        
+        
+        
+        
+          
+                                    <li class="children" id="menu-item-1-2">
+            <a href="#" data-ucws-analytics-toggle="" data-ucws-analytics-category="Menu" data-ucws-analytics-action="Open" data-ucws-analytics-label="Graduate" data-ucws-analytics-on-class="uc-active-menu" data-ucws-analytics-element="#menu-item-1-2">Graduate</a>
+
+          
+          
+          
+            
+              
+                
+                                                                        
+                                                                        
+    
+    
+    <ul class="level3 uc-submenu overview-link"><li class="uc-back"><a href="#" data-ucws-analytics-click="" data-ucws-analytics-category="Menu" data-ucws-analytics-action="Back" data-ucws-analytics-label="Graduate">Graduate</a></li>
+
+      
+                            <li class="overview">
+                <a href="https://schulich.ucalgary.ca/chemical-petroleum/programs/graduate" data-drupal-link-system-path="node/161">Graduate</a>
+              </li>
+            
+      
+      
+      
+      
+        
+        
+        
+        
+          <li>
+                                <a href="https://schulich.ucalgary.ca/chemical-petroleum/programs/graduate/master-engineering-cohort-based" data-drupal-link-system-path="node/251872">Master of Engineering (Cohort-based)</a>
+                                        
+        
+        </li>
+
+      
+        
+        
+        
+        
+          <li>
+                                <a href="https://schulich.ucalgary.ca/chemical-petroleum/programs/graduate/master-engineering-course-based" data-drupal-link-system-path="node/251874">Master of Engineering (course-based)</a>
+                                        
+        
+        </li>
+
+      
+        
+        
+        
+        
+          <li>
+                                <a href="https://www.ucalgary.ca/future-students/graduate/explore-programs/chemical-petroleum-engineering-master-science-thesis-based" target="_blank" rel="noopener noreferrer">Master of Science (thesis-based)</a>
+                                        
+        
+        </li>
+
+      
+        
+        
+        
+        
+          <li>
+                                <a href="https://www.ucalgary.ca/future-students/graduate/explore-programs/chemical-petroleum-engineering-doctor-philosophy-thesis-based" target="_blank" rel="noopener noreferrer">Doctor of Philosophy </a>
+                                        
+        
+        </li>
+
+      
+      
+    </ul>
+  
+
+          
+        
+        </li>
+
+      
+      
+    </ul>
+  
+
+          
+        
+        </li>
+
+      
+        
+        
+        
+        
+          
+                                    <li class="uc-mainmenu children" id="menu-item-2">
+            <a href="#" data-ucws-analytics-toggle="" data-ucws-analytics-category="Menu" data-ucws-analytics-action="Open" data-ucws-analytics-label="Research" data-ucws-analytics-on-class="uc-active-menu" data-ucws-analytics-element="#menu-item-2">Research</a>
+
+          
+          
+          
+            
+              
+                
+                                                                                
+    
+    <ul class="level2 uc-submenu"><li class="uc-back"><a href="#" data-ucws-analytics-click="" data-ucws-analytics-category="Menu" data-ucws-analytics-action="Back" data-ucws-analytics-label="Research">Research</a></li>
+
+      
+                            <li class="overview">
+                <a href="https://schulich.ucalgary.ca/chemical-petroleum/research" data-drupal-link-system-path="node/162">Research</a>
+              </li>
+            
+      
+      
+              <div class="uc-sublinks">
+      
+      
+        
+        
+        
+        
+          <li>
+                                <a href="https://schulich.ucalgary.ca/chemical-petroleum/research/research-areas" data-drupal-link-system-path="node/170">Research areas</a>
+                                        
+        
+        </li>
+
+      
+        
+        
+        
+        
+          <li>
+                                <a href="https://schulich.ucalgary.ca/chemical-petroleum/research/research-facilities" data-drupal-link-system-path="node/171">Research facilities</a>
+                                        
+        
+        </li>
+
+      
+              </div>
+      
+    </ul>
+  
+
+          
+        
+        </li>
+
+      
+        
+        
+        
+        
+          <li class="uc-mainmenu current">
+                                <a href="https://schulich.ucalgary.ca/chemical-petroleum/faculty-members" data-drupal-link-system-path="node/163" class="is-active">Faculty Members</a>
+                                        
+        
+        </li>
+
+      
+        
+        
+        
+        
+          <li class="uc-mainmenu">
+                                <a href="https://schulich.ucalgary.ca/chemical-petroleum/news-events" data-drupal-link-system-path="node/164">News &amp; Events</a>
+                                        
+        
+        </li>
+
+      
+        
+        
+        
+        
+          <li class="uc-mainmenu">
+                                <a href="https://schulich.ucalgary.ca/chemical-petroleum/about" data-drupal-link-system-path="node/165">About</a>
+                                        
+        
+        </li>
+
+      
+        
+        
+        
+        
+          <li class="uc-mainmenu">
+                                <a href="https://schulich.ucalgary.ca/chemical-petroleum/contacts" data-drupal-link-system-path="node/166">Contacts</a>
+                                        
+        
+        </li>
+
+      
+      
+    </ul>
+  
+
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+  </header>
+
+<main id="content">
+      <div class="loading" style="display: none;"></div>       <div data-drupal-messages-fallback="" class="hidden"></div>
+    <div class="container-fluid layout col1 hero">
+    <div class="row">
+      <div class="layout-col hero layout-12 col-sm-12">
+          
+    
+      
+
+  
+    
+
+    
+    
+  <div class="layout-blocks-ucws-text-hero-cta container-fluid block text-hero-cta top">
+    <div class="row">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+                                      <div class="headline">
+                <h1>Faculty members</h1>
+              </div>
+              <div class="divider hidden-xs hidden-sm"></div>
+              <div class="description">
+                <p><span><span><span>Department of Chemical and Petroleum Engineering</span></span></span></p>
+                                  <div class="btn-wrapper">
+                                          <a class="btn btn-default red-back" href="https://schulich.ucalgary.ca/contacts" role="button" data-ucws-analytics-click="" data-ucws-analytics-category="CTA button click" data-ucws-analytics-action="Search our faculty directory" data-ucws-analytics-label="http://schulich.ucalgary.ca/chemical-petroleum/faculty-members">Search our faculty directory</a>
+                                      </div>
+                              </div>
+                      </div>
+        </div>
+      </div>
+          </div>
+  </div>
+
+
+
+  
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid layout col1">
+    <div class="row">
+      <div class="layout-col col1 layout-12 col-sm-12">
+          
+    
+      
+
+  
+    
+
+    
+    
+  <div class="layout-blocks-ucws-divider container-fluid roundable block divider">
+    <div class="row">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <hr class="solid light-grey">
+          </div>
+        </div>
+      </div>
+          </div>
+  </div>
+
+
+
+  
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid layout col1">
+    <div class="row">
+      <div class="layout-col col1 layout-12 col-sm-12">
+          
+    
+      
+
+  
+    
+  <div class="layout-blocks-ucws-text container-fluid roundable block text">
+    <div class="row">
+      <div class="container">
+                          <div class="row header left">
+            <div class="col-sm-12">
+              <h2>
+                                                Professors, Associate/Assistant Professors, Senior Instructors/Instructors
+              </h2>
+            </div>
+          </div>
+                          <div class="row left">
+            <div class="col-sm-12 two-col">
+              <p><span><span><span>Dr. Jalal Abedi, Professor<br>
+<a href="mailto:jabedi@ucalgary.ca">jabedi@ucalgary.ca</a><br>
+<a href="https://schulich.ucalgary.ca/contacts/jalal-abedi">View profile &gt;</a></span></span></span></p>
+
+<p><span><span><span>Dr. Roberto Aguilera, Professor<br>
+<a href="mailto:raguiler@ucalgary.ca">raguiler@ucalgary.ca</a><br>
+<a href="https://schulich.ucalgary.ca/contacts/roberto-aguilera">View profile &gt;</a></span></span></span></p>
+
+<p><span><span><span>Dr. Jalel Azaiez, Professor<br>
+<a href="mailto:azaiez@ucalgary.ca">azaiez@ucalgary.ca</a><br>
+<a href="https://schulich.ucalgary.ca/contacts/jalel-azaiez">View profile &gt;</a></span></span></span></p>
+
+<p><span><span><span>Dr. Anne Benneker, Assistant Professor<br>
+<a href="mailto:anne.benneker@ucalgary.ca">anne.benneker@ucalgary.ca</a></span></span></span><br>
+<a href="https://schulich.ucalgary.ca/contacts/anne-benneker">View Profile &gt;</a></p>
+
+<p><span><span><span>Dr. Joule Bergerson, Associate Professor<br>
+<a href="mailto:jbergers@ucalgary.ca">jbergers@ucalgary.ca</a><br>
+<a href="https://schulich.ucalgary.ca/contacts/joule-bergerson">View profile &gt;</a></span></span></span></p>
+
+<p><span><span><span>Dr. Steven Bryant, Professor<br>
+<a href="mailto:steven.bryant@ucalgary.ca">steven.bryant@ucalgary.ca</a><br>
+<a href="https://schulich.ucalgary.ca/contacts/steven-bryant">View profile &gt;</a></span></span></span></p>
+
+<p><span><span><span>Deanna Burgart, Senior Instructor</span></span></span><br>
+<a href="mailto:deanna.burgart1@ucalgary.ca">deanna.burgart1@ucalgary.ca</a><br>
+<span><span><span><a href="https://schulich.ucalgary.ca/contacts/deanna-burgart">View profile &gt;</a></span></span></span></p>
+
+<p><span><span><span>Dr. Zhangxing (John) Chen, Professor<br>
+<a href="mailto:zhachen@ucalgary.ca">zhachen@ucalgary.ca</a><br>
+<a href="https://schulich.ucalgary.ca/contacts/zhangxing-john-chen">View profile &gt;</a></span></span></span></p>
+
+<p><span><span><span>Dr. Shengnan (Nancy) Chen, Associate Professor<br>
+<a href="mailto:snchen@ucalgary.ca">snchen@ucalgary.ca</a><br>
+<a href="https://schulich.ucalgary.ca/contacts/shengnan-nancy-chen">View profile &gt;</a></span></span></span></p>
+
+<p><span><span><span>Dr. Matthew Clarke, Associate Professor, Associate Head (Graduate Studies)<br>
+<a href="mailto:maclarke@ucalgary.ca">maclarke@ucalgary.ca</a><br>
+<a href="https://schulich.ucalgary.ca/contacts/matthew-clarke">View profile &gt;</a></span></span></span></p>
+
+<p><span><span><span>Dr.<strong> </strong>Hector De la Hoz Siegler, Assistant Professor&nbsp;<br>
+<a href="mailto:h.siegler@ucalgary.ca">h.siegler@ucalgary.ca</a><br>
+<a href="https://schulich.ucalgary.ca/contacts/hector-siegler">View profile &gt;</a></span></span></span></p>
+
+<p><span><span><span>Dr. Mingzhe Dong, Professor<br>
+<a href="mailto:mtdong@ucalgary.ca">mtdong@ucalgary.ca</a><br>
+<a href="https://schulich.ucalgary.ca/contacts/mingzhe-dong">View profile &gt;</a></span></span></span></p>
+
+<p><span><span><span>Dr. Michael Foley, Senior Instructor<br>
+<a href="mailto:mwfoley@ucalgary.ca">mwfoley@ucalgary.ca</a><br>
+<a href="https://schulich.ucalgary.ca/contacts/michael-foley">View profile &gt;</a></span></span></span></p>
+
+<p><span><span><span>Dr. Ian Donald Gates, Professor<br>
+<a href="mailto:ian.gates@ucalgary.ca">ian.gates@ucalgary.ca</a></span></span></span><br>
+<a href="https://schulich.ucalgary.ca/contacts/ian-donald-gates"><span><span><span>View profile &gt;</span></span></span></a></p>
+
+<p><span><span><span>Dr. Hassan Hassanzadeh, Associate Professor<br>
+<a href="mailto:hhassanz@ucalgary.ca">hhassanz@ucalgary.ca</a><br>
+<a href="https://schulich.ucalgary.ca/contacts/hassan-hassanzadeh">View profile &gt;</a></span></span></span></p>
+
+<p><span><span><span>Dr. Hossein Hejazi, Associate Professor<br>
+<a href="mailto:shhejazi@ucalgary.ca">shhejazi@ucalgary.ca</a><br>
+<a href="https://schulich.ucalgary.ca/contacts/hossein-hejazi">View profile &gt;</a></span></span></span></p>
+
+<p><span><span><span>Dr. Josephine Mary Hill, Professor</span></span></span><br>
+<span><span><span><a href="mailto:jhill@ucalgary.ca">jhill@ucalgary.ca</a><br>
+<a href="https://schulich.ucalgary.ca/contacts/josephine-mary-hill">View profile &gt;</a></span></span></span></p>
+
+<p>Dr.&nbsp;Jinguang Hu,&nbsp;Assistant Professor<br>
+<a href="mailto:jinguang.hu@ucalgary.ca">jinguang.hu@ucalgary.ca</a><br>
+<a href="https://schulich.ucalgary.ca/contacts/jinguang-hu">View profile &gt;</a></p>
+
+<p><span><span><span>Dr. Maen Husein, Professor<br>
+<a href="mailto:mhusein@ucalgary.ca">mhusein@ucalgary.ca</a><br>
+<a href="https://schulich.ucalgary.ca/contacts/maen-husein">View profile &gt;</a></span></span></span></p>
+
+<p><span><span><span>Dr. Martin Jasso, Assistant Professor<br>
+<a href="mailto:mjasso@ucalgary.ca">mjasso@ucalgary.ca</a><br>
+<a href="https://schulich.ucalgary.ca/contacts/martin-jasso">View profile &gt;</a></span></span></span></p>
+
+<p><span><span><span>Dr. Ayodeji Aderopo Jeje, Professor<br>
+<a href="mailto:jeje@ucalgary.ca">jeje@ucalgary.ca</a><br>
+<a href="https://schulich.ucalgary.ca/contacts/ayodeji-aderopo-jeje">View profile &gt;</a></span></span></span></p>
+
+<p><span><span><span>Dr. Kimberly Johnston, Instructor, </span></span></span>Associate Dean of&nbsp;Academic and Planning; Teaching and Learning<br>
+<span><span><span><a href="mailto:johnstka@ucalgary.ca">johnstka@ucalgary.ca</a></span></span></span><br>
+<a href="https://schulich.ucalgary.ca/contacts/kimberly-johnston"><span><span><span>View profile &gt;</span></span></span></a></p>
+
+<p><span><span><span>Dr. Michael Kallos, Professor<br>
+<a href="mailto:mskallos@ucalgary.ca">mskallos@ucalgary.ca</a><br>
+<a href="https://schulich.ucalgary.ca/contacts/michael-kallos">View profile &gt;</a></span></span></span></p>
+
+<p><span><span><span>Dr. Apostolos Kantzas, Professor<br>
+<a href="mailto:akantzas@ucalgary.ca">akantzas@ucalgary.ca</a><br>
+<a href="https://schulich.ucalgary.ca/contacts/apostolos-kantzas">View profile &gt;</a></span></span></span></p>
+
+<p><span><span><span>Dr. Kunal Karan, Professor<br>
+<a href="mailto:kkaran@ucalgary.ca">kkaran@ucalgary.ca</a><br>
+<a href="https://schulich.ucalgary.ca/contacts/kunal-karan">View profile &gt;</a></span></span></span></p>
+
+<p><span><span><span>Dr. Md Kibria, Assistant Professor<br>
+<a href="mailto:md.kibria@ucalgary.ca">md.kibria@ucalgary.ca</a><br>
+<a href="https://schulich.ucalgary.ca/contacts/md-kibria">View profile &gt;</a></span></span></span></p>
+
+<p><span><span><span>Dr. Qingye Lu, Assistant Professor<br>
+<a href="mailto:qingye.lu@ucalgary.ca">qingye.lu@ucalgary.ca</a><br>
+<a href="https://schulich.ucalgary.ca/contacts/qingye-gemma-lu">View profile &gt;</a></span></span></span></p>
+
+<p><span><span><span>Dr. Nader Mahinpey, Professor<br>
+<a href="mailto:nader.mahinpey@ucalgary.ca">nader.mahinpey@ucalgary.ca</a><br>
+<a href="https://schulich.ucalgary.ca/contacts/nader-mahinpey">View profile &gt;</a></span></span></span></p>
+
+<p><span><span><span>Dr. Brij Maini, Professor<br>
+<a href="mailto:bmaini@ucalgary.ca">bmaini@ucalgary.ca</a><br>
+<a href="https://schulich.ucalgary.ca/contacts/brij-maini">View profile &gt;</a></span></span></span></p>
+
+<p>Dr. Sean McCoy,&nbsp;<span><span><span>Assistant Professor</span></span></span><br>
+<a href="mailto:sean.mccoy@ucalgary.ca">sean.mccoy@ucalgary.ca</a><br>
+<a href="https://schulich.ucalgary.ca/contacts/sean-mccoy">View profile &gt;</a></p>
+
+<p><span><span><span>Dr. Anil Kumar Mehrotra, Professor<br>
+<a href="mailto:mehrotra@ucalgary.ca">mehrotra@ucalgary.ca</a><br>
+<a href="https://schulich.ucalgary.ca/contacts/anil-k-mehrotra">View profile &gt;</a></span></span></span></p>
+
+<p><span><span><span>Dr. Sudarshan Mehta, Professor<br>
+<a href="mailto:mehta@ucalgary.ca">mehta@ucalgary.ca</a><br>
+<a href="https://schulich.ucalgary.ca/contacts/sudarshan-mehta">View profile &gt;</a></span></span></span></p>
+
+<p><span><span><span>Dr.<strong> </strong>Robert Gordon Moore, Professor<br>
+<a href="mailto:moore@ucalgary.ca">moore@ucalgary.ca</a><br>
+<a href="https://schulich.ucalgary.ca/contacts/robert-gordon-moore">View profile &gt;</a></span></span></span></p>
+
+<p><span><span><span>Dr.<strong> </strong>Nashaat Nassar, Professor<br>
+<a href="mailto:nassar@ucalgary.ca">nassar@ucalgary.ca</a><br>
+<a href="https://schulich.ucalgary.ca/contacts/nashaat-nassar">View profile &gt;</a></span></span></span></p>
+
+<p><span><span><span>Dr.<strong> </strong>Giovanniantonio Natale, Assistant Professor<br>
+<a href="mailto:gnatale@ucalgary.ca">gnatale@ucalgary.ca</a><br>
+<a href="https://schulich.ucalgary.ca/contacts/giovanniantonio-natale">View profile &gt;</a></span></span></span></p>
+
+<p><span><span><span>Dr.<strong> </strong>Pedro<strong> </strong>Pereira Almao, Professor<br>
+<a href="mailto:ppereira@ucalgary.ca">ppereira@ucalgary.ca</a><br>
+<a href="https://schulich.ucalgary.ca/contacts/pedro-pereira-almao">View profile &gt;</a></span></span></span></p>
+
+<p><span><span><span>Dr.<strong> </strong>Tatyana Plaksina, Assistant Professor<br>
+<a href="mailto:tatyana.plaksina@ucalgary.ca">tatyana.plaksina@ucalgary.ca</a><br>
+<a href="https://schulich.ucalgary.ca/contacts/tatyana-plaksina">View profile &gt;</a></span></span></span></p>
+
+<p><span><span><span>Dr.<strong> </strong>Sathish Ponnurangam, Assistant Professor<br>
+<a href="mailto:sathish.ponnurangam@ucalgary.ca">sathish.ponnurangam@ucalgary.ca</a><br>
+<a href="https://schulich.ucalgary.ca/contacts/sathish-ponnurangam">View profile &gt;</a></span></span></span></p>
+
+<p><span><span><span>Dr.<strong> </strong>Kristina Diane Rinker, Professor<br>
+<a href="mailto:kdrinker@ucalgary.ca">kdrinker@ucalgary.ca</a><br>
+<a href="https://schulich.ucalgary.ca/contacts/kristina-diane-rinker">View profile &gt;</a></span></span></span></p>
+
+<p><span><span><span>Dr.<strong> </strong>Edward Roberts, Professor, Associate Head of Research<br>
+<a href="mailto:edward.roberts@ucalgary.ca">edward.roberts@ucalgary.ca</a><br>
+<a href="https://schulich.ucalgary.ca/contacts/edward-roberts">View profile &gt;</a></span></span></span></p>
+
+<p><span><span><span>Dr.<strong> </strong>Hemanta Sarma, Professor&nbsp;<br>
+<a href="mailto:hemanta.sarma@ucalgary.ca">hemanta.sarma@ucalgary.ca</a><br>
+<a href="https://schulich.ucalgary.ca/contacts/hemanta-sarma">View profile &gt;</a></span></span></span></p>
+
+<p><span><span><span>Dr.<strong> </strong>Arindom Sen, Professor, Department Head<br>
+<a href="mailto:asen@ucalgary.ca">asen@ucalgary.ca</a><br>
+<a href="https://schulich.ucalgary.ca/contacts/arindom-sen">View profile &gt;</a></span></span></span></p>
+
+<p><span><span><span>Dr. Roman Shor, Assistant Professor,&nbsp;Associate Head (Undergraduate Studies)</span></span></span><br>
+<span><a href="mailto:roman.shor@ucalgary.ca">roman.shor@ucalgary.ca</a></span><br>
+<a href="https://schulich.ucalgary.ca/contacts/roman-shor"><span><span><span>View profile &gt;</span></span></span></a></p>
+
+<p><span><span><span>Dr.<strong> </strong>Hua Song, Associate Professor<br>
+<a href="mailto:sonh@ucalgary.ca">sonh@ucalgary.ca</a><br>
+<a href="https://schulich.ucalgary.ca/contacts/hua-song">View profile &gt;</a></span></span></span></p>
+
+<p><span><span><span>Dr.<strong> </strong>Kazi Sumon, Instructor&nbsp;<br>
+<a href="mailto:kazi.sumon@ucalgary.ca">kazi.sumon@ucalgary.ca</a><br>
+<a href="https://schulich.ucalgary.ca/contacts/kazi-sumon">View profile &gt;</a></span></span></span></p>
+
+<p><span><span><span>Dr.<strong> </strong>Uttandaraman (U.T.) Sundararaj, Professor&nbsp;<br>
+<a href="mailto:u.sundararaj@ucalgary.ca">u.sundararaj@ucalgary.ca</a><br>
+<a href="https://schulich.ucalgary.ca/contacts/uttandaraman-ut-sundararaj">View profile &gt;</a></span></span></span></p>
+
+<p><span><span><span>Dr.<strong> </strong>Milana Trifkovic, Associate Professor<br>
+<a href="mailto:mtrifkov@ucalgary.ca">mtrifkov@ucalgary.ca</a><br>
+<a href="https://schulich.ucalgary.ca/contacts/milana-trifkovic">View profile &gt;</a></span></span></span></p>
+
+<p><span><span><span>Dr.<strong> </strong>Harvey Yarranton, Professor</span></span></span><br>
+<span><span><span><a href="mailto:hyarrant@ucalgary.ca">hyarrant@ucalgary.ca</a><br>
+<a href="https://schulich.ucalgary.ca/contacts/harvey-yarranton">View profile &gt;</a></span></span></span></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+            </div>
+          </div>
+                      </div>
+          </div>
+  </div>
+
+
+
+    
+    
+      
+
+  
+    
+
+    
+    
+  <div class="layout-blocks-ucws-divider container-fluid roundable block divider">
+    <div class="row">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <hr class="solid red">
+          </div>
+        </div>
+      </div>
+          </div>
+  </div>
+
+
+
+    
+    
+      
+
+  
+    
+  <div class="layout-blocks-ucws-text container-fluid roundable block text">
+    <div class="row">
+      <div class="container">
+                          <div class="row header left">
+            <div class="col-sm-12">
+              <h2>
+                                                Adjuncts
+              </h2>
+            </div>
+          </div>
+                          <div class="row left">
+            <div class="col-sm-12 two-col">
+              <p>Dr.<strong>&nbsp;</strong>S.M. Farouq Ali, Adjunct Professor<br>
+<span><span><span><a href="mailto:farouq@ucalgary.ca">farouq@ucalgary.ca</a></span></span></span></p>
+
+<p>Dr. Koorosh Asghari<strong>,</strong>&nbsp;Adjunct Assistant Professor<br>
+<a href="mailto:Koorosh.asghari@ucalgary.ca">Koorosh.asghari@ucalgary.ca</a></p>
+
+<p>Dr.<strong>&nbsp;</strong>Richard Baker, Adjunct Associate Professor&nbsp;<br>
+<a href="mailto:rbaker@ucalgary.ca">rbaker@ucalgary.ca</a></p>
+
+<p>Dr.<strong>&nbsp;</strong>Jon Bryan, Assistant Adjunct Professor<br>
+<span><span><span><a href="mailto:jlbryan@ucalgary.ca">jlbryan@ucalgary.ca</a></span></span></span></p>
+
+<p>Gary Bunio<strong>,</strong>&nbsp;Adjunct Assistant Professor<br>
+<a href="mailto:gary.bunio@ucalgary.ca">gary.bunio@ucalgary.ca</a></p>
+
+<p>Dr.<strong>&nbsp;</strong>Chris Clarkson, Adjunct Associate Professor&nbsp;<br>
+<span><span><span><a href="mailto:clarksoc@ucalgary.ca">clarksoc@ucalgary.ca</a></span></span></span></p>
+
+<p>Dr.<strong>&nbsp;</strong>Alex De Visscher, Adjunct Professor<br>
+<span><span><span><a href="mailto:adevissc@ucalgary.ca">adevissc@ucalgary.ca</a></span></span></span></p>
+
+<p>Dr.<strong>&nbsp;</strong>Tom Harding, Adjunct Professor&nbsp;<br>
+<span><span><span><a href="mailto:tharding@ucalgary.ca">tharding@ucalgary.ca</a></span></span></span></p>
+
+<p>Mohammad Kariznovi, Adjunct Assistant Professor<br>
+<span><span><span><span><span xml:lang="EN-US" lang="EN-US"><span><a href="mailto:mkarizno@ucalgary.ca">mkarizno@ucalgary.ca</a></span></span></span></span></span></span></p>
+
+<p>Mike Lloyd, Adjunct Professor&nbsp;<br>
+<span><span><span><a href="mailto:mlloyd@ucalgary.ca">mlloyd@ucalgary.ca</a></span></span></span></p>
+
+<p>Dr. Maryam Mkhani,&nbsp;Adjunct Assistant Professor<br>
+<a href="mailto:maryam.mkhani@ucalgary.ca">maryam.mkhani@ucalgary.ca</a></p>
+
+<p>Dr.<strong>&nbsp;</strong>Wayne Monnery, Adjunct Associate Professor<br>
+<span><span><span><a href="mailto:monnery@ucalgary.ca">monnery@ucalgary.ca</a></span></span></span></p>
+
+<p>Dr.<strong>&nbsp;</strong>Long Nghiem, Adjunct Professor&nbsp;<br>
+<span><span><span><a href="mailto:lxnghiem@ucalgary.ca">lxnghiem@ucalgary.ca</a></span></span></span></p>
+
+<p>Dr.<strong>&nbsp;</strong>Mehran Pooladi-Darvish, Adjunct Professor&nbsp;<br>
+<span><span><span><a href="mailto:pooladi@ucalgary.ca">pooladi@ucalgary.ca</a></span></span></span></p>
+
+<p>Dr.<strong>&nbsp;</strong>Darius Remesat, Adjunct Associate Professor&nbsp;<br>
+<span><span><span><a href="mailto:dremesat@ucalgary.ca">dremesat@ucalgary.ca</a></span></span></span></p>
+            </div>
+          </div>
+                      </div>
+          </div>
+  </div>
+
+
+
+    
+    
+      
+
+  
+    
+
+    
+    
+  <div class="layout-blocks-ucws-divider container-fluid roundable block divider">
+    <div class="row">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <hr class="solid red">
+          </div>
+        </div>
+      </div>
+          </div>
+  </div>
+
+
+
+    
+    
+      
+
+  
+    
+  <div class="layout-blocks-ucws-text container-fluid roundable block text">
+    <div class="row">
+      <div class="container">
+                          <div class="row header left">
+            <div class="col-sm-12">
+              <h2>
+                                                Professors Emeriti
+              </h2>
+            </div>
+          </div>
+                          <div class="row left">
+            <div class="col-sm-12 two-col">
+              <p>Dr.<strong>&nbsp;</strong>Amir Badakhshan, Professor Emeritus&nbsp;<br>
+<span><span><span><a href="mailto:abadakhs@ucalgary.ca">abadakhs@ucalgary.ca</a></span></span></span></p>
+
+<p>Dr. Leo Behie, Professor Emeritus&nbsp;<br>
+<span><span><span><a href="mailto:behie@ucalgary.ca">behie@ucalgary.ca</a></span></span></span></p>
+
+<p>Dr. Douglas Wilford Bennion, Professor Emeritus&nbsp;<br>
+<span><span><span><a href="mailto:bennion@ucalgary.ca">bennion@ucalgary.ca</a></span></span></span></p>
+
+<p>Dr. P. Raj Bishnoi, Professor Emeritus&nbsp;<br>
+<span><span><span><a href="mailto:bishnoi@ucalgary.ca">bishnoi@ucalgary.ca</a></span></span></span></p>
+
+<p>Dr. Farhang Mohtadi, Professor Emeritus&nbsp;</p>
+
+<p>Dr. Barry Blythe Pruden, Professor Emeritus&nbsp;<br>
+<span><span><span><a href="mailto:pruden@ucalgary.ca">pruden@ucalgary.ca</a></span></span></span></p>
+
+<p>Dr. Tony Settari, Professor Emeritus<br>
+<span><span><span><a href="mailto:asettari@ucalgary.ca">asettari@ucalgary.ca</a></span></span></span></p>
+
+<p>Dr. William (Bill) Svrcek, Professor Emeritus&nbsp;<br>
+<span><span><span><a href="mailto:svrcek@ucalgary.ca">svrcek@ucalgary.ca</a></span></span></span></p>
+            </div>
+          </div>
+                      </div>
+          </div>
+  </div>
+
+
+
+    
+    
+      
+
+  
+    
+
+    
+    
+  
+  <div class="layout-blocks-ucws-banner container-fluid roundable full-width block hero-cta banner graphic no-bottom-margin">
+    <div class="row red-back">
+      <div class="container">
+        <div class="row">
+                                <div class="col-sm-12 col-text">
+              <div class="cta-content center">
+                                  <h2>Department contact information</h2>
+                                <p><span><span><span>Find more details on where we are located, key members of our leadership team and more.</span></span></span></p>
+                                  <div class="btn-wrapper">
+                                                                                      <a class="btn btn-default btn-ghost" href="https://schulich.ucalgary.ca/chemical-petroleum/contacts" role="button" data-ucws-analytics-click="" data-ucws-analytics-category="CTA button click" data-ucws-analytics-action="Visit our contacts page" data-ucws-analytics-label="http://schulich.ucalgary.ca/chemical-petroleum/faculty-members">Visit our contacts page</a>
+                                      </div>
+                              </div>
+            </div>
+                  </div>
+      </div>
+          </div>
+  </div>
+
+
+  
+      </div>
+    </div>
+  </div>
+
+
+
+
+  </main>
+
+<footer class="container-fluid">
+    <div id="block-sectioninformation-chemical-petroleum">
+  
+    
+      
+                    
+
+
+          
+
+  
+
+  <div id="pre-footer" class="row grey-back">
+    <div class="container">
+      <div class="row">
+        <div id="pre-footer-deets" class="col-md-9">
+
+                      <p class="logo">
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 349.2 170.4" style="enable-background:new 0 0 349.2 170.4;" xml:space="preserve" class="svg schulich  injected-svg" data-url="/modules/ucalgary/ucws_common/ucws_section_information/templates/images/Schulich.svg">
+<style type="text/css">
+  .st0{fill:#FFFFFF;}
+  .st1{fill:#FFFFFF;stroke:#FFFFFF;stroke-width:0.5;stroke-miterlimit:3.864;}
+  .st2{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+  .st3{fill:none;stroke:#FFFFFF;stroke-width:2.200000e-02;stroke-miterlimit:3.864;}
+  .st4{fill:none;stroke:#FFFFFF;stroke-width:0.117;stroke-miterlimit:3.864;}
+</style>
+<line class="st0" x1="1.7" y1="75.4" x2="182.1" y2="75.4"></line>
+<path class="st0" d="M3.7,65.8c0.3,0.5,0.7,0.9,1.2,1.3c0.5,0.4,1,0.7,1.7,0.9c0.6,0.2,1.4,0.4,2.2,0.4c0.8,0,1.6-0.1,2.2-0.4   c0.7-0.3,1.2-0.7,1.7-1.2c0.5-0.5,0.8-1.1,1.1-1.7c0.2-0.7,0.4-1.4,0.4-2.1c0-1.1-0.3-2.1-0.9-2.7c-0.6-0.7-1.3-1.2-2.2-1.7   c-0.9-0.4-1.8-0.9-2.8-1.2c-1-0.4-1.9-0.8-2.8-1.4c-0.9-0.6-1.6-1.3-2.2-2.2c-0.6-0.9-0.9-2-0.9-3.5c0-1,0.2-2,0.6-2.9   c0.4-0.9,0.9-1.6,1.6-2.2c0.7-0.6,1.6-1.1,2.6-1.5c1-0.3,2.1-0.5,3.4-0.5c1.2,0,2.2,0.1,3.1,0.4c0.9,0.3,1.7,0.7,2.4,1.3   c-0.2,0.4-0.4,0.9-0.6,1.3c-0.2,0.5-0.3,1.1-0.4,1.8h-0.4c-0.1-0.3-0.3-0.7-0.5-1.1c-0.2-0.4-0.5-0.8-0.9-1.1   c-0.4-0.3-0.8-0.6-1.3-0.9c-0.5-0.2-1.1-0.4-1.8-0.4c-0.7,0-1.3,0.1-1.9,0.3c-0.6,0.2-1.1,0.5-1.5,1c-0.4,0.4-0.8,0.9-1,1.5   c-0.2,0.6-0.4,1.2-0.4,1.9c0,1.2,0.3,2.1,0.9,2.8c0.6,0.7,1.3,1.2,2.2,1.7c0.9,0.5,1.8,0.9,2.8,1.2c1,0.4,2,0.8,2.8,1.3   c0.9,0.5,1.6,1.2,2.2,2c0.6,0.8,0.9,1.9,0.9,3.3c0,1.1-0.2,2.2-0.6,3.3c-0.4,1-1,1.9-1.8,2.7c-0.8,0.8-1.7,1.3-2.9,1.8   c-1.1,0.4-2.4,0.6-3.9,0.6c-1.5,0-2.8-0.2-3.8-0.6c-1-0.4-1.8-0.9-2.4-1.4c0.2-0.6,0.4-1.1,0.5-1.5c0.1-0.5,0.2-1.1,0.2-1.8h0.4   C3.1,64.9,3.3,65.4,3.7,65.8"></path>
+<path class="st0" d="M40.6,68.4c-0.5,0.2-1.1,0.4-1.8,0.6c-0.7,0.2-1.5,0.4-2.3,0.5c-0.8,0.2-1.7,0.2-2.7,0.2c-2,0-3.8-0.3-5.5-0.8   c-1.7-0.6-3.1-1.4-4.3-2.6c-1.2-1.1-2.1-2.5-2.8-4.2c-0.7-1.7-1-3.5-1-5.7c0-2.1,0.3-4,1-5.7c0.7-1.7,1.6-3.1,2.9-4.2   c1.2-1.1,2.7-2,4.4-2.6c1.7-0.6,3.6-0.9,5.7-0.9c1.6,0,3.1,0.2,4.5,0.5c1.4,0.3,2.6,0.7,3.6,1.2c-0.2,0.4-0.4,0.8-0.5,1.4   c-0.1,0.6-0.2,1.1-0.3,1.5l-0.2,0.1c-0.2-0.3-0.6-0.6-1-1c-0.4-0.4-1-0.7-1.6-1.1c-0.6-0.3-1.3-0.6-2-0.9c-0.7-0.2-1.6-0.4-2.5-0.4   c-1.5,0-2.8,0.2-4.1,0.7c-1.3,0.5-2.4,1.2-3.3,2.2c-0.9,1-1.7,2.2-2.2,3.7c-0.5,1.5-0.8,3.3-0.8,5.4c0,2.1,0.3,3.9,0.8,5.4   c0.5,1.5,1.2,2.8,2.2,3.7c0.9,1,2,1.7,3.3,2.2c1.3,0.5,2.6,0.7,4.1,0.7c0.9,0,1.7-0.1,2.5-0.3c0.8-0.2,1.5-0.5,2.1-0.8   c0.6-0.3,1.2-0.7,1.7-1c0.5-0.4,0.9-0.7,1.3-1l0.1,0.1l-0.3,2.2C41.5,68,41.1,68.2,40.6,68.4"></path>
+<path class="st0" d="M65.9,48.5c-0.1-1.6-0.1-3.2-0.2-4.8c0.3,0.1,0.6,0.1,0.9,0.1c0.3,0,0.6,0.1,0.9,0.1c0.3,0,0.6,0,0.9-0.1   c0.3,0,0.6-0.1,0.9-0.1c-0.1,1.6-0.1,3.3-0.2,4.8c-0.1,1.6-0.1,3.2-0.1,4.8v6.4c0,1.6,0,3.3,0.1,4.9c0.1,1.6,0.1,3.2,0.2,4.7   c-0.6,0-1.2-0.1-1.8-0.1c-0.6,0-1.2,0-1.8,0.1c0.1-1.5,0.1-3.1,0.2-4.7C66,63,66,61.4,66,59.7v-3.4c-1.3,0-2.6,0-3.9,0   c-1.3,0-2.6,0-3.9,0c-1.3,0-2.6,0-3.9,0c-1.3,0-2.6,0-3.9,0v3.4c0,1.6,0,3.3,0.1,4.9c0.1,1.6,0.1,3.2,0.2,4.7   c-0.6,0-1.2-0.1-1.8-0.1c-0.6,0-1.2,0-1.8,0.1c0.1-1.5,0.1-3.1,0.2-4.7c0.1-1.6,0.1-3.2,0.1-4.9v-6.4c0-1.6,0-3.3-0.1-4.8   c-0.1-1.6-0.1-3.2-0.2-4.8c0.3,0.1,0.6,0.1,0.9,0.1c0.3,0,0.6,0.1,0.9,0.1c0.3,0,0.6,0,0.9-0.1c0.3,0,0.6-0.1,0.9-0.1   c-0.1,1.6-0.1,3.3-0.2,4.8c-0.1,1.6-0.1,3.2-0.1,4.8v1.3c1.3,0,2.6,0.1,3.9,0.1c1.3,0,2.6,0,3.9,0c1.3,0,2.6,0,3.9,0   c1.3,0,2.6-0.1,3.9-0.1v-1.3C66,51.7,66,50.1,65.9,48.5"></path>
+<path class="st0" d="M95.8,47.6c0-1.9-0.1-3.2-0.2-4c0.3,0.1,0.5,0.1,0.8,0.1c0.3,0,0.5,0.1,0.8,0.1c0.3,0,0.7-0.1,1.1-0.2   c-0.1,0.9-0.2,1.9-0.2,3.1c-0.1,1.2-0.1,2.5-0.2,3.9c-0.1,1.4-0.1,2.8-0.2,4.3c-0.1,1.5-0.1,2.9-0.1,4.2c0,1.7-0.3,3.2-0.8,4.5   c-0.5,1.3-1.2,2.4-2.1,3.4c-0.9,0.9-2,1.6-3.3,2.1c-1.3,0.5-2.8,0.7-4.5,0.7c-3.7,0-6.4-0.8-8.1-2.5c-1.7-1.7-2.5-4.4-2.5-8   c0-1.2,0-2.2,0.1-3.1c0.1-0.9,0.1-1.8,0.1-2.8c0-2.1,0-3.9-0.1-5.6c-0.1-1.6-0.1-3-0.2-4.1c0.3,0.1,0.6,0.1,1,0.1   c0.4,0,0.7,0.1,1,0.1c0.3,0,0.5,0,0.8-0.1c0.3,0,0.5-0.1,0.8-0.1c0,0.5-0.1,1.3-0.1,2.2c0,0.9-0.1,1.9-0.1,3c0,1.1-0.1,2.3-0.1,3.6   s0,2.6,0,4c0,0.8,0,1.7,0,2.6c0,0.9,0.1,1.8,0.3,2.7c0.1,0.9,0.4,1.7,0.7,2.5c0.3,0.8,0.8,1.5,1.4,2.1c0.6,0.6,1.4,1,2.3,1.4   c0.9,0.3,2.1,0.5,3.5,0.5c1.4,0,2.5-0.2,3.4-0.6c0.9-0.4,1.7-0.9,2.3-1.6c0.6-0.6,1.1-1.4,1.4-2.2c0.3-0.8,0.6-1.7,0.7-2.7   c0.1-0.9,0.2-1.8,0.3-2.8c0-0.9,0-1.8,0-2.5C95.9,52.3,95.8,49.5,95.8,47.6"></path>
+<path class="st0" d="M105.3,48.5c-0.1-1.6-0.1-3.2-0.2-4.8c0.3,0.1,0.6,0.1,0.9,0.1c0.3,0,0.6,0.1,0.9,0.1c0.3,0,0.6,0,0.9-0.1   c0.3,0,0.6-0.1,0.9-0.1c-0.1,1.6-0.1,3.3-0.2,4.8c-0.1,1.6-0.1,3.2-0.1,4.8c0,3.1,0,5.9,0,8.2c0,2.3,0.1,4.4,0.1,6.2   c1.8,0,3.5,0,5.1-0.1c1.6,0,3.4-0.2,5.2-0.4c-0.1,0.4-0.2,0.8-0.2,1.1c0,0.3,0.1,0.6,0.2,1c-1.1,0-2.3-0.1-3.4-0.1   c-1.1,0-2.3,0-3.4,0c-1.2,0-2.3,0-3.5,0c-1.1,0-2.3,0-3.5,0.1c0.1-1.5,0.2-3.1,0.2-4.7c0.1-1.6,0.1-3.2,0.1-4.9v-6.4   C105.4,51.7,105.4,50.1,105.3,48.5"></path>
+<path class="st0" d="M124.1,48.5c-0.1-1.6-0.1-3.2-0.2-4.8c0.3,0.1,0.6,0.1,0.9,0.1c0.3,0,0.6,0.1,0.9,0.1c0.3,0,0.6,0,0.9-0.1   c0.3,0,0.6-0.1,0.9-0.1c-0.1,1.6-0.1,3.3-0.2,4.8c-0.1,1.6-0.1,3.2-0.1,4.8v6.4c0,1.6,0,3.3,0.1,4.9c0.1,1.6,0.1,3.2,0.2,4.7   c-0.6,0-1.2-0.1-1.8-0.1c-0.6,0-1.2,0-1.8,0.1c0.1-1.5,0.1-3.1,0.2-4.7c0.1-1.6,0.1-3.2,0.1-4.9v-6.4   C124.2,51.7,124.2,50.1,124.1,48.5"></path>
+<path class="st0" d="M152.8,68.4c-0.5,0.2-1.1,0.4-1.8,0.6c-0.7,0.2-1.5,0.4-2.3,0.5c-0.8,0.2-1.7,0.2-2.7,0.2c-2,0-3.8-0.3-5.5-0.8   c-1.7-0.6-3.1-1.4-4.3-2.6c-1.2-1.1-2.1-2.5-2.8-4.2c-0.7-1.7-1-3.5-1-5.7c0-2.1,0.3-4,1-5.7c0.7-1.7,1.6-3.1,2.9-4.2   c1.2-1.1,2.7-2,4.4-2.6c1.7-0.6,3.6-0.9,5.7-0.9c1.6,0,3.1,0.2,4.5,0.5c1.4,0.3,2.6,0.7,3.6,1.2c-0.2,0.4-0.4,0.8-0.5,1.4   c-0.1,0.6-0.2,1.1-0.3,1.5l-0.2,0.1c-0.2-0.3-0.6-0.6-1-1c-0.4-0.4-1-0.7-1.6-1.1c-0.6-0.3-1.3-0.6-2-0.9c-0.7-0.2-1.6-0.4-2.5-0.4   c-1.5,0-2.8,0.2-4.1,0.7c-1.3,0.5-2.4,1.2-3.3,2.2c-0.9,1-1.7,2.2-2.2,3.7c-0.5,1.5-0.8,3.3-0.8,5.4c0,2.1,0.3,3.9,0.8,5.4   c0.5,1.5,1.3,2.8,2.2,3.7c0.9,1,2,1.7,3.3,2.2c1.3,0.5,2.6,0.7,4.1,0.7c0.9,0,1.7-0.1,2.5-0.3c0.8-0.2,1.5-0.5,2.1-0.8   c0.6-0.3,1.2-0.7,1.7-1c0.5-0.4,0.9-0.7,1.3-1l0.2,0.1l-0.3,2.2C153.6,68,153.3,68.2,152.8,68.4"></path>
+<path class="st0" d="M178.1,48.5c-0.1-1.6-0.1-3.2-0.2-4.8c0.3,0.1,0.6,0.1,0.9,0.1c0.3,0,0.6,0.1,0.9,0.1s0.6,0,0.9-0.1   c0.3,0,0.6-0.1,0.9-0.1c-0.1,1.6-0.1,3.3-0.2,4.8c-0.1,1.6-0.1,3.2-0.1,4.8v6.4c0,1.6,0,3.3,0.1,4.9c0.1,1.6,0.1,3.2,0.2,4.7   c-0.6,0-1.2-0.1-1.8-0.1c-0.6,0-1.2,0-1.8,0.1c0.1-1.5,0.1-3.1,0.2-4.7c0.1-1.6,0.1-3.2,0.1-4.9v-3.4c-1.3,0-2.6,0-3.9,0   c-1.3,0-2.6,0-3.9,0c-1.3,0-2.6,0-3.9,0c-1.3,0-2.6,0-3.9,0v3.4c0,1.6,0,3.3,0.1,4.9c0.1,1.6,0.1,3.2,0.2,4.7   c-0.6,0-1.2-0.1-1.8-0.1c-0.6,0-1.2,0-1.8,0.1c0.1-1.5,0.2-3.1,0.2-4.7c0.1-1.6,0.1-3.2,0.1-4.9v-6.4c0-1.6,0-3.3-0.1-4.8   c-0.1-1.6-0.1-3.2-0.2-4.8c0.3,0.1,0.6,0.1,0.9,0.1c0.3,0,0.6,0.1,0.9,0.1c0.3,0,0.6,0,0.9-0.1c0.3,0,0.6-0.1,0.9-0.1   c-0.1,1.6-0.1,3.3-0.2,4.8c-0.1,1.6-0.1,3.2-0.1,4.8v1.3c1.3,0,2.6,0.1,3.9,0.1c1.3,0,2.6,0,3.9,0c1.3,0,2.6,0,3.9,0   c1.3,0,2.6-0.1,3.9-0.1v-1.3C178.2,51.7,178.2,50.1,178.1,48.5"></path>
+<path class="st0" d="M2.6,94.2c0.2,0.2,0.4,0.5,0.6,0.6c0.3,0.2,0.5,0.4,0.9,0.5c0.3,0.1,0.7,0.2,1.1,0.2c0.4,0,0.8-0.1,1.1-0.2   c0.3-0.1,0.6-0.3,0.9-0.6c0.2-0.3,0.4-0.5,0.6-0.9C8,93.4,8,93.1,8,92.7c0-0.6-0.2-1.1-0.5-1.4c-0.3-0.3-0.7-0.6-1.1-0.9   C6,90.2,5.5,90,5,89.8c-0.5-0.2-1-0.4-1.5-0.7c-0.5-0.3-0.8-0.7-1.1-1.1C2.1,87.5,2,86.9,2,86.1c0-0.5,0.1-1,0.3-1.5   c0.2-0.4,0.5-0.8,0.8-1.2c0.4-0.3,0.8-0.6,1.3-0.8c0.5-0.2,1.1-0.3,1.7-0.3c0.6,0,1.2,0.1,1.6,0.2c0.5,0.1,0.9,0.4,1.3,0.7   c-0.1,0.2-0.2,0.5-0.3,0.7c-0.1,0.2-0.2,0.6-0.2,0.9H8.3c-0.1-0.2-0.2-0.4-0.3-0.6c-0.1-0.2-0.3-0.4-0.4-0.6   c-0.2-0.2-0.4-0.3-0.7-0.5c-0.3-0.1-0.6-0.2-0.9-0.2c-0.4,0-0.7,0.1-1,0.2c-0.3,0.1-0.6,0.3-0.8,0.5c-0.2,0.2-0.4,0.5-0.5,0.8   c-0.1,0.3-0.2,0.6-0.2,1c0,0.6,0.2,1.1,0.5,1.4c0.3,0.3,0.7,0.6,1.1,0.9c0.5,0.2,0.9,0.4,1.5,0.6c0.5,0.2,1,0.4,1.5,0.7   c0.5,0.3,0.8,0.6,1.1,1c0.3,0.4,0.5,1,0.5,1.7c0,0.6-0.1,1.2-0.3,1.7c-0.2,0.5-0.5,1-0.9,1.4c-0.4,0.4-0.9,0.7-1.5,0.9   c-0.6,0.2-1.3,0.3-2,0.3c-0.8,0-1.4-0.1-1.9-0.3c-0.5-0.2-0.9-0.4-1.2-0.7c0.1-0.3,0.2-0.6,0.2-0.8c0-0.2,0.1-0.5,0.1-0.9h0.2   C2.3,93.7,2.5,94,2.6,94.2"></path>
+<path class="st0" d="M11.7,89.2c0.3-0.6,0.7-1.1,1.1-1.5c0.5-0.4,1-0.7,1.6-0.9c0.6-0.2,1.2-0.3,1.8-0.3c0.7,0,1.3,0.1,1.9,0.3   c0.6,0.2,1,0.4,1.2,0.6c-0.1,0.2-0.2,0.4-0.2,0.6c-0.1,0.2-0.1,0.4-0.2,0.7h-0.2c-0.1-0.2-0.2-0.3-0.4-0.5c-0.2-0.2-0.3-0.3-0.6-0.5   c-0.2-0.1-0.4-0.3-0.7-0.4c-0.3-0.1-0.5-0.1-0.9-0.1c-0.6,0-1.1,0.1-1.5,0.3c-0.4,0.2-0.8,0.5-1,0.9c-0.3,0.4-0.5,0.8-0.6,1.3   c-0.1,0.5-0.2,1.1-0.2,1.7c0,1.3,0.3,2.3,0.8,3c0.6,0.7,1.4,1,2.5,1c0.3,0,0.5,0,0.8-0.1c0.3-0.1,0.5-0.2,0.8-0.3s0.5-0.3,0.7-0.4   c0.2-0.2,0.4-0.4,0.6-0.6l0.1,0.1c-0.1,0.3-0.1,0.6-0.1,0.9c-0.4,0.3-0.9,0.6-1.4,0.8c-0.6,0.2-1.2,0.3-1.8,0.3   c-0.6,0-1.1-0.1-1.7-0.2c-0.6-0.2-1.1-0.4-1.5-0.8c-0.5-0.4-0.8-0.9-1.1-1.5c-0.3-0.6-0.4-1.3-0.4-2.2   C11.2,90.6,11.4,89.8,11.7,89.2"></path>
+<path class="st0" d="M21.4,85.6c0-0.5,0-1,0-1.5c0-0.5,0-1,0-1.4c0-0.5,0-0.8-0.1-1.2c0.4,0.1,0.6,0.1,0.9,0.1c0.2,0,0.5,0,0.9-0.1   c0,0.3,0,0.7-0.1,1.2c0,0.5,0,0.9,0,1.4c0,0.5,0,1,0,1.5c0,0.5,0,1,0,1.4l0,1.5h0c0.4-0.6,0.8-1,1.3-1.3c0.5-0.3,1.1-0.5,1.8-0.5   c0.4,0,0.7,0.1,1.1,0.2c0.4,0.1,0.7,0.3,1,0.5c0.3,0.3,0.5,0.6,0.7,1c0.2,0.4,0.3,1,0.3,1.7c0,0.6,0,1.1,0,1.7c0,0.6,0,1.2,0,1.9   v1.3c0,0.2,0,0.4,0,0.6c0,0.2,0,0.4,0,0.6c-0.3,0-0.5,0-0.8,0c-0.3,0-0.5,0-0.8,0c0-0.7,0-1.4,0.1-2.1c0-0.7,0-1.4,0-2.2v-1.2   c0-1-0.2-1.7-0.6-2.2c-0.4-0.5-0.9-0.7-1.5-0.7c-0.9,0-1.5,0.3-2,0.8c-0.4,0.6-0.6,1.3-0.6,2.3c0,0.4,0,0.8,0,1.3c0,0.5,0,1,0,1.4   c0,0.5,0,1,0,1.4c0,0.5,0,0.8,0.1,1.1c-0.3,0-0.6,0-0.9,0c-0.3,0-0.6,0-0.9,0c0-0.3,0-0.7,0.1-1.1c0-0.5,0-0.9,0-1.4   c0-0.5,0-1,0-1.5c0-0.5,0-1,0-1.4V87C21.4,86.5,21.4,86.1,21.4,85.6"></path>
+<path class="st0" d="M31.6,89.2c0.3-0.6,0.6-1.1,1.1-1.5c0.4-0.4,1-0.7,1.5-0.8c0.6-0.2,1.1-0.3,1.7-0.3c0.6,0,1.1,0.1,1.7,0.3   c0.6,0.2,1.1,0.5,1.5,0.8c0.5,0.4,0.8,0.9,1.1,1.5c0.3,0.6,0.4,1.4,0.4,2.2c0,0.9-0.1,1.6-0.4,2.2c-0.3,0.6-0.6,1.1-1.1,1.5   c-0.4,0.4-1,0.6-1.5,0.8c-0.6,0.2-1.1,0.2-1.7,0.2c-0.6,0-1.1-0.1-1.7-0.2c-0.6-0.2-1.1-0.4-1.5-0.8c-0.5-0.4-0.8-0.9-1.1-1.5   c-0.3-0.6-0.4-1.4-0.4-2.2C31.2,90.5,31.3,89.8,31.6,89.2 M33,93c0.1,0.5,0.3,0.9,0.5,1.3c0.2,0.4,0.5,0.7,0.9,0.9   c0.4,0.2,0.9,0.3,1.4,0.3c0.6,0,1-0.1,1.4-0.3c0.4-0.2,0.7-0.5,0.9-0.9c0.2-0.4,0.4-0.8,0.5-1.3c0.1-0.5,0.1-1,0.1-1.6   c0-0.5,0-1.1-0.1-1.6c-0.1-0.5-0.3-0.9-0.5-1.3c-0.2-0.4-0.5-0.7-0.9-0.9c-0.4-0.2-0.9-0.3-1.4-0.3c-0.6,0-1,0.1-1.4,0.3   c-0.4,0.2-0.7,0.5-0.9,0.9c-0.2,0.4-0.4,0.8-0.5,1.3c-0.1,0.5-0.1,1-0.1,1.6C32.9,91.9,32.9,92.5,33,93z"></path>
+<path class="st0" d="M42.3,89.2c0.3-0.6,0.6-1.1,1.1-1.5c0.4-0.4,1-0.7,1.5-0.8c0.6-0.2,1.1-0.3,1.7-0.3c0.6,0,1.1,0.1,1.7,0.3   c0.6,0.2,1.1,0.5,1.5,0.8c0.5,0.4,0.8,0.9,1.1,1.5c0.3,0.6,0.4,1.4,0.4,2.2c0,0.9-0.1,1.6-0.4,2.2c-0.3,0.6-0.6,1.1-1.1,1.5   c-0.4,0.4-1,0.6-1.5,0.8c-0.6,0.2-1.1,0.2-1.7,0.2c-0.6,0-1.1-0.1-1.7-0.2c-0.6-0.2-1.1-0.4-1.5-0.8c-0.5-0.4-0.8-0.9-1.1-1.5   c-0.3-0.6-0.4-1.4-0.4-2.2C41.9,90.5,42.1,89.8,42.3,89.2 M43.8,93c0.1,0.5,0.3,0.9,0.5,1.3c0.2,0.4,0.5,0.7,0.9,0.9   c0.4,0.2,0.9,0.3,1.4,0.3c0.6,0,1-0.1,1.4-0.3c0.4-0.2,0.7-0.5,0.9-0.9c0.2-0.4,0.4-0.8,0.5-1.3c0.1-0.5,0.1-1,0.1-1.6   c0-0.5,0-1.1-0.1-1.6c-0.1-0.5-0.3-0.9-0.5-1.3c-0.2-0.4-0.5-0.7-0.9-0.9c-0.4-0.2-0.9-0.3-1.4-0.3c-0.6,0-1,0.1-1.4,0.3   c-0.4,0.2-0.7,0.5-0.9,0.9c-0.2,0.4-0.4,0.8-0.5,1.3c-0.1,0.5-0.1,1-0.1,1.6C43.6,91.9,43.7,92.5,43.8,93z"></path>
+<path class="st0" d="M53.9,85.6c0-0.5,0-1,0-1.5c0-0.5,0-1,0-1.4c0-0.5,0-0.8-0.1-1.2c0.4,0.1,0.6,0.1,0.9,0.1c0.2,0,0.5,0,0.9-0.1   c0,0.3,0,0.7-0.1,1.2c0,0.5,0,0.9,0,1.4c0,0.5,0,1,0,1.5c0,0.5,0,1,0,1.4v3.5c0,0.4,0,0.9,0,1.4c0,0.5,0,1,0,1.5c0,0.5,0,1,0,1.4   c0,0.4,0,0.8,0.1,1.1c-0.3,0-0.6,0-0.9,0c-0.3,0-0.6,0-0.9,0c0-0.3,0.1-0.7,0.1-1.1c0-0.5,0-0.9,0-1.4c0-0.5,0-1,0-1.5   c0-0.5,0-1,0-1.4V87C53.9,86.5,53.9,86.1,53.9,85.6"></path>
+<path class="st0" d="M63.8,89.2c0.3-0.6,0.6-1.1,1.1-1.5c0.5-0.4,1-0.7,1.5-0.8c0.6-0.2,1.1-0.3,1.7-0.3c0.6,0,1.1,0.1,1.7,0.3   c0.6,0.2,1.1,0.5,1.5,0.8c0.4,0.4,0.8,0.9,1.1,1.5c0.3,0.6,0.4,1.4,0.4,2.2c0,0.9-0.1,1.6-0.4,2.2c-0.3,0.6-0.6,1.1-1.1,1.5   c-0.5,0.4-1,0.6-1.5,0.8c-0.6,0.2-1.1,0.2-1.7,0.2c-0.6,0-1.1-0.1-1.7-0.2c-0.6-0.2-1.1-0.4-1.5-0.8c-0.4-0.4-0.8-0.9-1.1-1.5   c-0.3-0.6-0.4-1.4-0.4-2.2C63.4,90.5,63.5,89.8,63.8,89.2 M65.2,93c0.1,0.5,0.3,0.9,0.5,1.3c0.2,0.4,0.5,0.7,0.9,0.9   c0.4,0.2,0.9,0.3,1.4,0.3c0.6,0,1-0.1,1.4-0.3c0.4-0.2,0.7-0.5,0.9-0.9c0.2-0.4,0.4-0.8,0.5-1.3c0.1-0.5,0.1-1,0.1-1.6   c0-0.5,0-1.1-0.1-1.6c-0.1-0.5-0.3-0.9-0.5-1.3c-0.2-0.4-0.5-0.7-0.9-0.9c-0.4-0.2-0.9-0.3-1.4-0.3c-0.6,0-1,0.1-1.4,0.3   c-0.4,0.2-0.7,0.5-0.9,0.9c-0.2,0.4-0.4,0.8-0.5,1.3c-0.1,0.5-0.1,1-0.1,1.6C65.1,91.9,65.1,92.5,65.2,93z"></path>
+<path class="st0" d="M77.9,82.7c-0.3,0-0.5,0.1-0.7,0.2c-0.2,0.1-0.4,0.3-0.5,0.4c-0.1,0.2-0.2,0.4-0.3,0.6   c-0.1,0.2-0.1,0.5-0.1,0.7c0,0.2,0,0.6,0.1,1c0,0.4,0.1,0.9,0.2,1.3c0.3,0,0.7,0,1,0c0.3,0,0.7,0,1,0c0,0.1,0,0.1,0,0.2   c0,0.1,0,0.1,0,0.2c0,0.1,0,0.1,0,0.2c0,0.1,0,0.1,0,0.2c-0.3,0-0.7,0-1,0c-0.3,0-0.7,0-1,0c0,1.4,0,2.8,0,4.2c0,1.4,0,2.8,0.1,4.2   c-0.1,0-0.3,0-0.4,0c-0.1,0-0.3,0-0.4,0c-0.3,0-0.6,0-0.9,0c0.1-1.4,0.2-2.8,0.2-4.1c0-1.4,0-2.8,0-4.2c-0.2,0-0.5,0-0.7,0   c-0.2,0-0.5,0-0.7,0c0-0.1,0-0.1,0-0.2c0-0.1,0-0.1,0-0.2c0-0.1,0-0.1,0-0.2c0-0.1,0-0.1,0-0.2c0.2,0,0.5,0,0.7,0c0.2,0,0.5,0,0.7,0   c0-0.4,0-0.8,0.1-1.2c0.1-0.4,0.2-0.9,0.3-1.3c0.1-0.4,0.3-0.8,0.5-1.2c0.2-0.4,0.4-0.7,0.7-1c0.2-0.2,0.5-0.4,0.9-0.6   c0.4-0.2,0.7-0.3,1.1-0.3c0.1,0,0.3,0,0.4,0.1c0,0.3,0,0.5,0,0.8c0,0.3,0,0.5,0,0.8L79,83C78.7,82.8,78.3,82.7,77.9,82.7"></path>
+<path class="st0" d="M86,85.2c0-0.8-0.1-1.6-0.1-2.5c0.6,0,1.1,0,1.7,0.1c0.6,0,1.1,0,1.7,0c0.6,0,1.2,0,1.7,0c0.6,0,1.1,0,1.7-0.1   c0,0.2-0.1,0.4-0.1,0.6c0,0.2,0,0.4,0.1,0.6c-0.4,0-0.8-0.1-1.1-0.1c-0.3,0-0.7-0.1-1.1-0.1c-0.4,0-0.8,0-1.2-0.1c-0.5,0-1,0-1.6,0   c0,0.4,0,0.8,0,1.2c0,0.4,0,0.8,0,1.3c0,0.5,0,1,0,1.5c0,0.5,0,0.8,0,1.1c0.6,0,1.1,0,1.5,0c0.5,0,0.9,0,1.2,0c0.4,0,0.7,0,1-0.1   c0.3,0,0.6,0,0.9-0.1c0,0.2-0.1,0.4-0.1,0.6c0,0.2,0,0.4,0.1,0.6c-0.3,0-0.7-0.1-1.2-0.1c-0.4,0-0.9,0-1.3-0.1c-0.4,0-0.9,0-1.3,0   c-0.4,0-0.7,0-0.9,0c0,0.1,0,0.2,0,0.4c0,0.1,0,0.3,0,0.5v1.9c0,0.7,0,1.3,0,1.8c0,0.5,0,0.8,0,1.1c0.4,0,0.9,0,1.4,0   c0.5,0,1,0,1.4,0c0.5,0,0.9,0,1.3-0.1c0.4,0,0.8-0.1,1.1-0.1c0,0.1,0,0.2,0,0.3c0,0.1,0,0.2,0,0.3c0,0.2,0,0.4,0.1,0.5   c-0.6,0-1.2,0-1.7,0c-0.6,0-1.2,0-1.7,0c-0.6,0-1.2,0-1.8,0c-0.6,0-1.2,0-1.7,0c0-0.8,0.1-1.6,0.1-2.5c0-0.8,0-1.6,0-2.5v-3.3   C86.1,86.8,86.1,86,86,85.2"></path>
+<path class="st0" d="M101,88.3c-0.4-0.5-0.9-0.7-1.5-0.7c-0.9,0-1.5,0.3-2,0.8c-0.4,0.6-0.6,1.3-0.6,2.3v1.6c0,0.6,0,1.2,0,1.8   c0,0.6,0.1,1.2,0.1,1.7c-0.3,0-0.6,0-0.9,0c-0.3,0-0.6,0-0.9,0c0.1-0.5,0.1-1.1,0.1-1.7c0-0.6,0-1.2,0-1.8v-2c0-0.6,0-1.2,0-1.8   c0-0.6-0.1-1.2-0.1-1.8c0.4,0.1,0.7,0.1,0.9,0.1c0.1,0,0.2,0,0.3,0c0.1,0,0.3,0,0.4-0.1c0,0.5-0.1,1-0.1,1.5h0   c0.4-0.6,0.8-1,1.3-1.3c0.5-0.3,1.1-0.5,1.8-0.5c0.4,0,0.7,0.1,1.1,0.2c0.4,0.1,0.7,0.3,1,0.5c0.3,0.3,0.5,0.6,0.7,1   c0.2,0.4,0.3,1,0.3,1.7c0,0.6,0,1.1,0,1.7c0,0.6,0,1.2,0,1.9v1.3c0,0.2,0,0.4,0,0.6c0,0.2,0,0.4,0,0.6c-0.3,0-0.5,0-0.8,0   c-0.3,0-0.5,0-0.8,0c0-0.7,0-1.4,0.1-2.1c0-0.7,0-1.4,0-2.2v-1.2C101.6,89.6,101.4,88.8,101,88.3"></path>
+<path class="st0" d="M105.9,88.4c0.2-0.4,0.5-0.7,0.8-1c0.3-0.3,0.7-0.5,1.2-0.6c0.4-0.1,0.9-0.2,1.4-0.2c0.2,0,0.5,0,0.7,0   c0.2,0,0.5,0,0.9,0.1c0.3,0,0.6,0,0.8,0c0.2,0,0.4,0,0.6,0c0.7,0,1.2,0,1.6-0.1c0,0.1,0,0.1,0,0.2c0,0.1,0,0.1,0,0.2   c0,0.1,0,0.1,0,0.2c0,0.1,0,0.1,0,0.2c-0.4,0-0.7-0.1-1.1-0.1c-0.4,0-0.7-0.1-1.1-0.1l0,0c0.4,0.2,0.7,0.6,1,1   c0.2,0.5,0.4,0.9,0.4,1.4c0,1-0.3,1.7-1,2.3c-0.6,0.6-1.5,0.8-2.6,0.8c-0.2,0-0.4,0-0.5,0c-0.2,0-0.3,0-0.5,0   c-0.2,0-0.4,0.1-0.6,0.2c-0.2,0.2-0.3,0.4-0.3,0.6c0,0.3,0.1,0.6,0.2,0.7c0.2,0.2,0.5,0.2,0.9,0.2c0.4,0,0.7,0,1.1,0   c0.3,0,0.7,0,1.1,0c0.6,0,1.1,0.1,1.5,0.2c0.4,0.1,0.8,0.3,1,0.5c0.3,0.2,0.5,0.5,0.6,0.8c0.1,0.3,0.2,0.6,0.2,0.9   c0,0.4-0.1,0.9-0.3,1.4c-0.2,0.5-0.4,0.9-0.8,1.3c-0.4,0.4-0.8,0.7-1.4,0.9c-0.6,0.2-1.3,0.4-2.1,0.4c-1.2,0-2.2-0.2-2.9-0.7   c-0.7-0.5-1.1-1.2-1.1-2c0-0.3,0.1-0.6,0.2-0.9c0.1-0.3,0.3-0.5,0.5-0.8c0.2-0.2,0.4-0.4,0.7-0.5c0.2-0.1,0.5-0.2,0.8-0.3v0   c-0.4-0.1-0.7-0.3-0.9-0.6c-0.2-0.3-0.3-0.6-0.3-1c0-0.2,0-0.4,0.1-0.6c0.1-0.2,0.2-0.3,0.3-0.5c0.1-0.1,0.3-0.3,0.4-0.3   c0.2-0.1,0.3-0.1,0.5-0.2v0c-0.6-0.3-1.1-0.6-1.4-1.1c-0.3-0.5-0.5-1.1-0.5-1.8C105.6,89.2,105.7,88.7,105.9,88.4 M111.7,96.4   c-0.4-0.3-1.2-0.5-2.2-0.5c-1,0-1.7,0.2-2.2,0.5c-0.5,0.3-0.8,0.9-0.8,1.7c0,0.4,0.1,0.8,0.2,1.1c0.1,0.3,0.3,0.6,0.6,0.8   c0.2,0.2,0.5,0.3,0.9,0.4c0.3,0.1,0.7,0.1,1.1,0.1c0.4,0,0.8-0.1,1.1-0.2c0.4-0.1,0.7-0.3,1-0.5c0.3-0.2,0.5-0.5,0.7-0.8   c0.2-0.3,0.3-0.7,0.3-1.1C112.4,97.2,112.2,96.7,111.7,96.4z M110.8,87.8c-0.4-0.4-0.9-0.6-1.5-0.6c-0.7,0-1.2,0.2-1.6,0.7   c-0.4,0.5-0.6,1.1-0.6,1.9c0,0.8,0.2,1.5,0.5,1.9c0.4,0.5,0.9,0.7,1.6,0.7c0.4,0,0.7-0.1,1-0.2c0.3-0.1,0.5-0.3,0.7-0.6   c0.2-0.3,0.3-0.5,0.4-0.9c0.1-0.3,0.1-0.7,0.1-1C111.4,88.8,111.2,88.2,110.8,87.8z"></path>
+<path class="st0" d="M116.2,82.7c0.2-0.2,0.4-0.3,0.7-0.3c0.3,0,0.5,0.1,0.7,0.3c0.2,0.2,0.3,0.4,0.3,0.7c0,0.3-0.1,0.5-0.3,0.7   c-0.2,0.2-0.4,0.3-0.7,0.3c-0.3,0-0.5-0.1-0.7-0.3c-0.2-0.2-0.3-0.4-0.3-0.7C115.9,83.2,116,82.9,116.2,82.7 M116.2,88.6   c0-0.6-0.1-1.2-0.1-1.8c0.4,0.1,0.6,0.1,0.9,0.1c0.2,0,0.5,0,0.9-0.1c-0.1,0.6-0.1,1.1-0.1,1.8c0,0.6,0,1.2,0,1.8v2   c0,0.6,0,1.2,0,1.8c0,0.6,0,1.2,0.1,1.7c-0.3,0-0.6,0-0.9,0c-0.3,0-0.6,0-0.9,0c0.1-0.5,0.1-1.1,0.1-1.7c0-0.6,0-1.2,0-1.8v-2   C116.2,89.8,116.2,89.2,116.2,88.6z"></path>
+<path class="st0" d="M126.8,88.3c-0.4-0.5-0.9-0.7-1.5-0.7c-0.9,0-1.5,0.3-2,0.8c-0.4,0.6-0.6,1.3-0.6,2.3v1.6c0,0.6,0,1.2,0,1.8   c0,0.6,0.1,1.2,0.1,1.7c-0.3,0-0.6,0-0.9,0c-0.3,0-0.6,0-0.9,0c0.1-0.5,0.1-1.1,0.1-1.7c0-0.6,0-1.2,0-1.8v-2c0-0.6,0-1.2,0-1.8   c0-0.6-0.1-1.2-0.1-1.8c0.4,0.1,0.7,0.1,0.9,0.1c0.1,0,0.2,0,0.3,0c0.1,0,0.3,0,0.4-0.1c0,0.5-0.1,1-0.1,1.5h0   c0.4-0.6,0.8-1,1.3-1.3c0.5-0.3,1.1-0.5,1.8-0.5c0.4,0,0.7,0.1,1.1,0.2c0.4,0.1,0.7,0.3,1,0.5c0.3,0.3,0.5,0.6,0.7,1   c0.2,0.4,0.3,1,0.3,1.7c0,0.6,0,1.1,0,1.7c0,0.6,0,1.2,0,1.9v1.3c0,0.2,0,0.4,0,0.6c0,0.2,0,0.4,0,0.6c-0.3,0-0.5,0-0.8,0   c-0.3,0-0.5,0-0.8,0c0-0.7,0-1.4,0.1-2.1c0-0.7,0-1.4,0-2.2v-1.2C127.4,89.6,127.2,88.8,126.8,88.3"></path>
+<path class="st0" d="M132.2,87.9c0.8-0.9,1.8-1.4,3.3-1.4c0.7,0,1.3,0.1,1.8,0.3c0.5,0.2,0.9,0.5,1.2,0.9c0.3,0.4,0.6,0.8,0.7,1.2   c0.2,0.5,0.2,1,0.2,1.5c0,0.1,0,0.3,0,0.4c0,0.1,0,0.2,0,0.4c-0.7,0-1.4,0-2.1,0c-0.7,0-1.4,0-2.1,0c-0.4,0-0.8,0-1.3,0   c-0.4,0-0.8,0-1.3,0c0,0.1,0,0.2,0,0.3v0.3c0,0.5,0.1,1,0.2,1.4c0.1,0.4,0.4,0.8,0.6,1.1c0.3,0.3,0.6,0.6,1,0.8   c0.4,0.2,0.9,0.3,1.4,0.3c0.3,0,0.5,0,0.8-0.1c0.3-0.1,0.5-0.2,0.8-0.3c0.3-0.1,0.5-0.3,0.7-0.4c0.2-0.2,0.4-0.4,0.6-0.6l0.1,0.1   l-0.1,0.9c-0.4,0.3-0.9,0.6-1.4,0.8c-0.6,0.2-1.2,0.3-1.8,0.3c-0.7,0-1.3-0.1-1.9-0.3c-0.6-0.2-1.1-0.5-1.5-0.9   c-0.4-0.4-0.7-0.9-1-1.4c-0.2-0.6-0.3-1.2-0.3-1.8C131,90.1,131.4,88.8,132.2,87.9 M134.3,87.6c-0.3,0.2-0.6,0.5-0.8,0.8   c-0.2,0.3-0.4,0.7-0.5,1.1c-0.1,0.4-0.2,0.8-0.2,1.1c0.4,0,0.8,0,1.2,0c0.4,0,0.8,0,1.3,0c0.4,0,0.9,0,1.3,0c0.4,0,0.9,0,1.3,0   c0-0.3,0-0.7-0.1-1.1c-0.1-0.4-0.2-0.7-0.3-1.1c-0.2-0.3-0.4-0.6-0.7-0.8c-0.3-0.2-0.7-0.3-1.2-0.3C135,87.2,134.6,87.3,134.3,87.6z   "></path>
+<path class="st0" d="M141.8,87.9c0.8-0.9,1.8-1.4,3.3-1.4c0.7,0,1.3,0.1,1.8,0.3c0.5,0.2,0.9,0.5,1.2,0.9c0.3,0.4,0.6,0.8,0.7,1.2   c0.2,0.5,0.2,1,0.2,1.5c0,0.1,0,0.3,0,0.4c0,0.1,0,0.2,0,0.4c-0.7,0-1.4,0-2.1,0c-0.7,0-1.4,0-2.1,0c-0.4,0-0.8,0-1.3,0   c-0.4,0-0.8,0-1.3,0c0,0.1,0,0.2,0,0.3v0.3c0,0.5,0.1,1,0.2,1.4c0.1,0.4,0.4,0.8,0.6,1.1c0.3,0.3,0.6,0.6,1,0.8   c0.4,0.2,0.9,0.3,1.4,0.3c0.3,0,0.5,0,0.8-0.1c0.3-0.1,0.5-0.2,0.8-0.3c0.3-0.1,0.5-0.3,0.7-0.4c0.2-0.2,0.4-0.4,0.6-0.6l0.1,0.1   l-0.1,0.9c-0.4,0.3-0.9,0.6-1.4,0.8c-0.6,0.2-1.2,0.3-1.8,0.3c-0.7,0-1.3-0.1-1.9-0.3c-0.6-0.2-1.1-0.5-1.5-0.9   c-0.4-0.4-0.7-0.9-1-1.4c-0.2-0.6-0.3-1.2-0.3-1.8C140.7,90.1,141.1,88.8,141.8,87.9 M144,87.6c-0.3,0.2-0.6,0.5-0.8,0.8   c-0.2,0.3-0.4,0.7-0.5,1.1c-0.1,0.4-0.2,0.8-0.2,1.1c0.4,0,0.8,0,1.2,0c0.4,0,0.8,0,1.3,0c0.4,0,0.8,0,1.3,0c0.4,0,0.9,0,1.3,0   c0-0.3,0-0.7-0.1-1.1c-0.1-0.4-0.2-0.7-0.3-1.1c-0.2-0.3-0.4-0.6-0.7-0.8c-0.3-0.2-0.7-0.3-1.2-0.3C144.7,87.2,144.3,87.3,144,87.6z   "></path>
+<path class="st0" d="M155.2,88.2c-0.2-0.1-0.4-0.1-0.6-0.1c-0.3,0-0.6,0.1-0.8,0.2c-0.2,0.1-0.5,0.3-0.6,0.6   c-0.2,0.2-0.3,0.5-0.4,0.8c-0.1,0.3-0.1,0.7-0.1,1.1v2.1c0,0.9,0,1.5,0,2c0,0.5,0,0.8,0.1,1.1c-0.3,0-0.5,0-0.8,0   c-0.3,0-0.5,0-0.8,0c0-0.4,0-1,0.1-1.8c0-0.8,0-1.7,0-2.8v-0.6c0-0.5,0-1.1,0-1.7c0-0.7,0-1.4-0.1-2.3c0.1,0,0.3,0,0.4,0.1   c0.1,0,0.3,0,0.4,0c0.1,0,0.2,0,0.4,0c0.1,0,0.3,0,0.4-0.1c0,0.5-0.1,0.8-0.1,1.1c0,0.3,0,0.5,0,0.8l0,0c0.8-1.4,1.6-2.1,2.5-2.1   c0.1,0,0.2,0,0.3,0c0.1,0,0.2,0,0.3,0.1c-0.1,0.2-0.1,0.4-0.1,0.7c0,0.3,0,0.6,0,0.9l-0.1,0.1C155.5,88.3,155.4,88.2,155.2,88.2"></path>
+<path class="st0" d="M158.1,82.7c0.2-0.2,0.4-0.3,0.7-0.3c0.3,0,0.5,0.1,0.7,0.3c0.2,0.2,0.3,0.4,0.3,0.7c0,0.3-0.1,0.5-0.3,0.7   c-0.2,0.2-0.4,0.3-0.7,0.3c-0.3,0-0.5-0.1-0.7-0.3c-0.2-0.2-0.3-0.4-0.3-0.7C157.8,83.2,157.9,82.9,158.1,82.7 M158.1,88.6   c0-0.6-0.1-1.2-0.1-1.8c0.4,0.1,0.6,0.1,0.9,0.1c0.2,0,0.5,0,0.9-0.1c-0.1,0.6-0.1,1.1-0.1,1.8c0,0.6,0,1.2,0,1.8v2   c0,0.6,0,1.2,0,1.8c0,0.6,0,1.2,0.1,1.7c-0.3,0-0.6,0-0.9,0c-0.3,0-0.6,0-0.9,0c0.1-0.5,0.1-1.1,0.1-1.7c0-0.6,0-1.2,0-1.8v-2   C158.1,89.8,158.1,89.2,158.1,88.6z"></path>
+<path class="st0" d="M168.7,88.3c-0.4-0.5-0.9-0.7-1.5-0.7c-0.9,0-1.5,0.3-2,0.8c-0.4,0.6-0.6,1.3-0.6,2.3v1.6c0,0.6,0,1.2,0,1.8   c0,0.6,0.1,1.2,0.1,1.7c-0.3,0-0.6,0-0.9,0c-0.3,0-0.6,0-0.9,0c0.1-0.5,0.1-1.1,0.1-1.7c0-0.6,0-1.2,0-1.8v-2c0-0.6,0-1.2,0-1.8   c0-0.6-0.1-1.2-0.1-1.8c0.4,0.1,0.7,0.1,0.9,0.1c0.1,0,0.2,0,0.3,0c0.1,0,0.3,0,0.4-0.1c0,0.5-0.1,1-0.1,1.5h0   c0.4-0.6,0.8-1,1.3-1.3c0.5-0.3,1.1-0.5,1.8-0.5c0.4,0,0.7,0.1,1.1,0.2c0.4,0.1,0.7,0.3,1,0.5c0.3,0.3,0.5,0.6,0.7,1   c0.2,0.4,0.3,1,0.3,1.7c0,0.6,0,1.1,0,1.7c0,0.6,0,1.2,0,1.9v1.3c0,0.2,0,0.4,0,0.6c0,0.2,0,0.4,0,0.6c-0.3,0-0.5,0-0.8,0   c-0.3,0-0.5,0-0.8,0c0-0.7,0.1-1.4,0.1-2.1c0-0.7,0-1.4,0-2.2v-1.2C169.2,89.6,169,88.8,168.7,88.3"></path>
+<path class="st0" d="M173.5,88.4c0.2-0.4,0.5-0.7,0.8-1c0.3-0.3,0.7-0.5,1.2-0.6c0.4-0.1,0.9-0.2,1.4-0.2c0.2,0,0.5,0,0.7,0   c0.2,0,0.5,0,0.9,0.1c0.3,0,0.6,0,0.8,0c0.2,0,0.4,0,0.6,0c0.7,0,1.2,0,1.6-0.1c0,0.1,0,0.1,0,0.2c0,0.1,0,0.1,0,0.2   c0,0.1,0,0.1,0,0.2c0,0.1,0,0.1,0,0.2c-0.4,0-0.7-0.1-1.1-0.1c-0.4,0-0.7-0.1-1.1-0.1l0,0c0.4,0.2,0.7,0.6,1,1   c0.2,0.5,0.4,0.9,0.4,1.4c0,1-0.3,1.7-1,2.3c-0.6,0.6-1.5,0.8-2.6,0.8c-0.2,0-0.4,0-0.5,0c-0.2,0-0.3,0-0.5,0   c-0.2,0-0.4,0.1-0.6,0.2c-0.2,0.2-0.3,0.4-0.3,0.6c0,0.3,0.1,0.6,0.2,0.7c0.2,0.2,0.5,0.2,0.9,0.2c0.4,0,0.7,0,1.1,0   c0.3,0,0.7,0,1.1,0c0.6,0,1.1,0.1,1.5,0.2c0.4,0.1,0.8,0.3,1,0.5c0.3,0.2,0.5,0.5,0.6,0.8c0.1,0.3,0.2,0.6,0.2,0.9   c0,0.4-0.1,0.9-0.3,1.4c-0.2,0.5-0.4,0.9-0.8,1.3c-0.4,0.4-0.8,0.7-1.4,0.9c-0.6,0.2-1.3,0.4-2.1,0.4c-1.2,0-2.2-0.2-2.9-0.7   c-0.7-0.5-1.1-1.2-1.1-2c0-0.3,0.1-0.6,0.2-0.9c0.1-0.3,0.3-0.5,0.5-0.8c0.2-0.2,0.4-0.4,0.7-0.5c0.2-0.1,0.5-0.2,0.8-0.3v0   c-0.4-0.1-0.7-0.3-0.9-0.6c-0.2-0.3-0.3-0.6-0.3-1c0-0.2,0-0.4,0.1-0.6c0.1-0.2,0.2-0.3,0.3-0.5c0.1-0.1,0.3-0.3,0.4-0.3   c0.2-0.1,0.3-0.1,0.5-0.2v0c-0.6-0.3-1.1-0.6-1.4-1.1c-0.3-0.5-0.5-1.1-0.5-1.8C173.2,89.2,173.3,88.7,173.5,88.4 M179.4,96.4   c-0.4-0.3-1.2-0.5-2.2-0.5c-1,0-1.7,0.2-2.2,0.5c-0.5,0.3-0.8,0.9-0.8,1.7c0,0.4,0.1,0.8,0.2,1.1c0.1,0.3,0.3,0.6,0.6,0.8   c0.2,0.2,0.5,0.3,0.9,0.4c0.3,0.1,0.7,0.1,1.1,0.1c0.4,0,0.8-0.1,1.1-0.2c0.4-0.1,0.7-0.3,1-0.5c0.3-0.2,0.5-0.5,0.7-0.8   c0.2-0.3,0.3-0.7,0.3-1.1C180,97.2,179.8,96.7,179.4,96.4z M178.4,87.8c-0.4-0.4-0.9-0.6-1.5-0.6c-0.7,0-1.2,0.2-1.6,0.7   c-0.4,0.5-0.6,1.1-0.6,1.9c0,0.8,0.2,1.5,0.5,1.9c0.4,0.5,0.9,0.7,1.6,0.7c0.4,0,0.7-0.1,1-0.2c0.3-0.1,0.5-0.3,0.7-0.6   c0.2-0.3,0.3-0.5,0.4-0.9c0.1-0.3,0.1-0.7,0.1-1C179,88.8,178.8,88.2,178.4,87.8z"></path>
+<rect x="1.7" y="74.9" class="st0" width="180.4" height="1.8"></rect>
+<g>
+  <path class="st1" d="M263,2.2c1.9,0.3,3.8,0.6,5.6,0.9c2.3,0.3,4.5,0.6,6.8,0.9c0.5,0.1,1,0,1.6,0c2.8,4.2,5.7,8.5,8.6,12.9     c2.1-1.8,4.1-3.5,6.2-5.2c3.3-2.7,1.8-2.6,5.6-0.6c3.1,1.6,6.2,3.3,9.3,5c0.3,0.2,0.6,0.5,0.8,0.9c2.3,3.6,4.6,7.1,6.9,10.7     c0.2,0.4,0.5,0.7,0.8,1.2c1.2-0.4,2.4-0.8,3.5-1.3c0.9-0.4,1.4-0.2,1.9,0.6c6.6,9.9,13.3,19.9,19.9,29.8c0.6,0.9,0.4,1.3-0.5,1.6     c-0.7,0.2-1.4,0.5-2.2,0.9c0.5,0.8,1,1.5,1.5,2.2c2.2,3.1,4.3,6.2,6.5,9.3c0.4,0.5,0.6,1.2,0.7,1.9c0.3,3.3,0.5,6.6,0.8,9.9     c0,0.4,0.2,0.8,0.3,1.4c-3.6,1.1-7.3,2.2-11.1,3.3c0.8,1.2,1.5,2.3,2.2,3.3c1.8,2.8,3.7,5.6,5.6,8.3c0.5,0.8,0.6,1.4,0.2,2.3     c-1.5,3.4-2.9,6.8-4.4,10.2c-0.2,0.5-0.2,1.1-0.4,1.7c-3.7-0.3-7.5-0.5-11.3-0.8c-1.2-0.1-2.5-0.2-3.7-0.2c-0.4,0-0.8,0.2-1,0.5     c-0.7,0.9-1.2,1.9-1.8,2.9c2.2,3.4,4.5,6.8,6.7,10.2c1,1.6,1,1.6-0.3,2.9c-2.8,2.8-5.6,5.6-8.4,8.4c-0.3,0.3-0.4,0.9-0.7,1.5     c-1-0.4-2.4-0.9-3.7-1.5c-3.2-1.3-6.3-2.5-9.5-3.8c-0.8-0.3-1.2-0.2-1.7,0.4c-1.7,2.2-3.5,4.4-5.3,6.6c-0.5,0.6-0.6,1-0.2,1.7     c1.3,2.4,2.5,4.9,3.8,7.5c-5,2.6-10,5.3-14.6,7.7c-3.1-2.9-6-5.7-8.9-8.5c-0.5-0.5-1-0.7-1.7-0.4c-2.4,0.9-4.9,1.8-7.4,2.6     c-0.7,0.2-1,0.6-1,1.4c-0.2,4.2-0.5,8.5-0.8,12.5c-0.8,0-1.4-0.2-2.1-0.1c-4.5,0.7-8.9,1.5-13.4,2.3c-0.9,0.2-1.4-0.1-1.9-0.9     c-2.2-3.2-4.4-6.3-6.5-9.5c-0.5-0.8-1.1-1.1-2-1c-0.4,0-0.7,0.1-1.1,0c-2.3-0.6-3.5,0.5-4.5,2.5c-1.7,3.4-3.7,6.6-5.4,9.6     c-2-0.3-3.9-0.7-5.7-0.9c-3.2-0.5-6.4-0.9-9.6-1.5c-0.5-0.1-1-0.6-1.3-1c-2.6-3.8-5.1-7.6-7.7-11.6c-3.1,2.5-6.1,4.9-9.1,7.4     c-3.9-2.2-7.9-4.4-11.7-6.7c-0.6-0.3-1.2-0.9-1.5-1.4c-2.3-3.3-4.5-6.7-6.7-10.1c-0.2-0.3-0.5-0.6-0.7-1c-1.1,0.5-2.2,0.9-3.2,1.4     c-0.6,0.3-0.9,0.2-1.3-0.3c-4.6-6.5-9.3-13-13.7-19.6c-1.2-1.8-1.7-4-2.5-6c-0.4-1-0.8-2-1.2-3v-0.7c2.7-1,5.4-2.1,8.2-3.1     c6.5-2.4,13-4.7,19.5-7.1c1-0.4,1.6-0.3,2.3,0.6c6.1,7.7,14.3,12.4,23.5,15.3c14.2,4.4,28.4,4,42.6,0.2c12.3-3.3,23.5-9,32.9-17.8     c7.6-7.1,13.4-15.4,15.7-25.8c1.9-8.6,1-17-3.5-24.6c-1.4-2.4-3.9-4.3-6.1-6c-6.8-5.1-14.6-8-22.9-9.3     c-22.1-3.3-42.2,1.7-60.6,14.3c-0.2,0.1-0.4,0.3-0.7,0.5c-0.5-1-1-2-1.4-2.9c-4.4-9-8.8-18-13.2-27c-0.6-1.3-0.6-1.4,0.7-2.1     c4-2,8-4,11.9-6c1-0.5,1.6-0.4,2.4,0.4c2.3,2.5,4.8,5,7.1,7.5c0.5,0.6,0.9,0.7,1.7,0.4c2.5-1,5-1.9,7.6-2.7c0.7-0.2,1-0.4,1.1-1.2     c0.1-3.3,0.3-6.6,0.4-9.8c0-1.1,0.4-1.7,1.6-1.9c4.8-0.7,9.6-1.6,14.5-2.4c0.9-0.2,1.4,0.1,1.9,0.8c2.1,3.2,4.2,6.4,6.3,9.7     c0.4,0.6,0.8,1,1.6,1c1.1,0,2.2,0.1,3.2,0.2c0.8,0.1,1.1-0.2,1.5-0.8c1.9-3.5,3.9-7.1,5.9-10.6c0.2-0.4,0.5-0.7,0.7-1.1H263z      M276.3,5.4c-0.2-0.1-0.3-0.2-0.4-0.2c-4.3-0.6-8.7-1.2-13-1.8c-0.7-0.1-1.1,0.1-1.4,0.7c-1.9,3.5-3.9,6.9-5.8,10.4     c-0.5,0.9-1,1.3-2.1,1.2c-2.7-0.2-5.4-0.2-8-0.2c-1.6,0-1.6,0.2-2-1.4c-0.9-3.3-1.7-6.7-2.6-10c-0.3,0-0.6,0-0.8,0     c-4.7,0.8-9.4,1.6-14.1,2.4c-0.3,0.1-0.7,0.6-0.7,0.9c-0.2,3.4-0.3,6.7-0.4,10.1c0,0.9-0.3,1.5-1.3,1.8c-2.7,0.7-5.3,1.7-7.8,2.7     c-1.8,0.7-1.7,0.8-3.1-0.6c-2.5-2.6-5-5.2-7.6-7.9c-4.4,2.2-8.7,4.4-13,6.6c3.4,7,6.7,13.9,10.1,20.9c0.3-0.2,0.5-0.3,0.6-0.4     c13.4-8.7,28.1-13.2,44-13.9c9.2-0.4,18.2,0.9,26.9,4.1c10.9,4.1,19.2,11,24.3,21.5c5.7,11.7,4.7,23.2-1.1,34.5     c-5.1,10-12.9,17.6-22.3,23.5c-12,7.7-25.2,11.8-39.5,12.9c-10,0.7-19.7-0.3-29.1-3.7c-8.5-3-16-7.6-21.7-14.8     c-0.5-0.6-0.9-0.5-1.4-0.3c-5.3,1.9-10.7,3.9-16,5.8c-3.5,1.3-7.1,2.6-10.7,3.9c1,2.6,2,5.2,3,7.8c4.8-1.9,9.5-3.7,14.1-5.5     c0.8-0.3,1.3-0.2,1.8,0.6c1.1,1.9,2.2,3.7,3.4,5.5c0.5,0.8,0.5,1.4-0.1,2.1c-1.8,2.2-3.6,4.5-5.4,6.7c-0.3,0.3-0.5,0.7-0.8,1.1     c4.1,2.3,8.1,4.4,12.1,6.6c0.5-0.4,1-0.8,1.4-1.2c3-2.5,6.1-5.1,9.2-7.6c0.4-0.3,1-0.5,1.5-0.4c2.6,0.7,5.1,1.5,7.6,2.2     c0.9,0.2,1.2,0.6,0.9,1.5c-0.8,3.3-1.6,6.7-2.3,10.1c-0.1,0.4-0.1,0.8-0.2,1.2c4.7,0.8,9.3,1.6,13.9,2.5c0.9,0.2,1.3-0.2,1.6-0.9     c1.9-3.4,3.8-6.8,5.6-10.2c0.4-0.8,0.9-1.1,1.9-1c2.7,0.5,5.5,0.5,8.2-0.2c0.7-0.2,1.1,0.1,1.3,0.9c0.3,1.2,0.6,2.3,0.9,3.5     c0.6,2.3,1.2,4.7,1.9,7.1c5.3-1.1,10.5-2.1,15.7-3.2c0.3-3.8,0.7-7.5,1-11.2c0.1-0.7,0.1-1.3,1-1.5c2.9-0.9,5.8-1.8,8.7-2.8     c0.8-0.3,1.2-0.1,1.8,0.5c2.3,2.5,4.7,4.9,7,7.4c0.7,0.7,1.1,0.7,1.9,0.3c3.9-2,7.9-3.9,11.8-5.9c0.4-0.2,0.7-0.4,1.1-0.6     c-1.8-3.2-3.5-6.4-5.3-9.4c-0.5-0.9-0.3-1.4,0.5-2c2.3-1.6,4.6-3.3,6.9-5.1c0.9-0.7,1.6-0.7,2.6-0.3c2.9,1.4,5.8,2.6,8.6,3.9     c1,0.4,2.1,1.3,3,1.1c0.9-0.2,1.6-1.4,2.5-2.2c2.7-2.5,5.3-5.1,8.1-7.7c-0.7-0.5-1.1-0.8-1.4-1.1c-2.9-2.1-5.8-4.2-8.6-6.3     c-0.7-0.5-0.9-1-0.3-1.7c1.7-2.1,3.3-4.3,4.8-6.5c0.5-0.7,1-1,1.9-0.9c4.2,0.3,8.5,0.6,12.7,0.9c0.9,0.1,1.3-0.1,1.6-1     c0.8-2.2,1.8-4.4,2.7-6.6c0.5-1.3,1.1-2.7,1.6-4.1c-0.4-0.1-0.8-0.3-1.1-0.4c-4-1-7.9-1.9-11.9-2.9c-1.1-0.2-1.3-0.6-1.1-1.7     c0.5-2.2,0.9-4.5,1.2-6.7c0.1-0.8,0.4-1.1,1.1-1.3c1.8-0.4,3.6-0.9,5.3-1.4c3-0.8,6-1.6,9.1-2.5c-0.3-3.5-0.6-6.9-0.9-10.4     c-0.3,0-0.5-0.1-0.7,0c-4.8,0.3-9.5,0.7-14.3,1c-0.8,0.1-1.3-0.1-1.5-1c-0.7-2.4-1.5-4.8-2.3-7.2c-0.3-0.8-0.1-1.2,0.6-1.6     c1.6-0.9,3.3-1.9,4.9-2.8c2.5-1.5,5-3,7.6-4.5c-2.1-3.1-4.2-6.1-6.3-9.1c-4.8,1.8-9.5,3.6-14.2,5.4c-0.5,0.2-1.3,0.2-1.7-0.1     c-2-1.5-3.8-3.2-5.7-4.8c-0.8-0.6-0.7-1.1-0.2-1.8c0.6-0.6,1.1-1.3,1.6-1.9c2.2-2.7,4.4-5.3,6.6-8c-0.2-0.1-0.2-0.2-0.3-0.3     c-3.5-1.9-6.9-3.9-10.4-5.7c-0.3-0.2-1,0-1.3,0.3c-3.4,2.8-6.8,5.7-10.2,8.6c-0.4,0.3-1.1,0.5-1.5,0.4c-2.8-0.8-5.6-1.8-8.3-2.6     c-0.8-0.3-1.1-0.6-0.8-1.5c0.6-1.8,1.1-3.7,1.7-5.5C275.3,8.9,275.8,7.1,276.3,5.4 M292.9,45.7c-0.4-0.5-0.7-1-1.1-1.4     c-2.5-3-5.4-5.6-8.7-7.7c-9.2-5.9-19.3-8.4-30.1-8.8c-14.8-0.6-28.7,2.6-41.9,9.3c-2.8,1.4-5.6,3.1-8.4,4.8     c1.3,2.7,2.5,5.1,3.8,7.5c0.7-0.4,1.2-0.8,1.8-1.2c15.3-10,32.2-14.7,50.5-14c9,0.3,17.7,2.3,25.8,6.5     C287.4,42.1,290.1,44,292.9,45.7 M274.6,137.4c4.5,6.6,8.8,13.1,13.2,19.7c4.5-2.4,8.9-4.7,13.4-7c-4.3-6.6-8.4-13.1-12.6-19.6     C283.8,132.8,279.3,135,274.6,137.4 M266.8,164.5c-0.1-0.3-0.1-0.4-0.2-0.5c-4.1-6.3-8.2-12.7-12.4-19c-0.2-0.3-0.8-0.5-1.2-0.4     c-3.1,0.6-6.1,1.2-9.2,1.8c-1.7,0.3-3.4,0.7-5.1,1.1c0.1,0.2,0.1,0.4,0.1,0.5c4.3,6.2,8.6,12.4,12.9,18.5c0.2,0.3,0.7,0.5,1.1,0.4     C257.4,166.2,262,165.4,266.8,164.5 M305.3,118.7c4.4,6.4,8.8,12.7,13.2,19.2c3.3-3.4,6.4-6.6,9.6-10c-4.2-6.4-8.5-12.8-12.6-19.1     C312.1,112.1,308.7,115.4,305.3,118.7 M206.4,152.8c-1-1.5-1.7-3-2.8-4.2c-2-2.2-2.4-4.6-1.3-7.3c0.1-0.4,0.2-0.9,0-1.2     c-2-3-4.1-6-6.2-9c-3.6,3-7.2,6-10.8,9c4.3,6.6,8.5,13.1,12.7,19.8C200.8,157.3,203.6,155,206.4,152.8 M346,84.4     c0-0.2,0-0.3-0.1-0.3c-4.2-6.2-8.5-12.5-12.7-18.7c-0.2-0.2-0.8-0.3-1.1-0.3c-2.5,0.6-5,1.3-7.5,2c-2,0.5-4,1.1-6.2,1.7     c1.3,1.9,2.8,3.6,3.8,5.5c1.7,3.1,4.1,5,7.7,5.3c0.5,0,1.1,0.6,1.5,1c1.4,2,2.7,4,4,6c0.2,0.3,0.7,0.6,1,0.5     C339.6,86.3,342.8,85.3,346,84.4 M311.5,92.5c0.1,0.2,0.1,0.4,0.2,0.4c4,6.1,8,12.3,12,18.4c0.2,0.3,0.7,0.6,1,0.6     c4.1,0.3,8.2,0.6,12.3,0.9c0.3,0,0.5,0,1,0c-4.3-6.5-8.4-12.7-12.6-19c-0.2-0.2-0.6-0.4-0.9-0.5C320.2,93.1,315.9,92.8,311.5,92.5      M224.7,136.8c-2,3.6-3.9,7-5.8,10.4c-0.4,0.7-0.3,1.1,0.1,1.7c3.8,5.8,7.7,11.5,11.5,17.3c0.2,0.3,0.4,0.5,0.6,0.8     c1.9-3.4,3.8-6.6,5.6-9.9c0.2-0.3,0.1-1-0.2-1.4c-3.1-5.1-6.3-10.1-9.5-15.2C226.3,139.4,225.5,138.2,224.7,136.8 M203.4,146.1     c0,0.2,0,0.3,0,0.3c4,6.1,8.1,12.3,12.1,18.4c0.2,0.3,0.7,0.5,1.1,0.6c1.9,0.3,3.9,0.6,5.8,0.9c2.4,0.4,4.8,0.7,7.4,1.1     c-0.3-0.5-0.4-0.8-0.6-1.1c-3-4.5-6-9.1-9-13.6c-0.9-1.3-1.5-3.1-2.7-3.9c-1.3-0.8-3.1-0.7-4.7-1.1c-0.1,0-0.2,0-0.2-0.1     C209.5,147.1,206.5,146.6,203.4,146.1 M330.7,81.5c-1.5,3.8-3,7.4-4.4,11c-0.1,0.3,0.1,0.8,0.3,1.2c2.5,3.8,5,7.6,7.4,11.3     c1.6,2.4,3.2,4.9,4.9,7.4c1.2-2.8,2.2-5.6,3.6-8.1c1.3-2.3,0.9-4-0.6-6C338.1,92.8,334.5,87.2,330.7,81.5 M283.6,119.2     c4.8,7.2,9.7,14.3,14.6,21.5c2.1-2.6,4.1-5,6-7.5c-4.3-6.6-8.6-13.1-12.9-19.7C288.7,115.4,286.2,117.3,283.6,119.2 M313.8,45.8     c0.7,2.2,1.4,4.4,2.1,6.6c0.2,0.8,0.6,1.2,1.5,1.1c4.4-0.4,8.8-0.8,13.2-1.2c1.1-0.1,1.9,0,2.5,1c0.9,1.5,2,2.9,3,4.3     c1.3,1.9,1.3,1.9,3.4,0.9c0.1,0,0.1-0.1,0.2-0.2c-4.4-6.6-8.8-13.2-13.2-19.9C322.1,40.9,318,43.4,313.8,45.8 M255.9,131.8     c0,0.1,0.1,0.2,0.1,0.3c4.1,6.2,8.3,12.4,12.5,18.6c0.2,0.3,0.8,0.4,1.1,0.3c1.7-0.5,3.4-1.2,5.1-1.8c1-0.3,1.9-0.7,2.9-1.1     c-1.2-1.9-2.3-3.6-3.5-5.3c-2.9-4.4-5.8-8.8-8.7-13.3c-0.2-0.3-0.8-0.7-1-0.6C261.6,129.8,258.7,130.8,255.9,131.8 M178.1,123.6     c-1.1-1.8-2.3-3.6-3.4-5.4c-0.4-0.7-0.8-0.8-1.5-0.5c-3.6,1.5-7.2,2.8-10.8,4.3c-0.8,0.3-1.6,0.6-2.5,1c4.6,6.5,9.1,12.9,13.6,19.3     c1.1-0.5,2-0.9,3.1-1.4c-1.6-2.5-3.2-4.9-4.8-7.2c-0.6-0.8-0.7-1.5,0.1-2.3C173.9,128.8,176,126.2,178.1,123.6 M293.3,114.2     c-0.1,0.1-0.1,0.1-0.2,0.2c0.3,0.4,0.5,0.8,0.8,1.2c3,4.5,6.1,9,8.8,13.6c1.6,2.6,3.5,4.5,6.5,5.3c2.5,0.7,4.9,1.9,7.6,2.9     c-0.2-0.4-0.2-0.5-0.3-0.6c-4-5.7-7.9-11.5-11.9-17.2c-0.2-0.3-0.4-0.5-0.7-0.6C300.3,117.3,296.8,115.7,293.3,114.2 M267.1,162.9     c0.1,0,0.2,0,0.2,0c0.2-3.3,0.5-6.5,0.6-9.8c0-0.7-0.2-1.4-0.5-2c-3.7-5.6-7.4-11.1-11.1-16.7c-0.2-0.3-0.4-0.5-0.8-1     c-0.3,3.4-0.6,6.6-0.9,9.8c0,0.3,0.1,0.6,0.3,0.9C259,150.4,263,156.7,267.1,162.9 M173.9,134.5c-0.1,0.1-0.1,0.1-0.2,0.2     c0.1,0.1,0.1,0.3,0.2,0.4c3.9,5.8,7.8,11.7,11.7,17.5c0.2,0.3,0.6,0.6,1,0.9c2.8,1.6,5.6,3.2,8.5,4.8c0.2,0.1,0.5,0.2,1,0.5     c-4-6.3-7.9-12.3-11.8-18.2c-0.1-0.2-0.4-0.4-0.6-0.6C180.4,138.1,177.2,136.3,173.9,134.5 M306.8,17.8c-2.8,3.5-5.6,6.8-8.3,10.1     c1.9,1.7,3.8,3.2,5.6,4.8c0.2,0.2,0.6,0.3,0.8,0.2c3.1-1.2,6.2-2.3,9.3-3.6C311.8,25.4,309.3,21.7,306.8,17.8 M242.8,155.5     c-1-1.5-1.9-3-3-4.3c-2.1-2.6-3.5-5.5-4.1-8.8c-0.4-2.1-1.1-4.2-1.6-6h-8.4c0.1,0.3,0.1,0.4,0.2,0.6c3.8,6,7.5,12,11.3,18     c0.2,0.2,0.5,0.5,0.7,0.5C239.6,155.6,241.1,155.5,242.8,155.5 M305.4,99.6c1.9,1.4,3.7,2.9,5.7,4.1c3.5,2.2,6.1,5.1,8.1,8.6     c0.6,1,1.3,2,2,3c2.1-2.7,2.1-2.7,0.3-5.4c-0.2-0.3-0.4-0.7-0.7-1c-3.5-5.3-7-10.7-10.5-16C308.7,95.2,307.1,97.4,305.4,99.6      M345.9,82.1c0.1,0,0.2-0.1,0.3-0.1c-0.2-2.9-0.4-5.7-0.7-8.6c0-0.5-0.4-1-0.7-1.4c-3.7-5.3-7.3-10.5-11-15.7     c-0.2-0.3-0.5-0.7-0.8-1c0,2.6,0.2,5,0.5,7.5c0.1,0.8,0.4,1.7,0.9,2.4c1.9,2.9,3.9,5.8,5.9,8.7C342.1,76.6,344,79.4,345.9,82.1      M274,16.6c3,0.9,5.8,1.8,8.8,2.8c0.6-0.5,1.3-1.1,2-1.8c-2.6-3.8-5-7.5-7.7-11.4C276.1,9.8,275.1,13.2,274,16.6 M283.2,152.1     c-4.5-6-7.7-13-13.4-18.1C274.2,140.1,277.2,147.2,283.2,152.1 M323.6,78.1c-2-2.8-3.7-5.2-5.5-7.7c-0.5,2.1-0.9,4.1-1.4,6.1     C318.9,77,321.1,77.5,323.6,78.1 M197.6,131.4c1.8,2.6,3.4,4.9,5.2,7.4c0.5-2.1,0.9-3.8,1.3-5.7C202,132.6,199.9,132.1,197.6,131.4      M247.9,14.4c-1.8-2.7-3.3-5.1-4.9-7.5c-0.1,0-0.1,0.1-0.2,0.1c0.6,2.5,1.3,5,1.9,7.4H247.9z"></path>
+</g>
+<g>
+  <path class="st0" d="M210,90.8c-0.1,0-0.3,0-0.4,0c-0.1,0-0.3,0-0.4,0v3.7c0,0.7,0.1,1.5,0.7,2.1c0.5,0.4,1.1,0.6,2,0.6     c1.6,0,2.7-0.9,2.7-2.7v-3.6c-0.1,0-0.2,0-0.3,0c-0.1,0-0.2,0-0.3,0v3.4c0,1.5-0.5,2.5-2,2.5c-1.6,0-2-0.8-2-2.4V90.8z"></path>
+  <path class="st0" d="M221.7,90.8c-0.1,0-0.2,0-0.3,0c-0.1,0-0.2,0-0.3,0v4.7H221l-4.3-4.7h-0.4V97c0.1,0,0.2,0,0.3,0     c0.1,0,0.2,0,0.3,0v-4.9h0.1l3.9,4.4c0.2,0.2,0.4,0.4,0.5,0.6h0.3V90.8z"></path>
+  <path class="st0" d="M223.4,97c0.1,0,0.3,0,0.4,0c0.1,0,0.3,0,0.4,0v-6.2c-0.1,0-0.3,0-0.4,0c-0.1,0-0.3,0-0.4,0V97z"></path>
+  <path class="st0" d="M228.9,94.9c-0.1,0.4-0.3,0.7-0.5,1.1h-0.1l-1.1-2.8l-0.6-1.6c-0.1-0.3-0.2-0.6-0.3-0.9c-0.2,0-0.3,0-0.4,0     c-0.1,0-0.3,0-0.4,0c0.4,0.8,1.7,4.1,2.8,6.2c0.1,0,0.1,0,0.2,0c0.1,0,0.1,0,0.2,0c0.3-1,2.3-5.7,2.6-6.2c-0.1,0-0.2,0-0.3,0     c-0.1,0-0.2,0-0.3,0l-0.1,0.1l-0.5,1.5L228.9,94.9z"></path>
+  <path class="st0" d="M232.8,91.2h0.7l0.9,0c0.3,0,0.5,0,0.8,0.1c0-0.1,0-0.2,0-0.3c0-0.1,0-0.2,0-0.3H232V97h3.3c0-0.1,0-0.2,0-0.3     c0-0.1,0-0.2,0-0.3c-0.3,0-0.6,0.1-0.8,0.1c-0.5,0-1.1,0.1-1.7,0v-2.7h1.4c0.3,0,0.5,0,0.8,0c0-0.1,0-0.2,0-0.3c0-0.1,0-0.2,0-0.2     c-0.3,0-0.5,0-0.8,0h-1.4V91.2z"></path>
+  <path class="st2" d="M237.4,91.1c0.4,0,1,0,1.3,0c0.7,0.1,1,0.5,1,1.1c0,0.7-0.5,1.2-1.2,1.3c-0.5,0.1-1,0.1-1.2,0V91.1z M236.6,97     c0.1,0,0.3,0,0.4,0c0.1,0,0.3,0,0.4,0v-3h0.3l0.7,0.9l1.1,1.4c0.2,0.3,0.4,0.5,0.6,0.8c0.2,0,0.3,0,0.5,0c0.2,0,0.3,0,0.5,0     l-0.2-0.2l-0.4-0.5l-1.9-2.4c0.9-0.2,1.9-0.7,1.9-1.7c0-0.9-0.6-1.4-2-1.4h-1.9V97z"></path>
+  <path class="st0" d="M241.9,95.8c0,0.3-0.1,0.5-0.2,0.8c0.3,0.3,1,0.5,1.5,0.5c1.2,0,2.3-0.8,2.3-2.1c0-1.9-2.9-1.3-2.9-2.9     c0-0.6,0.5-1.1,1.1-1.1c0.5,0,0.9,0.3,1.1,0.8h0.1c0.1-0.3,0.1-0.5,0.2-0.7c-0.3-0.3-0.9-0.4-1.3-0.4c-1.1,0-2,0.6-2,1.8     c0,2.1,2.9,1.3,2.9,3c0,0.7-0.5,1.3-1.3,1.3C242.8,96.7,242.3,96.3,241.9,95.8L241.9,95.8z"></path>
+  <path class="st0" d="M246.7,97c0.1,0,0.3,0,0.4,0c0.1,0,0.3,0,0.4,0v-6.2c-0.1,0-0.3,0-0.4,0c-0.1,0-0.3,0-0.4,0V97z"></path>
+  <path class="st0" d="M251.4,91.2c0.8,0,1.5,0.1,1.9,0.1c0-0.1,0-0.2,0-0.3c0-0.1,0-0.2,0-0.3h-4.7c0,0.1,0,0.2,0,0.3     c0,0.1,0,0.2,0,0.3c0.5-0.1,1.1-0.1,2-0.1V97c0.1,0,0.3,0,0.4,0c0.1,0,0.3,0,0.4,0V91.2z"></path>
+  <path class="st0" d="M256.7,94.2c0.1-0.3,0.3-0.6,0.5-0.9l1-1.6c0.2-0.3,0.4-0.6,0.6-0.9c-0.1,0-0.2,0-0.4,0c-0.1,0-0.2,0-0.4,0     c-0.3,0.5-1.4,2.7-1.7,3.1c-0.3-0.4-1.4-2.4-1.7-3.1c-0.2,0-0.3,0-0.5,0c-0.2,0-0.3,0-0.5,0l2.2,3.6V97c0.1,0,0.3,0,0.4,0     c0.1,0,0.3,0,0.4,0V94.2z"></path>
+  <path class="st2" d="M267.8,93.8c0.1,1-0.6,3-2.6,3c-1.4,0-2.5-1-2.5-2.8c0-1.9,1-3.1,2.6-3.1c0.7,0,1.4,0.3,1.9,0.9     C267.7,92.4,267.8,93.1,267.8,93.8 M265.2,97.1c2,0,3.5-1.3,3.5-3.4c0-2.2-1.7-3.1-3.5-3.1c-1.9,0-3.4,1.3-3.4,3.3     C261.8,95.8,263.2,97.1,265.2,97.1"></path>
+  <path class="st0" d="M269.9,97c0.1,0,0.3,0,0.4,0c0.1,0,0.3,0,0.4,0v-3.1h1.4c0.3,0,0.5,0,0.8,0c0-0.1,0-0.2,0-0.3     c0-0.1,0-0.2,0-0.2c-0.3,0-0.5,0-0.8,0h-1.4v-2.3h0.7l0.9,0c0.3,0,0.5,0,0.8,0.1c0-0.1,0-0.2,0-0.3c0-0.1,0-0.2,0-0.3h-3.2V97z"></path>
+  <path class="st0" d="M217.8,107.9c-0.3,0.3-1.6,1.2-3.2,1.2c-2.4,0-4-1.9-4-4.8c0-2.6,1.4-4.8,4.1-4.8c1.6,0,2.7,1,2.9,1.3l0.1,0     c0.1-0.4,0.2-0.8,0.3-1.2c-1-0.4-2.1-0.7-3.2-0.7c-3.2,0-5.7,1.9-5.7,5.3c0,3.3,2,5.4,5.3,5.4c1.1,0,2.4-0.2,3.3-0.9L217.8,107.9z"></path>
+  <path class="st2" d="M223.9,99h-0.3l-4.7,10.5c0.2,0,0.3,0,0.5,0c0.2,0,0.3,0,0.6,0c0.4-1.4,1-2.7,1.5-4.1h3.8     c0.6,1.4,1.1,2.8,1.6,4.1c0.3,0,0.5,0,0.8,0c0.3,0,0.5,0,0.8,0L223.9,99z M225,104.8h-3.3l1.6-3.9L225,104.8z"></path>
+  <path class="st0" d="M231.3,99.2c-0.2,0-0.5,0-0.7,0c-0.2,0-0.5,0-0.7,0v10.3h5.5c0-0.2,0-0.3,0-0.5c0-0.2,0-0.3,0-0.5     c-0.5,0.1-1,0.1-1.4,0.1c-0.9,0-1.8,0.1-2.7,0.1V99.2z"></path>
+  <path class="st0" d="M244.6,101c0.1-0.4,0.2-0.8,0.3-1.2c-0.3-0.2-1.6-0.9-3.8-0.9c-3.3,0-5.9,1.9-5.9,5.4c0,3.1,1.8,5.3,5.6,5.3     c1.4,0,2.8-0.2,4.1-0.7v-4.3c-0.2,0-0.5,0-0.7,0c-0.2,0-0.5,0-0.7,0v3.9c-0.7,0.4-1.5,0.5-2.4,0.5c-3,0-4.5-1.9-4.5-4.8     c0-3,1.8-4.7,4.3-4.7c1.3,0,2.6,0.5,3.4,1.5H244.6z"></path>
+  <path class="st2" d="M251.4,99h-0.3l-4.7,10.5c0.2,0,0.3,0,0.5,0c0.2,0,0.3,0,0.6,0c0.4-1.4,1-2.7,1.5-4.1h3.8     c0.6,1.4,1.1,2.8,1.6,4.1c0.3,0,0.5,0,0.8,0c0.3,0,0.5,0,0.8,0L251.4,99z M252.6,104.8h-3.3l1.6-3.9L252.6,104.8z"></path>
+  <path class="st2" d="M258.5,99.8c0.6,0,1.7-0.1,2.2,0c1.1,0.2,1.7,0.9,1.7,1.9c0,1.2-0.8,1.9-1.9,2.2c-0.8,0.2-1.7,0.1-1.9,0.1     V99.8z M257.2,109.6c0.2,0,0.4,0,0.7,0c0.2,0,0.4,0,0.7,0v-5h0.6l1.2,1.4l1.8,2.3c0.3,0.4,0.6,0.8,1,1.3c0.3,0,0.6,0,0.9,0     c0.3,0,0.6,0,0.9,0l-0.3-0.4l-0.7-0.8l-3.1-3.9c1.5-0.3,3.1-1.1,3.1-2.9c0-1.5-1-2.3-3.3-2.3h-3.2V109.6z"></path>
+  <path class="st0" d="M269.2,104.9c0.2-0.4,0.5-1,0.8-1.5l1.7-2.7c0.3-0.5,0.7-1,1.1-1.5c-0.2,0-0.4,0-0.6,0c-0.2,0-0.4,0-0.6,0     c-0.4,0.8-2.4,4.5-2.9,5.1c-0.5-0.7-2.3-3.9-2.9-5.1c-0.3,0-0.6,0-0.8,0c-0.3,0-0.6,0-0.8,0l3.7,6v4.3c0.2,0,0.4,0,0.7,0     c0.2,0,0.4,0,0.7,0V104.9z"></path>
+  <path class="st0" d="M224.2,64.7l0.1,0.5l0.1,0.4l0.1,0.5l0.1,0.5l0.1,0.5l0.2,0.6l0.2,0.6l0.2,0.5l0.2,0.5l0.2,0.4l0.3,0.6     l0.3,0.5l0.3,0.7l0.3,0.5l0.3,0.5l0.3,0.5l0.3,0.4l0.4,0.5l0.3,0.4l0.4,0.5l0.3,0.4l0.4,0.4l0.4,0.4l0.3,0.4l0.3,0.3l0.3,0.3     l0.4,0.3l0.3,0.3l0.5,0.4l0.4,0.3l0.5,0.4l0.4,0.3l0.5,0.4l0.5,0.4l0.5,0.3l0.4,0.3l0.5,0.3l0.5,0.3l0.5,0.3l0.6,0.3l0.6,0.2     l0.5,0.2l0.5,0.2l0.6,0.2l0.5,0.1l0.4,0.1l0.3,0.1l0.2,0v-0.3l-0.2,0l-0.3,0l-0.5-0.2l-0.6-0.2l-0.7-0.3l-0.6-0.3l-0.6-0.3     l-0.8-0.4l-0.5-0.3l-0.6-0.3l-0.5-0.3l-0.5-0.3l-0.5-0.3l-0.4-0.3l-0.7-0.5l-0.6-0.5l-0.5-0.4l-0.4-0.4l-0.5-0.5l-0.5-0.5l-0.4-0.4     l-0.4-0.5l-0.4-0.5l-0.4-0.5l-0.4-0.5l-0.4-0.5l-0.4-0.5l-0.6-0.9l-0.3-0.5l-0.3-0.7l-0.2-0.4l0-0.1l0-0.1l0.1-0.4l0-0.5l0-0.6     v-0.6l0-0.6l-0.1-0.6l-0.1-0.6l-0.1-0.4L226,65l-0.2-0.6l-0.2-0.5l-0.1-0.2l-0.2-0.2l-0.2-0.2l-0.2-0.2l-0.2-0.1l-0.2-0.1l-0.3,0     l-0.2,0l-0.1,0.1l-0.2,0.1l-0.2,0.2l-0.2,0.3l-0.2,0.2l-0.3,0.3l-0.2,0.2l-0.2,0.3l-0.2,0.2L222,65l-0.3,0.2l-0.2,0.1l-0.3,0.1     l-0.3,0.1l-0.3,0.1l-0.3,0.1l-0.4,0.1l-0.2,0.1l-0.1,0.1l-0.1,0.1l0,0.1l0,0.2l0,0.3l0,0.3l0.1,0.4l0.1,0.3l0.1,0.4l0.1,0.3     l0.2,0.6l0.2,0.6l0.2,0.7l0.2,0.5l0.3,0.7l0.2,0.5l0.2,0.4l0.2,0.4l0.2,0.4l0.3,0.5l0.1,0.3l0,0.4v0.4v0.6l0,0.5l0,0.2l0,0.3     l0.1,0.4l0.1,0.4l0.2,0.4l0.1,0.3l0.2,0.4l0.2,0.3l0.2,0.3l0.3,0.3l0.3,0.3l0.3,0.2l0.3,0.2l0.3,0.1l0.3,0.1l0.3,0h0.7l-0.1,0     l-0.1-0.1l-0.2-0.1l-0.2-0.2l-0.2-0.2l-0.2-0.2l-0.2-0.3l-0.2-0.3l-0.1-0.3l-0.1-0.4l-0.1-0.3v-0.3l0-0.1l0.9,1.1l0.6,0.6l0.7,0.8     l0.7,0.7l0.7,0.7l0.7,0.6l0.7,0.5l0.7,0.5l0.7,0.6l0.7,0.5l0.8,0.5l0.7,0.4l0.8,0.4l0.8,0.4l0.9,0.4l1.1,0.5l0.9,0.3l0.9,0.3     l1.2,0.4l0.7,0.2l0.7,0.1v-0.3l-0.2,0l-0.4-0.1l-0.4-0.1l-0.4-0.1l-0.5-0.1l-0.4-0.1l-0.5-0.2l-0.5-0.1l-0.4-0.1l-0.5-0.2l-0.5-0.2     l-0.5-0.2l-0.5-0.2l-0.5-0.2l-0.5-0.2l-0.5-0.3l-0.6-0.3l-0.6-0.3l-0.5-0.3l-0.6-0.4l-0.6-0.4l-0.5-0.4l-0.4-0.3l-0.5-0.4l-0.5-0.4     l-0.4-0.3l-0.4-0.4l-0.4-0.4l-0.4-0.4l-0.4-0.4l-0.4-0.4l-0.4-0.5l-0.4-0.4l-0.4-0.4l-0.3-0.4l-0.3-0.4l-0.3-0.4l-0.3-0.4l-0.3-0.4     l-0.4-0.6l-0.3-0.5l-0.3-0.5l-0.3-0.5l-0.3-0.5l-0.3-0.5l-0.2-0.5l-0.2-0.4l-0.2-0.5l-0.3-0.5l-0.2-0.5l-0.2-0.6l-0.2-0.6l-0.2-0.6     l-0.2-0.6l-0.1-0.4l-0.1-0.4l-0.1-0.4l0-0.3v-0.2v-0.1v-0.1l0-0.1l0,0l0.1-0.1l0.4-0.2l0.4-0.2l0.4-0.1l0.4-0.1l0.3-0.1l0.3-0.2     l0.3-0.3l0.3-0.3l0.3-0.3l0.2-0.3l0.2-0.3l0.2-0.2l0.1-0.2l0.1-0.1l0.1-0.1l0.1,0l0,0l0,0l0,0.2l0,0.2l0,0.3l0,0.1v0.1L224.2,64.7z      M224.4,63.5l0-0.1l0-0.1l0.1,0l0.1,0l0.1,0.1l0.1,0.1l0.1,0.1l0.1,0.1l0.2,0.3l0.2,0.3l0.2,0.3l0.1,0.3l0.1,0.3l0.1,0.4L226,66     l0.1,0.3l0.1,0.4l0,0.4l0,0.4v0.4l0,0.3l0,0.4l0,0.3l0,0.3v0.2l0,0.2l0,0.1l0,0.1l0,0.1l-0.1-0.4l-0.2-0.6l-0.1-0.3l-0.2-0.5     l-0.2-0.5L225,67l-0.1-0.5l-0.1-0.4l-0.1-0.5l-0.1-0.4l-0.1-0.4l-0.1-0.3l0-0.3l0-0.2l0-0.2l0-0.2l0-0.1L224.4,63.5z M222.5,74.6     L222.5,74.6l0.1,0.1l0,0.1l0.1,0.1l0,0.1l1.3,2l0.1,0.2l0,0.2l0,0.3l0,0.3l0,0.3l0.1,0.3l0.1,0.3l0.2,0.3l0.2,0.2l0.2,0.2l0.2,0.2     l0.1,0.1l0.1,0.1l0,0l0,0l0,0l0,0l0,0l-0.4-0.2l-0.3-0.2l-0.4-0.3l-0.3-0.3l-0.2-0.3l-0.2-0.3l-0.2-0.4l-0.2-0.5l-0.2-0.5l-0.1-0.4     l-0.1-0.4l0-0.3l0-0.5l0-0.3v-0.1l0-0.1V74.6L222.5,74.6z"></path>
+  <path class="st0" d="M262.3,66.3l0-0.1l-0.1-0.1L262,66l-0.2-0.1l-0.4-0.1l-0.3-0.1l-0.3-0.1l-0.3-0.1l-0.3-0.1l-0.2-0.1l-0.3-0.2     l-0.2-0.2l-0.2-0.2l-0.2-0.3l-0.2-0.2l-0.3-0.3l-0.2-0.2l-0.2-0.3l-0.2-0.2l-0.2-0.1l-0.1-0.1l-0.2,0l-0.3,0l-0.2,0.1l-0.2,0.1     l-0.2,0.2l-0.2,0.2l-0.2,0.2l-0.1,0.2l-0.2,0.5l-0.2,0.6l-0.2,0.6l-0.1,0.4l-0.1,0.6l-0.1,0.6l0,0.6v0.6l0,0.6l0,0.5l0.1,0.4l0,0.1     l0,0.1l-0.2,0.4l-0.3,0.7l-0.3,0.5l-0.6,0.9l-0.4,0.5l-0.4,0.5l-0.4,0.5l-0.4,0.5l-0.4,0.5l-0.4,0.5l-0.4,0.4l-0.5,0.5l-0.5,0.5     l-0.4,0.4l-0.5,0.4l-0.6,0.5l-0.7,0.5l-0.4,0.3l-0.5,0.3l-0.5,0.3l-0.5,0.3l-0.6,0.3l-0.5,0.3l-0.8,0.4l-0.6,0.3l-0.6,0.3l-0.7,0.3     l-0.6,0.2l-0.5,0.2l-0.3,0l-0.2,0v0.3l0.2,0l0.3-0.1l0.4-0.1l0.5-0.1l0.6-0.2l0.5-0.2l0.5-0.2l0.6-0.2l0.6-0.3l0.5-0.3l0.5-0.3     l0.5-0.3l0.4-0.3l0.5-0.3l0.5-0.4l0.5-0.4l0.5-0.3l0.5-0.4L250,78l0.5-0.4l0.3-0.3l0.4-0.3l0.3-0.3l0.3-0.3l0.3-0.4l0.4-0.4     l0.4-0.4l0.3-0.4l0.4-0.5l0.3-0.4l0.4-0.5l0.3-0.4l0.3-0.5L255,72l0.3-0.5l0.3-0.7l0.2-0.5l0.3-0.6l0.2-0.4l0.2-0.5l0.2-0.5     l0.2-0.6l0.2-0.6l0.1-0.5l0.1-0.5l0.1-0.5l0.1-0.4l0.1-0.5l0-0.2v-0.1l0-0.1l0-0.3l0-0.2l0-0.2l0,0l0,0l0.1,0l0.1,0.1l0.1,0.1     l0.1,0.2l0.2,0.2l0.2,0.3l0.2,0.3l0.3,0.3l0.3,0.3l0.3,0.3l0.3,0.2l0.3,0.1l0.4,0.1L261,66l0.4,0.2l0.4,0.2l0.1,0.1l0,0l0,0.1v0.1     v0.1v0.2l0,0.3l-0.1,0.4l-0.1,0.4l-0.1,0.4l-0.2,0.6l-0.2,0.6l-0.2,0.6l-0.2,0.6l-0.2,0.5l-0.3,0.5l-0.2,0.5l-0.2,0.4l-0.2,0.5     l-0.3,0.5l-0.3,0.5l-0.3,0.5l-0.3,0.5l-0.3,0.5l-0.4,0.6l-0.3,0.4l-0.3,0.4l-0.3,0.4l-0.3,0.4l-0.3,0.4l-0.4,0.4l-0.4,0.4l-0.4,0.5     l-0.4,0.4l-0.4,0.4l-0.4,0.4l-0.4,0.4l-0.4,0.3l-0.4,0.3l-0.4,0.4l-0.5,0.4l-0.4,0.3l-0.5,0.4l-0.6,0.4l-0.6,0.4l-0.5,0.3l-0.6,0.3     l-0.6,0.3l-0.5,0.3l-0.5,0.2l-0.5,0.2L246,86l-0.5,0.2l-0.5,0.2l-0.5,0.2l-0.4,0.1l-0.5,0.1l-0.5,0.2l-0.4,0.1l-0.5,0.1l-0.4,0.1     l-0.4,0.1l-0.4,0.1l-0.2,0v0.3l0.7-0.1l0.7-0.2l1.2-0.4l0.9-0.3l0.9-0.3l1.1-0.5l0.9-0.4l0.8-0.4l0.8-0.4l0.7-0.4l0.8-0.5l0.7-0.5     l0.7-0.6l0.7-0.5l0.7-0.5l0.7-0.6l0.7-0.7l0.7-0.7l0.7-0.8l0.6-0.6l0.9-1.1l0,0.1v0.3l-0.1,0.3l-0.1,0.4l-0.1,0.3l-0.2,0.3     l-0.2,0.3l-0.2,0.2l-0.2,0.2L256,80l-0.2,0.1l-0.1,0.1l-0.1,0h0.7l0.3,0l0.3-0.1l0.3-0.1l0.3-0.2l0.3-0.2l0.3-0.3l0.3-0.3l0.2-0.3     l0.2-0.3L259,78l0.1-0.3l0.2-0.4l0.1-0.4l0.1-0.4l0-0.3l0-0.2l0-0.5v-0.6v-0.4l0-0.4l0.1-0.3l0.3-0.5l0.2-0.4l0.2-0.4l0.2-0.4     l0.2-0.5L261,71l0.2-0.5l0.2-0.7l0.2-0.6l0.2-0.6l0.1-0.3l0.1-0.4l0.1-0.3l0.1-0.4l0-0.3l0-0.3L262.3,66.3z M257.4,63.7l0,0.2     l0,0.2l0,0.2l0,0.3l-0.1,0.3l-0.1,0.4l-0.1,0.4l-0.1,0.5l-0.1,0.4l-0.1,0.5l-0.1,0.5l-0.2,0.5l-0.2,0.5l-0.1,0.3l-0.2,0.6l-0.1,0.4     l0-0.1l0-0.1l0-0.1l0-0.2V69l0-0.3l0-0.3l0-0.4l0-0.3v-0.4l0-0.4l0-0.4l0.1-0.4l0.1-0.3l0.1-0.4l0.1-0.4l0.1-0.3l0.1-0.3l0.2-0.3     l0.2-0.3l0.2-0.3l0.1-0.1l0.1-0.1l0.1-0.1l0.1-0.1l0.1,0l0.1,0l0,0.1l0,0.1l0,0.1L257.4,63.7z M259.3,75.3l0,0.5l0,0.3l-0.1,0.4     l-0.1,0.4l-0.2,0.6l-0.2,0.5l-0.2,0.4l-0.2,0.3l-0.2,0.3l-0.3,0.3l-0.4,0.3l-0.3,0.2l-0.4,0.2l0,0l0,0l0,0l0,0l0,0l0.1-0.1l0.1-0.1     l0.2-0.2l0.2-0.2l0.2-0.2l0.2-0.3l0.1-0.3l0.1-0.3l0-0.3l0-0.3l0-0.3l0-0.2l0.1-0.2l1.3-2l0-0.1l0.1-0.1l0-0.1l0.1-0.1l0,0l0,0.1     l0,0.1l0,0.1V75L259.3,75.3z"></path>
+  <path class="st0" d="M254.1,63.6l-0.1-0.3l-0.1-0.2l-0.1-0.3l-0.1-0.3l-0.2-0.3l-0.2-0.3l-0.2-0.3l-0.2-0.3l-0.2-0.3l-0.2-0.3     l-0.2-0.3l-0.2-0.3l-0.1-0.3l-0.1-0.2l-0.1-0.2l0-0.2l-0.1-0.2l0-0.2v-0.1l0-0.1l0.4-0.7l0-0.1l0.1,0h0.1l0.1,0l0.1-0.1l0.1-0.1     l0.1-0.1v-0.2l-0.1-0.2l-0.1-0.1l-0.1-0.1l-0.2-0.1l-0.2-0.1l-0.2,0h-0.2l-0.2,0l-0.1,0.1l-0.1,0.1v0.1l0,0.1l0.1,0.1l0.1,0.1     l0,0.1l0,0.1l-0.1,0.1l-10.6,18.4l0,1.3l7.4-12.7l0-0.1l0.1-0.1l0.1,0.1l0,0.2l0,0.2l0.1,0.3l0.2,0.3l0.1,0.3l0.2,0.3l0.2,0.2     l0.1,0.2l0,0.1l-0.1,0.2l-0.1,0.2l-0.1,0.3l-0.2,0.3l-0.3,0.4l-0.2,0.2l-0.2,0.2l-0.2,0.2l-0.3,0.2l-0.2,0.1l-0.3,0.2l-0.3,0.1     l-0.3,0.1l-0.3,0.1l-0.2,0.1l-0.2,0.2l-0.1,0.2l-0.1,0.2l-0.1,0.2l0,0.2l0,0.2l0.1,0.3l0.1,0.3l0.1,0.3l0.1,0.4l0.1,0.3l0.2,0.3     l0.1,0.3l0.1,0.4l0.1,0.3l0,0.3l0,0.3l0,0.4l-0.1,0.2l-0.1,0.2l-0.1,0.2l-0.1,0.1l-0.1,0.1l0.1,0l0.3-0.1l0.3-0.1l0.3-0.2l0.3-0.2     l0.2-0.2l0.2-0.3l0.2-0.3l0.1-0.3l0.1-0.3l0.2-0.3l0.1-0.3l0.2-0.3l0.2-0.2l0.3-0.3l0.3-0.2l0.4-0.2l0.3-0.2l0.3-0.2l0.4-0.3     l0.3-0.4l0.3-0.4l0.1-0.3l0.1-0.3l0.1-0.2l0-0.3l0-0.3l0-0.2l0-0.3l0-0.2l-0.1-0.2l0-0.2l0-0.1l0.1-0.2l0.2-0.3l0.3-0.3l0.4-0.3     l0.3-0.3l0.2-0.3l0.2-0.2l0.2-0.3l0.2-0.3l0.1-0.3l0.1-0.3l0-0.2l0-0.2v-0.3L254.1,63.6z M248.8,63.7l2.5-4.4l0.1,0l0,0v0.1l0,0.1     l0,0.1l-0.1,0.2l-0.1,0.3l-0.1,0.3l-0.1,0.3l-0.2,0.4l-0.2,0.4l-0.3,0.4l-0.3,0.4l-0.3,0.4l-0.3,0.4l-0.3,0.3l-0.3,0.3L248.8,63.7     L248.8,63.7z M247.6,69.1l0.1-0.1l0.3-0.2l0.3-0.2l0.2-0.2l0.2-0.2l0.2-0.3l0.2-0.3l0.2-0.4l0.2-0.3l0.1,0l0.1,0.1l0.1,0.1l0.1,0.2     l0.2,0.2l0.1,0.2l0.1,0.3l0.1,0.3l0,0.3l0,0.2l0,0.2l-0.1,0.2l-0.1,0.2l-0.2,0.3l-0.2,0.2l-0.3,0.2l-0.2,0l-0.3-0.1l-0.4-0.1     l-0.3-0.2l-0.3-0.2l-0.2-0.1l-0.3-0.1L247.6,69.1L247.6,69.1z M251.7,68.7l0,0.3l0,0.3l-0.1,0.2l-0.1,0.3l-0.1,0.3l-0.1,0.2     l-0.2,0.3l-0.3,0.2l-0.2,0.2l-0.3,0.2l-0.3,0.2l-0.3,0.2l-0.3,0.2l-0.3,0.2l-0.2,0.1l-0.2,0.2l-0.2,0.2l-0.2,0.2l-0.1,0.3l-0.1,0.3     l-0.1,0.3l-0.1,0.3l-0.2,0.3l-0.2,0.3l-0.2,0.3l-0.2,0.2l-0.2,0.1l-0.1,0.1l-0.1,0l0-0.1l0.1-0.1l0.1-0.1l0-0.2l0-0.2l0-0.2l0-0.2     l0-0.2l0-0.2l-0.1-0.3l-0.1-0.2l-0.2-0.4l-0.1-0.3l-0.1-0.3l-0.2-0.4l-0.1-0.3l-0.1-0.4l0-0.3l0-0.2l0-0.2l0-0.2l0.2-0.2l0.2-0.2     l0.3-0.1l0.2-0.1l0.2,0l0.2,0l0.2,0.1l0.3,0.1l0.3,0.2l0.3,0.2l0.3,0.2l0.3,0.1l0.3,0l0.2,0l0.2-0.1l0.2-0.2l0.1-0.2l0.1-0.2     l0.1-0.2l0.1-0.2l0.1-0.3l0.2-0.3l0.2-0.2l0.2-0.3l0.1-0.2l0.1-0.1l0.1-0.1l0.1,0l0,0.1l0,0.2l0,0.2L251.7,68.7z M253.8,64.3l0,0.3     l0,0.3l-0.1,0.3l-0.1,0.2l-0.2,0.3l-0.2,0.2l-0.2,0.2l-0.2,0.2l-0.2,0.2l-0.2,0.2L252,67l-0.3,0.3l-0.2,0.3l-0.3,0.3l-0.2,0.3     l-0.2,0.3l-0.1,0.1h-0.1l0-0.1l0-0.1l0-0.2l-0.1-0.3l-0.1-0.3l-0.1-0.3l-0.2-0.3l-0.2-0.3l-0.2-0.2l-0.2-0.2l-0.2-0.2l-0.2-0.3     l-0.2-0.3l-0.1-0.3l-0.1-0.3l0-0.2l0-0.2l0-0.2l0-0.1l0-0.1l0.1-0.1l0.1-0.1l0.2-0.2l0.2-0.3l0.2-0.2l0.3-0.3l0.3-0.3l0.2-0.3     l0.2-0.3l0.2-0.4l0.2-0.4l0.1-0.3l0.2-0.5l0.1-0.4l0.1-0.3l0-0.2l0.1-0.1l0,0l0,0.1l0,0.1l0.1,0.2l0.1,0.2l0.2,0.3l0.2,0.3l0.2,0.3     l0.2,0.2l0.2,0.3l0.2,0.3l0.2,0.4l0.2,0.3l0.2,0.4l0.1,0.3l0.1,0.4l0.1,0.3l0,0.2L253.8,64.3z"></path>
+  <path class="st0" d="M235.9,70.1l-0.1-0.2l-0.1-0.2l-0.2-0.2l-0.2-0.1l-0.3-0.1l-0.3-0.1l-0.3-0.1l-0.3-0.2l-0.2-0.1l-0.3-0.2     l-0.2-0.2l-0.2-0.2l-0.2-0.2l-0.3-0.4l-0.2-0.3l-0.1-0.3l-0.1-0.2l-0.1-0.2l0-0.1l0.1-0.2l0.2-0.2l0.2-0.3l0.1-0.3l0.2-0.3l0.1-0.3     l0-0.2l0-0.2l0.1-0.1l0.1,0.1l0,0.1l7.4,12.7l0-1.3l-10.6-18.4l-0.1-0.1l0-0.1l0-0.1l0.1-0.1l0.1-0.1l0-0.1V57l-0.1-0.1l-0.1-0.1     l-0.2,0h-0.2l-0.2,0l-0.2,0.1l-0.2,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.2v0.2l0.1,0.1l0.1,0.1l0.1,0.1l0.1,0h0.1l0.1,0l0,0.1l0.4,0.7     l0,0.1v0.1l0,0.2l-0.1,0.2l0,0.2l-0.1,0.2l-0.1,0.2l-0.1,0.3l-0.2,0.3l-0.2,0.3l-0.2,0.3l-0.2,0.3l-0.2,0.3l-0.2,0.3l-0.2,0.3     l-0.2,0.3l-0.1,0.3l-0.1,0.3l-0.1,0.2l-0.1,0.3l0,0.3v0.3l0,0.2l0,0.2l0.1,0.3l0.1,0.3l0.2,0.3l0.2,0.3l0.2,0.2l0.3,0.3l0.3,0.3     l0.4,0.3l0.3,0.3l0.2,0.3l0.1,0.2l0,0.1l0,0.2L230,68l0,0.2l0,0.3l0,0.2l0,0.3l0,0.3l0.1,0.2l0.1,0.3l0.1,0.3l0.3,0.4l0.3,0.4     l0.4,0.3l0.3,0.2l0.3,0.2l0.4,0.2l0.3,0.2l0.3,0.3l0.2,0.2l0.2,0.3l0.1,0.3l0.2,0.3l0.1,0.3l0.1,0.3l0.2,0.3l0.2,0.3l0.2,0.2     l0.3,0.2l0.3,0.2l0.3,0.1l0.3,0.1l0.1,0l-0.1-0.1l-0.1-0.1l-0.1-0.2l-0.1-0.2l-0.1-0.2l0-0.4l0-0.3l0-0.3l0.1-0.3l0.1-0.4l0.1-0.3     l0.2-0.3l0.1-0.3l0.1-0.4l0.1-0.3L236,71l0.1-0.3l0-0.2l0-0.2L235.9,70.1z M232.5,67.3l0.2,0.4l0.2,0.3l0.2,0.3l0.2,0.2l0.2,0.2     l0.3,0.2l0.3,0.2l0.1,0.1l0.1,0.1l0,0.1l-0.3,0.1l-0.2,0.1l-0.3,0.2l-0.3,0.2l-0.4,0.1l-0.3,0.1l-0.2,0l-0.3-0.2l-0.2-0.2l-0.2-0.3     l-0.1-0.2l-0.1-0.2l0-0.2l0-0.2l0-0.3l0.1-0.3l0.1-0.3l0.1-0.2l0.2-0.2l0.1-0.2l0.1-0.1l0.1-0.1l0.1,0L232.5,67.3z M230.4,59.3     L230.4,59.3L230.4,59.3l2.6,4.4v0.1l-0.1,0l-0.3-0.3l-0.3-0.3l-0.3-0.4l-0.3-0.4l-0.3-0.4l-0.3-0.4l-0.2-0.4l-0.2-0.4l-0.1-0.3     l-0.1-0.3l-0.1-0.3l-0.1-0.2l0-0.1L230.4,59.3L230.4,59.3z M229.9,67l-0.3-0.3l-0.2-0.2l-0.2-0.2l-0.2-0.2l-0.2-0.2l-0.2-0.2     l-0.2-0.3l-0.1-0.2l-0.1-0.3l0-0.3l0-0.3l0-0.3l0-0.2l0.1-0.3l0.1-0.4l0.1-0.3l0.2-0.4l0.2-0.3l0.2-0.4l0.2-0.3l0.2-0.3l0.2-0.2     l0.2-0.3l0.2-0.3l0.2-0.3l0.1-0.2l0.1-0.2l0-0.1l0-0.1l0,0l0.1,0.1l0,0.2l0.1,0.3l0.1,0.4l0.2,0.5l0.1,0.3l0.2,0.4l0.2,0.4l0.2,0.3     l0.3,0.3L232,63l0.3,0.3l0.2,0.2l0.2,0.3l0.2,0.2l0.1,0.1l0.1,0.1l0,0.1l0,0.1l0,0.2l0,0.2l0,0.2l-0.1,0.3l-0.1,0.3l-0.2,0.3     l-0.2,0.3l-0.2,0.2l-0.2,0.2l-0.2,0.2l-0.2,0.3l-0.2,0.3l-0.1,0.3l-0.1,0.3l-0.1,0.3l0,0.2l0,0.1l0,0.1h-0.1l-0.1-0.1l-0.2-0.3     l-0.2-0.3l-0.3-0.3l-0.2-0.3L229.9,67z M235.7,70.9l-0.1,0.4l-0.1,0.3l-0.2,0.4l-0.1,0.3l-0.1,0.3L235,73l-0.1,0.2l-0.1,0.3l0,0.2     l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2l0.1,0.1l0.1,0.1l0,0.1l-0.1,0l-0.1-0.1l-0.2-0.1l-0.2-0.2l-0.2-0.3l-0.2-0.3l-0.2-0.3l-0.1-0.3     l-0.1-0.3l-0.1-0.3l-0.1-0.3l-0.2-0.2l-0.2-0.2l-0.2-0.2l-0.2-0.1l-0.3-0.2l-0.3-0.2l-0.3-0.2l-0.3-0.2l-0.3-0.2l-0.2-0.2l-0.3-0.2     l-0.2-0.3l-0.1-0.2l-0.1-0.3l-0.1-0.3l-0.1-0.2l0-0.3l0-0.3l0-0.2l0-0.2l0-0.2l0-0.1l0.1,0l0.1,0.1l0.1,0.1l0.1,0.2l0.2,0.3     l0.2,0.2l0.2,0.3l0.1,0.3l0.1,0.2l0.1,0.2l0.1,0.2l0.1,0.2l0.2,0.2l0.2,0.1l0.2,0l0.3,0l0.3-0.1l0.3-0.2l0.3-0.2l0.3-0.2l0.3-0.1     l0.2-0.1l0.2,0l0.2,0l0.2,0.1l0.3,0.1l0.2,0.2l0.2,0.2l0,0.2l0,0.2l0,0.2L235.7,70.9z"></path>
+  <polygon class="st0" points="240.9,76.1 240.9,76.1 241,77.2 240.9,77.4 240.9,77.3 240.7,76.5  "></polygon>
+  <polygon class="st0" points="232.2,45.3 232.1,45.2 231.9,45.1 231.8,45 231.6,44.9 231.4,44.9 231.2,44.8 231,44.8 230.8,44.8     230.7,44.9 230.5,44.9 230.3,45 230.1,45 230,45 229.8,45 229.7,45 229.6,44.9 229.5,44.9 229.4,44.9 229.3,44.9 229.3,45     229.4,45.1 229.4,45.1 229.5,45.1 229.6,45.1 229.7,45.2 229.9,45.2 230.1,45.2 230.2,45.2 230.4,45.1 230.6,45 230.8,45 231,45     231.2,45 231.3,45 231.5,45 231.7,45.1 231.8,45.2 232,45.3 232.1,45.4 232.1,45.4 232.1,45.4 232.2,45.4   "></polygon>
+  <polygon class="st0" points="229.3,45 229.1,45 228.6,45.4 228.6,45.6 228.8,45.6 228.8,45.5 229.1,45.2 229.2,45.2 229.2,50     229.4,50 229.4,45.1   "></polygon>
+  <polygon class="st0" points="228.6,45.6 228.6,51.3 228.7,51.3 228.7,51.4 228.7,51.4 228.8,51.4 228.8,45.4   "></polygon>
+  <polygon class="st0" points="227.9,45.4 227.9,52.1 231.6,51.7 231.7,51.8 231.9,51.8 232,51.9 232.2,51.9 232.4,51.9 232.7,51.8     233,51.7 236.5,52.2 236.5,45.4 235.7,45.4 235.7,45.6 236.4,45.6 236.4,51.9 232.8,51.5 232.7,51.6 232.6,51.6 232.5,51.7     232.3,51.7 232.2,51.7 232,51.7 231.9,51.6 231.8,51.6 231.7,51.5 231.6,51.4 228.1,51.9 228.1,45.6 228.6,45.6 228.6,45.4  "></polygon>
+  <polygon class="st0" points="232.2,45.3 232.3,45.2 232.5,45.1 232.6,45 232.8,44.9 233,44.8 233.2,44.8 233.4,44.8 233.6,44.8     233.8,44.9 234,44.9 234.1,45 234.3,45 234.4,45 234.6,45 234.7,45 234.8,44.9 234.9,44.9 235,44.9 235.1,44.9 235.1,45 235,45.1     235,45.1 234.9,45.1 234.8,45.1 234.7,45.2 234.5,45.2 234.4,45.2 234.2,45.2 234,45.1 233.8,45 233.6,45 233.4,45 233.2,45     233.1,45 232.9,45 232.8,45.1 232.6,45.2 232.5,45.3 232.3,45.3 232.3,45.4 232.3,45.4 232.2,45.4  "></polygon>
+  <polygon class="st0" points="235.1,45 235.3,45 235.8,45.4 235.8,45.6 235.6,45.6 235.6,45.5 235.3,45.2 235.2,45.2 235.2,50     235,50 235,45.1   "></polygon>
+  <polygon class="st0" points="235.8,45.6 235.8,51.3 235.8,51.3 235.7,51.4 235.7,51.4 235.6,51.4 235.6,45.4   "></polygon>
+  <polygon class="st0" points="232.2,50.1 232.1,50.1 232.1,45.4 232.2,45.3 232.2,45.3 232.2,45.3 232.3,45.4 232.3,45.4     232.3,50.1 232.2,50.4 232.2,50.4 232.2,50.2   "></polygon>
+  <polygon class="st0" points="230,46.2 230.1,46.2 230.2,46.2 230.3,46.3 230.4,46.3 230.5,46.3 230.7,46.3 230.8,46.2 230.9,46.2     231,46.2 231.2,46.1 231.4,46.1 231.5,46.1 231.7,46.2 231.8,46.2 232,46.3 232,46.3 232.1,46.3 232.1,46.3 232.1,46.6 232.1,46.6     232,46.5 231.9,46.4 231.7,46.3 231.6,46.3 231.5,46.2 231.4,46.2 231.2,46.3 231,46.3 230.9,46.3 230.8,46.4 230.6,46.4     230.5,46.4 230.3,46.4 230.2,46.4 230.1,46.4 230,46.4  "></polygon>
+  <polygon class="st0" points="230,47.1 230.1,47.1 230.2,47.2 230.3,47.2 230.4,47.2 230.5,47.2 230.7,47.2 230.8,47.2 230.9,47.1     231,47.1 231.2,47 231.4,47 231.5,47 231.7,47.1 231.8,47.2 232,47.2 232,47.2 232.1,47.3 232.1,47.3 232.1,47.6 232.1,47.5     232,47.4 231.9,47.3 231.7,47.2 231.6,47.2 231.5,47.1 231.4,47.1 231.2,47.2 231,47.2 230.9,47.3 230.8,47.3 230.6,47.3     230.5,47.3 230.3,47.3 230.2,47.3 230.1,47.3 230,47.3  "></polygon>
+  <polygon class="st0" points="230,48.1 230.1,48.1 230.2,48.1 230.3,48.1 230.4,48.1 230.5,48.1 230.7,48.1 230.8,48.1 230.9,48.1     231,48 231.2,48 231.4,48 231.5,48 231.7,48 231.8,48.1 232,48.2 232,48.2 232.1,48.2 232.1,48.2 232.1,48.5 232.1,48.5 232,48.4     231.9,48.2 231.7,48.2 231.6,48.1 231.5,48.1 231.4,48.1 231.2,48.1 231,48.2 230.9,48.2 230.8,48.2 230.6,48.3 230.5,48.3     230.3,48.3 230.2,48.3 230.1,48.2 230,48.2   "></polygon>
+  <polygon class="st0" points="230,49 230.1,49 230.2,49.1 230.3,49.1 230.4,49.1 230.5,49.1 230.7,49.1 230.8,49.1 230.9,49 231,49     231.2,49 231.4,48.9 231.5,49 231.7,49 231.8,49.1 232,49.1 232,49.2 232.1,49.2 232.1,49.2 232.1,49.5 232.1,49.5 232,49.3     231.9,49.2 231.7,49.1 231.6,49.1 231.5,49.1 231.4,49.1 231.2,49.1 231,49.1 230.9,49.2 230.8,49.2 230.6,49.2 230.5,49.2     230.3,49.2 230.2,49.2 230.1,49.2 230,49.2   "></polygon>
+  <polygon class="st0" points="234.4,46.2 234.3,46.2 234.2,46.2 234.1,46.3 234,46.3 233.9,46.3 233.7,46.3 233.6,46.2 233.5,46.2     233.4,46.2 233.2,46.1 233,46.1 232.9,46.1 232.7,46.2 232.5,46.2 232.4,46.3 232.3,46.3 232.3,46.3 232.3,46.3 232.3,46.6     232.3,46.6 232.4,46.5 232.5,46.4 232.7,46.3 232.8,46.3 232.9,46.2 233,46.2 233.2,46.3 233.3,46.3 233.5,46.3 233.6,46.4     233.7,46.4 233.9,46.4 234,46.4 234.2,46.4 234.3,46.4 234.4,46.4   "></polygon>
+  <polygon class="st0" points="234.4,47.1 234.3,47.1 234.2,47.2 234.1,47.2 234,47.2 233.9,47.2 233.7,47.2 233.6,47.2 233.5,47.1     233.4,47.1 233.2,47 233,47 232.9,47 232.7,47.1 232.5,47.2 232.4,47.2 232.4,47.2 232.3,47.3 232.3,47.3 232.3,47.6 232.3,47.5     232.4,47.4 232.5,47.3 232.7,47.2 232.8,47.2 232.9,47.1 233,47.1 233.2,47.2 233.3,47.2 233.5,47.3 233.6,47.3 233.7,47.3     233.9,47.3 234,47.3 234.2,47.3 234.3,47.3 234.4,47.3  "></polygon>
+  <polygon class="st0" points="234.4,48.1 234.3,48.1 234.2,48.1 234.1,48.1 234,48.1 233.9,48.1 233.7,48.1 233.6,48.1 233.5,48.1     233.4,48 233.2,48 233,48 232.9,48 232.7,48 232.5,48.1 232.4,48.2 232.3,48.2 232.3,48.2 232.3,48.2 232.3,48.5 232.3,48.5     232.4,48.4 232.5,48.2 232.7,48.2 232.8,48.1 232.9,48.1 233,48.1 233.2,48.1 233.3,48.2 233.5,48.2 233.6,48.2 233.7,48.3     233.9,48.3 234,48.3 234.2,48.3 234.3,48.2 234.4,48.2  "></polygon>
+  <polygon class="st0" points="234.4,49 234.3,49 234.2,49.1 234.1,49.1 234,49.1 233.9,49.1 233.7,49.1 233.6,49.1 233.5,49     233.4,49 233.2,49 233,48.9 232.9,49 232.7,49 232.5,49.1 232.4,49.1 232.3,49.2 232.3,49.2 232.3,49.2 232.3,49.5 232.3,49.5     232.4,49.3 232.5,49.2 232.7,49.1 232.8,49.1 232.9,49.1 233,49.1 233.2,49.1 233.3,49.1 233.5,49.2 233.6,49.2 233.7,49.2     233.9,49.2 234,49.2 234.2,49.2 234.3,49.2 234.4,49.2  "></polygon>
+  <polygon class="st0" points="249.6,45.3 249.7,45.2 249.9,45.1 250,45 250.2,44.9 250.4,44.9 250.6,44.8 250.8,44.8 251,44.8     251.2,44.9 251.4,44.9 251.5,45 251.7,45 251.8,45 252,45 252.1,45 252.2,44.9 252.3,44.9 252.4,44.9 252.6,44.9 252.6,45     252.4,45.1 252.4,45.1 252.3,45.1 252.2,45.1 252.1,45.2 251.9,45.2 251.8,45.2 251.6,45.2 251.4,45.1 251.2,45 251,45 250.9,45     250.7,45 250.5,45 250.3,45 250.2,45.1 250,45.2 249.9,45.3 249.7,45.4 249.7,45.4 249.7,45.4 249.6,45.4   "></polygon>
+  <polygon class="st0" points="252.6,45 252.8,45 253.2,45.4 253.2,45.6 253,45.6 253,45.5 252.7,45.2 252.6,45.2 252.6,50 252.4,50     252.4,45.1  "></polygon>
+  <polygon class="st0" points="253.2,45.6 253.2,51.3 253.2,51.3 253.1,51.4 253.1,51.4 253,51.4 253,45.4   "></polygon>
+  <polygon class="st0" points="253.9,45.4 253.9,52.1 250.2,51.7 250.1,51.8 250,51.8 249.8,51.9 249.6,51.9 249.4,51.9 249.2,51.8     248.9,51.7 245.3,52.2 245.3,45.4 246.1,45.4 246.1,45.6 245.5,45.6 245.5,51.9 249,51.5 249.1,51.6 249.2,51.6 249.4,51.7     249.5,51.7 249.6,51.7 249.8,51.7 250,51.6 250.1,51.6 250.1,51.5 250.2,51.4 253.7,51.9 253.7,45.6 253.2,45.6 253.2,45.4  "></polygon>
+  <polygon class="st0" points="249.6,45.3 249.5,45.2 249.3,45.1 249.2,45 249,44.9 248.8,44.8 248.6,44.8 248.4,44.8 248.2,44.8     248.1,44.9 247.9,44.9 247.7,45 247.5,45 247.4,45 247.2,45 247.1,45 247,44.9 246.9,44.9 246.9,44.9 246.7,44.9 246.7,45     246.8,45.1 246.9,45.1 246.9,45.1 247,45.1 247.1,45.2 247.3,45.2 247.5,45.2 247.6,45.2 247.9,45.1 248,45 248.2,45 248.4,45     248.6,45 248.7,45 248.9,45 249.1,45.1 249.2,45.2 249.4,45.3 249.5,45.3 249.5,45.4 249.5,45.4 249.6,45.4   "></polygon>
+  <polygon class="st0" points="246.7,45 246.5,45 246,45.4 246,45.6 246.2,45.6 246.2,45.5 246.5,45.2 246.6,45.2 246.6,50 246.8,50     246.8,45.1  "></polygon>
+  <polygon class="st0" points="246.1,45.6 246.1,51.3 246.1,51.3 246.1,51.4 246.1,51.4 246.2,51.4 246.2,45.4   "></polygon>
+  <polygon class="st0" points="253,50.8 253,51 253,50.8   "></polygon>
+  <path class="st0" d="M253,50.9L253,50.9l-0.1-0.2l-0.1-0.2l-0.2-0.3v-0.3l-0.2,0V50h0l-0.1,0l-0.1,0l-0.2,0.1l-0.2,0.1l-0.4,0     l-0.3-0.1l-0.2-0.1l-0.2-0.1l-0.4,0l-0.3,0l-0.1,0l-0.1,0.1l-0.1,0.1l-0.1,0l-0.1,0v0.3l0,0.1l0,0.1l0,0.1l0,0.1l0.1,0.1l0,0.1     l0,0.1l0,0.1l-0.1,0l-0.1,0l-0.1,0l0,0.1l0,0l0.2,0l0.1,0l0.1,0l0.1,0l0.1,0l0.1,0l0.6,0.1l0.8,0.1l0.6,0l0.8,0.1v-0.3L253,50.9z      M252.9,51.2L252.9,51.2l-0.5,0l-0.6,0l-0.6,0l-0.6-0.1l-0.4,0l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l0-0.1l0-0.1l0.1-0.1l0.1-0.1     l0.1,0l0.1,0h0.4l0.2,0l0.2,0.1l0.2,0.1l0.2,0l0.2,0h0.2h0.1l0.2,0l0.2,0l0.1,0l0.1,0h0.1l0,0l0.1,0.2l0.1,0.2l0.1,0.2l0.1,0.1     L252.9,51.2L252.9,51.2L252.9,51.2L252.9,51.2z"></path>
+  <polygon class="st0" points="253,51 253,51.1 253,51.1   "></polygon>
+  <polygon class="st0" points="246.2,51.1 246.2,51.1 246.2,51   "></polygon>
+  <polygon class="st0" points="246.2,50.8 246.2,51 246.2,50.8   "></polygon>
+  <path class="st0" d="M249.6,51.1L249.6,51.1l-0.1,0l-0.1,0l-0.1,0l0-0.1l0-0.1l0-0.1l0.1-0.1l0-0.1l0-0.1l0-0.1l0-0.1v-0.3l-0.1,0     l-0.1,0l-0.1-0.1l-0.1-0.1l-0.1,0l-0.3,0l-0.4,0l-0.2,0.1l-0.2,0.1l-0.3,0.1l-0.4,0l-0.2-0.1l-0.2-0.1l-0.1,0l-0.1,0h0v-0.1l-0.2,0     v0.3l-0.2,0.3l-0.1,0.2l-0.1,0.1l0,0.1l-0.1,0.2v0.3l0.8-0.1l0.6,0l0.8-0.1l0.6-0.1l0.1,0l0.1,0l0.1,0l0.1,0l0.1,0l0.2,0v0     L249.6,51.1L249.6,51.1z M249.2,50.8l-0.1,0.1l-0.4,0l-0.6,0.1l-0.6,0l-0.6,0l-0.4,0l0,0l0,0l0,0l0,0l0-0.1l0.1-0.1l0.1-0.2     l0.1-0.2l0.1-0.2l0,0h0.1l0.1,0l0.1,0l0.2,0l0.2,0h0.1h0.2l0.2,0l0.2,0l0.2-0.1l0.2-0.1l0.2,0h0.4l0.1,0l0.1,0l0.1,0.1l0.1,0.1     l0,0.1l0,0.1l-0.1,0.1l-0.1,0.1L249.2,50.8z"></path>
+  <polygon class="st0" points="249.6,50.1 249.7,50.1 249.7,45.4 249.7,45.3 249.6,45.3 249.6,45.3 249.5,45.4 249.5,45.4     249.5,50.1 249.6,50.4 249.6,50.4 249.6,50.2   "></polygon>
+  <polygon class="st0" points="251.8,46.2 251.7,46.2 251.6,46.2 251.5,46.3 251.4,46.3 251.3,46.3 251.1,46.3 251,46.2 250.9,46.2     250.8,46.2 250.7,46.1 250.5,46.1 250.3,46.1 250.1,46.2 250,46.2 249.9,46.3 249.8,46.3 249.7,46.3 249.7,46.3 249.7,46.6     249.7,46.6 249.8,46.5 250,46.4 250.1,46.3 250.2,46.3 250.3,46.2 250.5,46.2 250.6,46.3 250.8,46.3 250.9,46.3 251,46.4     251.2,46.4 251.3,46.4 251.5,46.4 251.6,46.4 251.7,46.4 251.8,46.4   "></polygon>
+  <polygon class="st0" points="251.8,47.1 251.7,47.1 251.6,47.2 251.5,47.2 251.4,47.2 251.3,47.2 251.2,47.2 251.1,47.2     250.9,47.1 250.8,47.1 250.7,47 250.5,47 250.3,47 250.1,47.1 250,47.2 249.9,47.2 249.8,47.2 249.7,47.3 249.7,47.3 249.7,47.6     249.7,47.5 249.8,47.4 250,47.3 250.1,47.2 250.3,47.2 250.4,47.1 250.5,47.1 250.6,47.2 250.8,47.2 250.9,47.3 251,47.3     251.2,47.3 251.3,47.3 251.5,47.3 251.6,47.3 251.7,47.3 251.8,47.3   "></polygon>
+  <polygon class="st0" points="251.8,48.1 251.7,48.1 251.6,48.1 251.5,48.1 251.4,48.1 251.3,48.1 251.1,48.1 251,48.1 250.9,48.1     250.8,48 250.7,48 250.5,48 250.3,48 250.1,48 250,48.1 249.9,48.2 249.8,48.2 249.7,48.2 249.7,48.2 249.7,48.5 249.7,48.5     249.8,48.4 250,48.2 250.1,48.2 250.2,48.1 250.3,48.1 250.5,48.1 250.6,48.1 250.8,48.2 250.9,48.2 251,48.2 251.2,48.3     251.3,48.3 251.5,48.3 251.6,48.3 251.7,48.2 251.8,48.2  "></polygon>
+  <polygon class="st0" points="251.8,49 251.7,49 251.6,49.1 251.5,49.1 251.4,49.1 251.3,49.1 251.1,49.1 251,49.1 250.9,49     250.8,49 250.7,49 250.5,48.9 250.3,49 250.1,49 250,49.1 249.9,49.1 249.8,49.2 249.7,49.2 249.7,49.2 249.7,49.5 249.7,49.5     249.8,49.3 250,49.2 250.1,49.1 250.2,49.1 250.3,49.1 250.5,49.1 250.6,49.1 250.8,49.1 250.9,49.2 251,49.2 251.2,49.2     251.3,49.2 251.5,49.2 251.6,49.2 251.7,49.2 251.8,49.2  "></polygon>
+  <polygon class="st0" points="247.4,46.2 247.5,46.2 247.6,46.2 247.7,46.3 247.8,46.3 248,46.3 248.1,46.3 248.2,46.2 248.3,46.2     248.4,46.2 248.6,46.1 248.8,46.1 248.9,46.1 249.1,46.2 249.3,46.2 249.4,46.3 249.5,46.3 249.5,46.3 249.5,46.3 249.5,46.6     249.5,46.6 249.4,46.5 249.3,46.4 249.1,46.3 249,46.3 248.9,46.2 248.8,46.2 248.6,46.3 248.5,46.3 248.3,46.3 248.2,46.4     248.1,46.4 247.9,46.4 247.8,46.4 247.6,46.4 247.5,46.4 247.4,46.4   "></polygon>
+  <polygon class="st0" points="247.4,47.1 247.5,47.1 247.6,47.2 247.7,47.2 247.8,47.2 248,47.2 248.1,47.2 248.2,47.2 248.3,47.1     248.4,47.1 248.6,47 248.8,47 248.9,47 249.1,47.1 249.3,47.2 249.4,47.2 249.5,47.2 249.5,47.3 249.5,47.3 249.5,47.6 249.5,47.5     249.4,47.4 249.3,47.3 249.1,47.2 249,47.2 248.9,47.1 248.8,47.1 248.6,47.2 248.5,47.2 248.3,47.3 248.2,47.3 248.1,47.3     247.9,47.3 247.8,47.3 247.6,47.3 247.5,47.3 247.4,47.3  "></polygon>
+  <polygon class="st0" points="247.4,48.1 247.5,48.1 247.6,48.1 247.7,48.1 247.8,48.1 248,48.1 248.1,48.1 248.2,48.1 248.3,48.1     248.4,48 248.6,48 248.8,48 248.9,48 249.1,48 249.3,48.1 249.4,48.2 249.5,48.2 249.5,48.2 249.5,48.2 249.5,48.5 249.5,48.5     249.4,48.4 249.3,48.2 249.1,48.2 249,48.1 248.9,48.1 248.8,48.1 248.6,48.1 248.5,48.2 248.3,48.2 248.2,48.2 248.1,48.3     247.9,48.3 247.8,48.3 247.6,48.3 247.5,48.2 247.4,48.2  "></polygon>
+  <polygon class="st0" points="247.4,49 247.5,49 247.6,49.1 247.7,49.1 247.8,49.1 248,49.1 248.1,49.1 248.2,49.1 248.3,49     248.4,49 248.6,49 248.8,48.9 248.9,49 249.1,49 249.3,49.1 249.4,49.1 249.5,49.2 249.5,49.2 249.5,49.2 249.5,49.5 249.5,49.5     249.4,49.3 249.3,49.2 249.1,49.1 249,49.1 248.9,49.1 248.8,49.1 248.6,49.1 248.5,49.1 248.3,49.2 248.2,49.2 248.1,49.2     247.9,49.2 247.8,49.2 247.6,49.2 247.5,49.2 247.4,49.2  "></polygon>
+  <polygon class="st0" points="226.4,43.7 255.4,43.7 255.4,59.8 255.1,59.8 255.1,44.1 226.8,44.1 226.7,59.8 226.4,59.8  "></polygon>
+  <polygon class="st3" points="226.4,43.7 255.4,43.7 255.4,59.8 255.1,59.8 255.1,44.1 226.8,44.1 226.7,59.8 226.4,59.8  "></polygon>
+  <polygon class="st0" points="226.8,56.4 227.8,55.8 228.7,55.3 229.9,54.8 231.4,54.2 232.4,53.9 233.4,53.6 234.4,53.4     235.5,53.2 236.9,53 238.2,52.9 239.4,52.8 240.6,52.7 242.1,52.7 243.6,52.8 245.3,53 247.1,53.3 248.6,53.6 249.9,54 250.9,54.3     251.9,54.7 252.8,55.1 253.7,55.6 254.4,56 255.1,56.4 255.1,56.8 254.7,56.5 253.6,55.8 252.6,55.3 251.6,54.9 250.5,54.4     249.4,54.1 248.2,53.8 247.1,53.5 245.9,53.3 244.3,53.1 243,53 241.9,53 240.8,53 239.8,53 238.8,53.1 237.9,53.1 236.8,53.2     235.8,53.4 234.7,53.5 233.8,53.8 232.8,54 231.6,54.3 230.7,54.7 229.9,55 229.1,55.4 228.3,55.8 227.7,56.1 227.2,56.5     226.8,56.7  "></polygon>
+  <polygon class="st3" points="226.8,56.4 227.8,55.8 228.7,55.3 229.9,54.8 231.4,54.2 232.4,53.9 233.4,53.6 234.4,53.4     235.5,53.2 236.9,53 238.2,52.9 239.4,52.8 240.6,52.7 242.1,52.7 243.6,52.8 245.3,53 247.1,53.3 248.6,53.6 249.9,54 250.9,54.3     251.9,54.7 252.8,55.1 253.7,55.6 254.4,56 255.1,56.4 255.1,56.8 254.7,56.5 253.6,55.8 252.6,55.3 251.6,54.9 250.5,54.4     249.4,54.1 248.2,53.8 247.1,53.5 245.9,53.3 244.3,53.1 243,53 241.9,53 240.8,53 239.8,53 238.8,53.1 237.9,53.1 236.8,53.2     235.8,53.4 234.7,53.5 233.8,53.8 232.8,54 231.6,54.3 230.7,54.7 229.9,55 229.1,55.4 228.3,55.8 227.7,56.1 227.2,56.5     226.8,56.7  "></polygon>
+  <polygon class="st0" points="255.1,59.8 255.1,61.3 255.1,62.2 255,62.7 254.9,63.1 254.9,63.6 254.8,64.2 254.7,64.6 254.5,65.2     254.4,65.7 254.2,66.2 254.1,66.7 253.9,67.1 253.8,67.5 253.6,68 253.4,68.4 253.2,68.9 253,69.4 252.8,69.8 252.6,70.2     252.4,70.6 252.2,71 252,71.4 251.7,71.9 251.3,72.4 251,72.8 250.7,73.1 250.4,73.5 250.2,73.8 249.9,74.1 249.6,74.5 249.3,74.7     249.1,75 248.7,75.4 248.2,75.8 247.6,76.3 246.9,76.9 246.3,77.3 245.7,77.7 245.1,78.1 244.5,78.4 243.9,78.8 243.2,79.1     242.5,79.4 242,79.6 241.3,79.9 240.9,80.1 240.9,80.4 241.8,80 242.7,79.6 243.5,79.3 244.2,78.9 245,78.5 245.6,78.1 246.3,77.6     247.1,77.1 247.8,76.6 248.3,76.2 248.9,75.6 249.8,74.8 250.4,73.9 251,73.3 251.4,72.8 251.8,72.2 252.4,71.3 252.8,70.4     253.2,69.6 253.6,68.8 254,67.8 254.3,66.9 254.6,66.1 254.8,65.5 255,64.6 255.1,63.8 255.3,63 255.3,62.4 255.4,61.8 255.4,61.2     255.4,60.6 255.4,60.1 255.4,59.8  "></polygon>
+  <polygon class="st3" points="255.1,59.8 255.1,61.3 255.1,62.2 255,62.7 254.9,63.1 254.9,63.6 254.8,64.2 254.7,64.6 254.5,65.2     254.4,65.7 254.2,66.2 254.1,66.7 253.9,67.1 253.8,67.5 253.6,68 253.4,68.4 253.2,68.9 253,69.4 252.8,69.8 252.6,70.2     252.4,70.6 252.2,71 252,71.4 251.7,71.9 251.3,72.4 251,72.8 250.7,73.1 250.4,73.5 250.2,73.8 249.9,74.1 249.6,74.5 249.3,74.7     249.1,75 248.7,75.4 248.2,75.8 247.6,76.3 246.9,76.9 246.3,77.3 245.7,77.7 245.1,78.1 244.5,78.4 243.9,78.8 243.2,79.1     242.5,79.4 242,79.6 241.3,79.9 240.9,80.1 240.9,80.4 241.8,80 242.7,79.6 243.5,79.3 244.2,78.9 245,78.5 245.6,78.1 246.3,77.6     247.1,77.1 247.8,76.6 248.3,76.2 248.9,75.6 249.8,74.8 250.4,73.9 251,73.3 251.4,72.8 251.8,72.2 252.4,71.3 252.8,70.4     253.2,69.6 253.6,68.8 254,67.8 254.3,66.9 254.6,66.1 254.8,65.5 255,64.6 255.1,63.8 255.3,63 255.3,62.4 255.4,61.8 255.4,61.2     255.4,60.6 255.4,60.1 255.4,59.8  "></polygon>
+  <polygon class="st0" points="226.7,59.8 226.7,60.7 226.8,62.2 226.8,62.7 226.9,63.1 226.9,63.6 227.1,64.2 227.2,64.6     227.3,65.2 227.4,65.7 227.6,66.2 227.7,66.7 227.9,67.1 228,67.5 228.2,68 228.4,68.4 228.6,68.9 228.8,69.4 229,69.8 229.2,70.2     229.4,70.6 229.6,71 229.9,71.4 230.2,71.9 230.5,72.4 230.8,72.8 231.1,73.1 231.4,73.5 231.6,73.8 231.9,74.1 232.2,74.5     232.5,74.7 232.8,75 233.1,75.4 233.7,75.8 234.2,76.3 235,76.9 235.5,77.3 236.1,77.7 236.7,78.1 237.3,78.4 237.9,78.8     238.6,79.1 239.3,79.4 239.9,79.6 240.5,79.9 240.9,80.1 240.9,80.4 240.1,80 239.1,79.6 238.3,79.3 237.6,78.9 236.8,78.5     236.2,78.1 235.5,77.6 234.8,77.1 234,76.6 233.6,76.2 232.9,75.6 232.1,74.8 231.4,73.9 230.9,73.3 230.4,72.8 230,72.2     229.4,71.3 229,70.4 228.6,69.6 228.2,68.8 227.8,67.8 227.5,66.9 227.2,66.1 227.1,65.5 226.8,64.6 226.7,63.8 226.5,63     226.5,62.4 226.5,61.8 226.4,61.2 226.4,60.6 226.4,60.1 226.4,59.8   "></polygon>
+  <polygon class="st3" points="226.7,59.8 226.7,60.7 226.8,62.2 226.8,62.7 226.9,63.1 226.9,63.6 227.1,64.2 227.2,64.6     227.3,65.2 227.4,65.7 227.6,66.2 227.7,66.7 227.9,67.1 228,67.5 228.2,68 228.4,68.4 228.6,68.9 228.8,69.4 229,69.8 229.2,70.2     229.4,70.6 229.6,71 229.9,71.4 230.2,71.9 230.5,72.4 230.8,72.8 231.1,73.1 231.4,73.5 231.6,73.8 231.9,74.1 232.2,74.5     232.5,74.7 232.8,75 233.1,75.4 233.7,75.8 234.2,76.3 235,76.9 235.5,77.3 236.1,77.7 236.7,78.1 237.3,78.4 237.9,78.8     238.6,79.1 239.3,79.4 239.9,79.6 240.5,79.9 240.9,80.1 240.9,80.4 240.1,80 239.1,79.6 238.3,79.3 237.6,78.9 236.8,78.5     236.2,78.1 235.5,77.6 234.8,77.1 234,76.6 233.6,76.2 232.9,75.6 232.1,74.8 231.4,73.9 230.9,73.3 230.4,72.8 230,72.2     229.4,71.3 229,70.4 228.6,69.6 228.2,68.8 227.8,67.8 227.5,66.9 227.2,66.1 227.1,65.5 226.8,64.6 226.7,63.8 226.5,63     226.5,62.4 226.5,61.8 226.4,61.2 226.4,60.6 226.4,60.1 226.4,59.8   "></polygon>
+  <polygon class="st0" points="220.9,67.5 221.1,67.5 221.2,67.5 221.3,67.6 221.4,67.6 221.5,67.7 221.5,67.7 221.5,67.7     221.6,67.7 221.7,67.7 221.8,67.7 222,67.6 222.3,67.6 222.5,67.5 222.7,67.4 222.9,67.3 223.1,67.3 223.2,67.2 223.3,67.2     223.4,67.2 223.5,67.2 223.6,67.2 223.6,67.2 223.6,67.2 223.6,67.2 223.5,67.1 223.4,67 223.4,66.9 223.4,66.8 223.4,66.7     223.3,66.7 223.3,66.6 223.3,66.6 223.3,66.6 223.3,66.5 223.4,66.6 223.6,66.6 223.7,66.6 223.8,66.7 223.8,66.7 223.9,66.9     223.9,67 223.9,67.1 224,67.2 224,67.3 224,67.4 224,67.5 224.1,67.5 224.1,67.6 223.8,67.7 223.6,67.9 223.3,68.1 223.1,68.3     222.8,68.6 222.6,68.7 222.4,68.9 222.4,68.9 222.4,68.9 222.4,68.9 222.6,69 222.8,69 222.9,69 223.2,69 223.5,69 223.7,69     224,69 224.2,69.1 224.4,69.1 224.5,69.1 224.6,69.1 224.7,69.2 224.7,69.3 224.8,69.5 224.8,69.6 224.8,69.7 224.9,69.8     224.9,69.9 225,70 225,70 225,70.1 224.9,70.1 224.8,70.1 224.7,70 224.6,70 224.5,69.9 224.4,69.8 224.4,69.8 224.4,69.7     224.4,69.7 224.3,69.7 224.2,69.7 224,69.8 223.8,69.9 223.5,70 223.3,70.1 223,70.2 222.9,70.2 222.8,70.3 222.7,70.3 222.6,70.2     222.5,70.2 222.4,70.2 222.4,70.1 222.3,70.1 222.3,70.1 222.4,70.2 222.4,70.3 222.4,70.3 222.5,70.5 222.5,70.6 222.5,70.6     222.5,70.7 222.6,70.7 222.5,70.8 222.5,70.7 222.3,70.7 222.2,70.7 222.1,70.6 222,70.6 222,70.4 221.9,70.2 221.9,70.1     221.8,69.9 221.8,69.8 221.8,69.7 221.7,69.7 221.7,69.6 221.7,69.6 221.8,69.6 221.9,69.6 222,69.7 222.1,69.7 222.2,69.8     222.3,69.9 222.3,69.9 222.4,69.9 222.6,69.9 222.8,69.8 223.1,69.7 223.3,69.6 223.5,69.5 223.7,69.5 223.8,69.4 224,69.4     224.1,69.4 224.2,69.4 224.2,69.4 224.3,69.3 224.2,69.3 224.2,69.3 224,69.3 223.6,69.3 223.3,69.3 223,69.2 222.6,69.2     222.2,69.2 222,69.2 221.7,69.1 221.5,69.1 221.5,69.1 221.5,69.1 221.8,68.8 223.5,67.4 223.6,67.4 223.6,67.4 223.5,67.4     223.4,67.4 222,67.9 221.9,68 221.8,68 221.7,68 221.7,68 221.6,67.9 221.6,67.9 221.6,67.9 221.6,68 221.6,68.1 221.6,68.2     221.6,68.3 221.7,68.4 221.7,68.4 221.7,68.5 221.7,68.5 221.7,68.5 221.6,68.5 221.4,68.4 221.3,68.4 221.2,68.3 221.1,68.2     221.1,68.1 221.1,68 221.1,67.9 221.1,67.8 221,67.7 221,67.6 221,67.6 220.9,67.5 220.9,67.5  "></polygon>
+  <path class="st0" d="M225.7,71.4l0-0.2l-0.1-0.2l-0.2-0.1l-0.3-0.1l-0.3-0.1l-0.2,0l-0.3,0H224l-0.2,0l-0.2,0.1l-0.2,0.1l-0.2,0.2     l-0.2,0.2l-0.1,0.2l-0.1,0.2l0,0.2l0,0.2l0,0.2l0.1,0.2l0.1,0.2l0.2,0.2l0.3,0.2l0.3,0.1l0.2,0.1h0.3l0.3,0l0.2-0.1l0.2-0.2     l0.2-0.2l0.1-0.2l0.1-0.2l0.1-0.3l0-0.2l0-0.3L225.7,71.4z M225.2,71.8l-0.1,0.3l-0.1,0.3l-0.2,0.3l-0.2,0.2l-0.3,0.1l-0.4,0     l-0.2-0.1l-0.2-0.2l-0.1-0.2l-0.1-0.3V72l0.1-0.3l0.1-0.2l0.2-0.2l0.1-0.1l0.1-0.1l0.2-0.1l0.2-0.1l0.2,0h0.2l0.2,0.1l0.2,0.1     l0.1,0.1l0.1,0.2l0,0.2L225.2,71.8z"></path>
+  <polygon class="st0" points="225.6,74 225.3,74.3 225.3,74.4 225.5,74.7 225.5,74.8 225.5,74.7 225.8,74.4 225.8,74.4 225.8,74.3     225.8,74.2 225.7,74 225.7,74  "></polygon>
+  <polygon class="st0" points="227.8,76.6 228.1,76.5 228.2,76.5 228.4,76.5 228.4,76.3 228.4,76 228.3,75.9 228.2,75.8 228.1,75.6     228,75.4 227.8,75.3 227.6,75.2 227.5,75.2 227.3,75.2 227.1,75.2 226.9,75.2 226.8,75.3 226.7,75.5 226.6,75.6 226.6,75.7     226.6,75.9 226.6,76.1 226.6,76.3 226.7,76.4 226.8,76.6 226.8,76.8 226.9,77 226.9,77.2 226.8,77.3 226.8,77.4 226.7,77.5     226.6,77.6 226.4,77.5 226.3,77.5 226.1,77.4 226,77.2 225.9,77.1 225.8,76.9 225.8,76.8 225.8,76.6 225.9,76.5 225.9,76.3     226,76.2 226.1,76.1 226.1,76 226.2,76 226.2,76 225.4,76.1 225.4,76.1 225.4,76.2 225.4,76.6 225.4,76.8 225.5,77 225.6,77.2     225.7,77.4 225.9,77.5 226,77.7 226.2,77.8 226.3,77.8 226.4,77.8 226.6,77.9 226.7,77.8 226.9,77.8 227,77.7 227.1,77.7     227.3,77.6 227.3,77.4 227.4,77.2 227.4,77.1 227.4,77 227.4,76.8 227.3,76.6 227.3,76.5 227.2,76.3 227.1,76.1 227.1,76     227.1,75.8 227.1,75.7 227.1,75.6 227.1,75.5 227.2,75.5 227.2,75.4 227.3,75.4 227.4,75.4 227.5,75.5 227.6,75.5 227.7,75.6     227.8,75.8 227.9,75.9 227.9,76.1 227.9,76.3 227.9,76.4 227.9,76.5   "></polygon>
+  <polygon class="st0" points="228.8,77.5 228.6,77.6 228.4,77.8 228.2,78 227.9,78.3 227.7,78.4 227.6,78.6 227.5,78.6 227.4,78.6     227.3,78.6 227.2,78.6 227.2,78.6 227,78.5 226.9,78.6 226.8,78.6 226.7,78.6 226.7,78.7 226.8,78.7 226.9,78.8 227.1,79     227.2,79.2 227.4,79.3 227.5,79.4 227.6,79.4 227.7,79.4 227.9,79.3 228,79.3 227.9,79.3 227.8,79.2 227.7,79 227.6,79 227.5,78.8     227.5,78.8 227.6,78.8 227.7,78.8 227.9,78.8 228,78.7 228.2,78.6 228.3,78.5 228.4,78.4 228.5,78.3 228.5,78.3 229.5,79.3     229.5,79.4 229.4,79.4 228.9,79.9 228.8,80 228.7,80 228.6,80 228.5,79.9 228.4,79.9 228.3,80 228.2,80 228.1,80 228.1,80     228.1,80.1 228.2,80.1 228.8,80.7 229,80.7 229.1,80.7 229.3,80.7 229.3,80.6 229.3,80.6 229.3,80.6 228.8,80.2 228.9,80.2     229,80.2 229.3,80.1 229.3,80.1 230.5,78.9 230.5,78.9 230.6,78.9 230.7,79 230.8,79 231.2,78.9 230.5,78.3 230.1,78.3 230.1,78.4     230.3,78.6 230.3,78.7 230.2,78.7 230.1,78.7 229.7,79.1 229.7,79.1 228.8,78.3 228.7,78.3 228.6,78.2 228.6,78.2 228.6,78.2     229.2,77.7 229.2,77.6 229.3,77.7 229.4,77.8 229.9,77.7 229.2,76.9 228.7,76.9 228.7,77 228.7,77.1 229,77.4 229,77.4 229,77.5     229,77.5 228.9,77.5 228.8,77.5  "></polygon>
+  <polygon class="st0" points="231.2,79.4 231.7,79.9 231.7,79.9 231.7,80 231.6,80 231.5,80 231.2,80.1 231,80.2 230.7,80.3     230.5,80.5 230.4,80.6 230.2,80.7 230.1,80.8 230.1,81 230,81.1 230,81.2 230,81.3 230,81.4 230.1,81.6 230.1,81.7 230.2,81.9     230.3,82 230.4,82.1 230.6,82.2 230.7,82.2 230.9,82.3 231.1,82.3 231.2,82.2 231.4,82.2 231.5,82.1 231.6,82.1 231.6,82 231.6,82     231.7,82.1 231.6,82.1 231.6,82.2 231.5,82.3 231.5,82.4 231.5,82.5 231.5,82.6 231.5,82.7 231.6,82.8 231.6,82.9 231.7,82.9     232,82.8 232.1,82.7 232.1,82.7 232,82.6 231.9,82.6 231.9,82.5 231.9,82.4 232.1,82.1 232.5,81.6 232.7,81.3 232.9,81 233.1,80.8     233.2,80.8 233.3,80.7 233.4,80.7 233.4,80.6 233.4,80.5 233,80.2 232.9,80.1 232.8,80.1 232.7,80.1 232.3,80.3 232.7,80.6     232.8,80.6 232.8,80.6 232.8,80.7 232.7,80.7 232.5,80.9 232.3,81.2 232.1,81.5 231.9,81.7 231.8,81.7 231.6,81.9 231.3,81.9     231.2,82 231.1,82 230.9,81.9 230.7,81.8 230.6,81.7 230.5,81.5 230.5,81.4 230.5,81.2 230.5,81 230.6,80.9 230.7,80.7 230.8,80.6     231,80.5 231.3,80.4 231.6,80.2 231.8,80.1 232,80.1 232.3,80 232.4,79.9 232.4,79.9 232.3,79.8 232.3,79.8 231.9,79.4 231.8,79.3     231.7,79.3 231.6,79.3 231.5,79.3 231.4,79.3 231.3,79.4  "></polygon>
+  <polygon class="st0" points="232.1,79.3 232.2,79.3 232.3,79.3 232.9,80 233,80.1 233,80.1 233.1,80.1 233.4,80.1 233.4,80.1     233.4,80.1 233.4,80 233.3,80 233.2,80 233.2,79.9 232.7,79.4 232.7,79.3 232.6,79.3 232.5,79.2 232.4,79.2 232.3,79.2 232.2,79.2       "></polygon>
+  <polygon class="st0" points="233.9,81.7 233.1,83 233,83.1 232.9,83.2 232.9,83.2 232.8,83.2 232.7,83.2 232.6,83.2 232.4,83.2     232.3,83.3 232.3,83.3 232.3,83.4 232.5,83.5 232.8,83.7 233,83.8 233.1,83.9 233.1,83.9 233.2,83.9 233.3,83.9 233.5,83.8     233.6,83.7 233.6,83.7 233.6,83.6 233.5,83.6 233.1,83.4 233.1,83.3 233.1,83.3 233.1,83.3 233.2,83.3 233.4,83.2 233.4,83.2     234.3,81.8 234.3,81.8 234.3,81.7 234.4,81.7 234.4,81.7 234.4,81.8 234.5,81.8 234.5,81.8 234.6,81.8 234.6,81.8 234.9,81.6     235,81.6 235,81.6 235,81.5 234.9,81.5 234.9,81.5 234.3,81.1 234.2,81.1 234.2,81 234.1,81 234,81.1 233.8,81.2 233.7,81.2     233.7,81.3 233.8,81.3 233.8,81.3 234,81.5 234.1,81.5 234.1,81.5 234,81.6 234,81.6 233.9,81.6 233.9,81.7   "></polygon>
+  <polygon class="st0" points="235.3,82.6 234.6,83.9 234.5,84 234.5,84 234.4,84 234.4,84 234.3,84 234.2,84 234.1,84 234.1,84     234,84.1 233.9,84.1 233.9,84.2 233.8,84.2 233.8,84.2 233.9,84.2 233.9,84.2 234,84.3 234.5,84.6 235,84.9 235.3,85 235.4,85.1     235.5,85.1 235.6,85.2 235.7,85.2 235.8,85.1 236,85.1 236.2,85 236.5,84.7 236.6,84.6 236.6,84.5 236.7,84.4 236.7,84.4     236.7,84.3 236.7,84.2 236.7,84.1 236.6,84 236.6,83.9 236.5,83.9 236.3,83.8 236.2,83.8 236.1,83.9 236,84 235.9,84 235.9,84.1     235.8,84.1 235.8,84.1 236,84.1 236.1,84.1 236.2,84.2 236.2,84.3 236.3,84.4 236.3,84.5 236.3,84.6 236.2,84.7 236.2,84.7     236.1,84.8 236,84.8 235.9,84.8 235.9,84.8 235.8,84.8 235.3,84.5 235,84.3 235,84.3 234.8,84.3 234.7,84.2 234.7,84.2 234.6,84.2     234.7,84.1 234.7,84.1 234.8,84.1 234.8,84.1 234.9,84 235.2,83.6 235.6,82.9 235.7,82.7 235.8,82.5 235.8,82.4 235.8,82.4     235.9,82.4 235.9,82.4 235.9,82.5 235.9,82.5 235.9,82.7 236,82.8 236.1,82.9 236.2,82.9 236.2,83 236.3,82.9 236.6,82.7     236.6,82.7 236.6,82.6 236.4,82.6 236.3,82.5 236.2,82.5 236.2,82.3 236.1,82.2 236.1,82.1 236.1,82 236.1,82 236.1,82 236.1,82     236,82.1 235.8,82.1 235.7,82.2 235.6,82.2 235.5,82.3 235.4,82.3 235.3,82.4  "></polygon>
+  <polygon class="st0" points="237.7,83.7 237.5,84.3 237.3,84.8 237.1,85.1 237.1,85.2 237.1,85.2 237,85.3 236.9,85.3 236.8,85.3     236.7,85.3 236.6,85.3 236.6,85.4 236.5,85.4 236.4,85.5 236.5,85.5 236.5,85.5 236.7,85.6 237,85.7 237.4,85.9 237.7,86.1     237.9,86.1 238.1,86.2 238.1,86.2 238.2,86.2 238.3,86.2 238.4,86.2 238.6,86.1 238.7,86 238.7,85.9 238.7,85.9 238.7,85.9     238.7,85.9 238.6,85.9 238.5,85.9 238.3,85.8 238.1,85.7 238,85.6 237.7,85.5 237.6,85.5 237.4,85.4 237.3,85.4 237.2,85.4     237.2,85.4 237.2,85.3 237.3,85.3 237.4,85.3 237.5,85.2 237.6,85 237.7,84.8 237.8,84.7 237.8,84.6 237.8,84.6 237.9,84.6     237.9,84.6 238,84.6 238.4,84.9 238.5,84.9 238.6,84.9 238.7,84.9 238.8,84.9 238.9,84.8 238.9,84.8 239,84.7 239,84.7 239,84.7     239,84.7 238.9,84.7 238.9,84.6 238.7,84.5 238.6,84.4 238.5,84.4 238.4,84.3 238.3,84.3 238.2,84.3 238.1,84.3 238,84.3 238,84.4     238,84.4 237.9,84.4 237.9,84.3 237.9,84.3 238.1,83.8 238.1,83.7 238.2,83.6 238.2,83.6 238.2,83.6 238.3,83.6 238.3,83.6     238.6,83.7 238.8,83.8 238.9,83.9 239,83.9 239.1,83.9 239.2,83.9 239.2,83.9 239.3,83.9 239.4,83.8 239.5,83.8 239.5,83.7     239.5,83.7 239.6,83.6 239.6,83.6 239.5,83.6 239.5,83.6 239.4,83.6 239,83.4 238.6,83.2 238.2,83 238.1,83 238,82.9 237.9,82.9     237.8,82.9 237.7,82.9 237.6,83 237.6,83.1 237.5,83.1 237.4,83.2 237.4,83.2 237.4,83.2 237.5,83.2 237.5,83.2 237.6,83.3     237.8,83.4 237.9,83.4 237.9,83.4 237.9,83.5 237.9,83.5 237.8,83.5 237.8,83.6 237.7,83.6   "></polygon>
+  <polygon class="st0" points="240.5,85.3 240.8,85.7 240.8,85.7 241.2,85.7 241.2,85.7 241.2,85.6 241,85.3 241,85.2 240.9,85.2     240.8,85.2 240.6,85.2 240.6,85.2  "></polygon>
+  <polygon class="st0" points="242.1,84.3 242.6,85.5 242.7,85.6 242.7,85.7 242.7,85.8 242.6,85.8 242.6,85.9 242.5,86 242.4,86.1     242.4,86.2 242.4,86.3 242.4,86.4 242.4,86.4 242.4,86.4 242.4,86.4 242.5,86.3 242.8,86.2 243.1,86.2 243.2,86.1 243.4,86.1     243.4,86 243.5,85.9 243.5,85.7 243.5,85.6 243.5,85.5 243.4,85.5 243.4,85.6 243.4,85.6 243.3,85.6 243.2,85.7 243.1,85.7     243,85.7 243,85.8 242.9,85.8 242.9,85.8 242.9,85.7 242.9,85.7 243,85.6 243,85.5 243,85.4 243,85.4 243,85.2 242.5,84     242.4,83.9 242.4,83.8 242.4,83.8 242.4,83.8 242.5,83.8 242.8,83.6 243.1,83.5 243.1,83.4 243.2,83.3 243.2,83.2 243.2,83.1     243.3,83 243.3,83 243.2,83 243.2,83 243.1,83 243,83.1 242.7,83.2 242.3,83.3 241.8,83.5 241.6,83.5 241.5,83.6 241.4,83.6     241.3,83.7 241.3,83.8 241.2,83.8 241.2,83.9 241.2,84.1 241.2,84.2 241.2,84.2 241.2,84.2 241.2,84.2 241.4,84.1 241.8,84     242,83.9 242.1,83.9 242.1,83.9 242.1,83.9 242.1,84 242.1,84 242.1,84.1 242.1,84.2   "></polygon>
+  <path class="st0" d="M246.1,83.6l-0.1-0.2l-0.2-0.2l-0.2-0.2l-0.2-0.1l-0.2-0.1l-0.3-0.1l-0.2,0l-0.3,0l-0.2,0l-0.2,0l-0.2,0.1     l-0.1,0.2l-0.1,0.3l-0.1,0.3l0,0.2l0,0.3v0.3l0,0.2l0.1,0.2l0.1,0.2L244,85l0.2,0.2l0.2,0.1l0.2,0.1l0.2,0l0.2,0l0.2,0l0.2-0.1     l0.2-0.1l0.2-0.2l0.2-0.3l0.1-0.2l0.1-0.2v-0.3L246.1,83.6z M245.9,84.3l-0.1,0.2l-0.2,0.2l-0.2,0.1l-0.3,0.1h-0.3l-0.3-0.1     l-0.2-0.1l-0.2-0.2l-0.1-0.1l-0.1-0.1l-0.1-0.2l-0.1-0.2l0-0.2v-0.2l0.1-0.2l0.1-0.2l0.1-0.1l0.2-0.1l0.1,0l0.2,0L245,83l0.3,0.1     l0.3,0.2l0.2,0.2l0.1,0.3L245.9,84.3z"></path>
+  <polygon class="st0" points="247.7,80.7 247.6,80.8 247.4,80.9 247.2,81 247,81.1 246.9,81.1 246.7,81.2 246.6,81.3 246.5,81.4     246.4,81.5 246.3,81.6 246.3,81.8 246.3,81.9 246.2,82.1 246.2,82.3 246.2,82.5 246.2,82.7 246.3,82.9 246.3,83 246.4,83.2     246.5,83.4 246.6,83.5 246.8,83.7 246.9,83.8 247.1,83.9 247.3,83.9 247.4,84 247.6,84 247.8,84 248.1,83.9 248.2,83.9 248.4,83.8     248.5,83.6 248.6,83.5 248.7,83.3 248.7,83.2 248.7,83.1 248.7,83 248.7,83 248.8,82.9 248.8,83 248.9,83.1 249,83.2 249,83.2     249.1,83.2 249.3,83.2 249.3,83.2 249.4,83.2 249.4,83.1 249.4,82.6 249.4,82.6 249.3,82.6 249.3,82.7 249.2,82.7 249.2,82.7     249.1,82.7 249,82.7 248.9,82.7 248.8,82.5 248.7,82.3 248.6,82.2 248.6,82.1 248.6,81.9 248.6,81.8 248.6,81.7 248.6,81.6     248.6,81.5 248.5,81.5 248.5,81.6 248.5,81.6 248.5,81.6 248.3,81.7 248.1,81.9 247.9,81.9 247.7,82 247.6,82 247.5,82.1     247.4,82.2 247.4,82.3 247.3,82.5 247.4,82.6 247.4,82.7 247.4,82.7 247.4,82.7 247.5,82.6 247.7,82.5 248.1,82.4 248.2,82.3     248.3,82.2 248.4,82.2 248.4,82.3 248.5,82.4 248.5,82.5 248.5,82.7 248.5,82.8 248.5,82.9 248.4,83.1 248.3,83.3 248.1,83.4     247.9,83.4 247.7,83.4 247.5,83.4 247.3,83.4 247.1,83.3 246.9,83.2 246.8,83.1 246.7,82.9 246.6,82.8 246.6,82.7 246.5,82.5     246.5,82.4 246.5,82.3 246.5,82.2 246.5,82 246.6,81.9 246.8,81.7 247,81.6 247.2,81.5 247.4,81.5 247.5,81.4 247.6,81.3     247.6,81.3 247.7,81.2 247.7,81.2 247.7,80.9 247.7,80.8 247.7,80.8 247.7,80.7  "></polygon>
+  <path class="st0" d="M251.8,80.9L251.8,80.9L251.8,80.9L251.8,80.9L251.8,80.9L251.8,80.9l-0.1,0l0,0l-0.1,0h-0.1l0,0l-0.5-0.3     l-0.6-0.4L250,80l-0.3-0.2l-0.1-0.1l-0.1,0l-0.1,0l-0.1,0l-0.1,0l-0.1,0l-0.1,0l-0.1,0.1l-0.1,0.1l-0.1,0.1l0,0.1l0,0.1l0,0.1     l0,0.1l0,0.1l0,0.1l0,0h0l0,0l0.1-0.1l0.1-0.1l0,0l0.1,0l0.1,0l0,0l0.1,0.2l0,0.1l0.4,1.3l0,0.1l0,0.1l0,0.1v0.1l0,0.1l0,0.1l0,0.1     l0,0.1l0,0.1l0,0.1l0,0.1l0,0l0,0l0,0l0-0.1l0.3-0.2l0.4-0.2v-0.5l0,0l-0.1,0l-0.1,0.1l-0.1,0.1l-0.1,0.1l0,0l0,0l0-0.1l0-0.2     l0-0.1l0-0.1l0-0.1l0,0l0,0l0.3-0.2l0.3-0.2l0.2-0.1l0.1,0l0.1,0l0.5,0.3l0.1,0.1l0.1,0l0.1,0h0.1l0.1,0l0,0l0,0l0,0L251.8,80.9     L251.8,80.9z M250.4,80.9L250.4,80.9L250.4,80.9l-0.2,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.2l-0.1,0.1l0,0l0,0l0-0.1l0-0.2l-0.1-0.3     l-0.1-0.3l-0.1-0.2l0-0.1v-0.1l0,0l0.1,0l0.1,0.1l0.1,0.1l0.6,0.4L250.4,80.9L250.4,80.9L250.4,80.9z"></path>
+  <polygon class="st0" points="254.9,78.5 254.7,78.4 254.6,78.4 254.5,78.4 254.4,78.4 254.3,78.4 254.3,78.4 254.2,78.4     254.1,78.4 254,78.4 253.9,78.3 253.8,78.1 253.6,78 253.5,77.8 253.3,77.6 253.2,77.4 253.1,77.3 253,77.2 252.9,77.1 252.8,77.1     252.7,77.1 252.7,77 252.6,77 252.6,77 252.7,77 252.8,77 252.9,76.9 253,76.9 253,76.8 253.1,76.7 253.1,76.6 253.2,76.6     253.2,76.6 253.2,76.6 253.2,76.5 253.1,76.5 253,76.5 252.9,76.4 252.7,76.4 252.6,76.5 252.5,76.6 252.5,76.7 252.4,76.8     252.3,76.9 252.2,76.9 252.2,77 252.1,77 252.1,77 252.1,77.1 252.2,77.3 252.3,77.6 252.4,77.9 252.6,78.2 252.7,78.6 252.8,78.8     252.9,79 252.9,79.1 252.9,79.1 252.9,79.1 252.7,79 252.5,79 252.4,78.9 252.2,78.8 251.9,78.6 251.7,78.6 251.4,78.4 251.2,78.4     251,78.3 250.9,78.2 250.8,78.2 250.8,78.2 250.7,78.3 250.5,78.4 250.5,78.5 250.4,78.6 250.3,78.7 250.2,78.8 250.1,78.8     250.1,78.9 250.1,78.9 250.1,78.9 250.2,78.9 250.3,79 250.4,79 250.6,79 250.7,78.9 250.7,78.9 250.7,78.8 250.8,78.8 250.8,78.8     250.9,79 251.1,79.1 251.2,79.3 251.4,79.5 251.6,79.7 251.7,79.9 251.8,80 251.9,80.1 252,80.1 252.1,80.2 252.2,80.2 252.3,80.2     252.3,80.1 252.4,80.1 252.4,80.2 252.3,80.2 252.3,80.3 252.2,80.3 252.1,80.4 252.1,80.5 252,80.5 251.9,80.6 251.9,80.6     251.9,80.6 252,80.6 252.1,80.7 252.2,80.7 252.3,80.7 252.5,80.7 252.6,80.6 252.7,80.5 252.8,80.3 252.9,80.2 253,80.2     253.1,80.1 253.1,80.1 253.2,80.1 253.2,80 253.1,80 253,79.9 252.8,79.9 252.7,79.9 252.6,79.9 252.6,80 252.5,80 252.4,79.9     252.3,79.8 252.1,79.7 251.9,79.5 251.8,79.3 251.6,79.1 251.5,79 251.4,78.9 251.3,78.8 251.2,78.7 251.1,78.6 251.1,78.6     251.1,78.6 251.1,78.6 251.1,78.6 251.3,78.6 251.6,78.8 251.9,78.9 252.2,79.1 252.6,79.2 252.9,79.4 253.2,79.5 253.4,79.6     253.6,79.7 253.6,79.7 253.6,79.6 253.4,79.3 252.6,77.2 252.6,77.2 252.6,77.2 252.6,77.2 252.7,77.3 253.7,78.4 253.8,78.5     253.9,78.5 253.9,78.6 254,78.6 254,78.5 254.1,78.6 254.1,78.6 254.1,78.6 254,78.7 253.9,78.8 253.9,78.9 253.8,78.9 253.7,79     253.7,79 253.7,79 253.7,79 253.8,79.1 254,79.1 254.1,79.1 254.2,79.1 254.3,79 254.4,78.9 254.5,78.9 254.5,78.8 254.6,78.7     254.7,78.7 254.7,78.6 254.8,78.6 254.8,78.6 254.9,78.5  "></polygon>
+  <polygon class="st0" points="254.1,76.9 254.5,76.9 254.6,76.9 254.8,76.6 254.8,76.5 254.8,76.5 254.4,76.5 254.3,76.5     254.3,76.5 254.2,76.7 254.1,76.8 254.1,76.8   "></polygon>
+  <polygon class="st0" points="255.5,74.1 255.4,73.9 255.3,73.8 255.2,73.7 255,73.7 254.8,73.8 254.7,73.9 254.6,74.1 254.5,74.2     254.4,74.4 254.3,74.6 254.3,74.8 254.3,75 254.4,75.2 254.5,75.3 254.6,75.5 254.7,75.6 254.9,75.6 255,75.7 255.1,75.6     255.3,75.6 255.5,75.5 255.6,75.4 255.7,75.3 255.9,75.1 256.1,75 256.2,74.9 256.4,74.8 256.5,74.8 256.6,74.8 256.7,74.9     256.8,74.9 256.9,75.1 256.9,75.3 256.8,75.4 256.7,75.6 256.6,75.8 256.5,75.9 256.4,75.9 256.2,76 256.1,76 255.9,76 255.8,76     255.7,76 255.6,75.9 255.5,75.9 255.5,75.9 255.9,76.6 255.9,76.6 256,76.6 256.4,76.4 256.6,76.3 256.7,76.2 256.9,76 257,75.9     257.1,75.6 257.1,75.5 257.2,75.3 257.2,75.1 257.2,75 257.1,74.9 257.1,74.7 257,74.6 256.9,74.5 256.8,74.4 256.6,74.3     256.4,74.3 256.3,74.3 256.2,74.3 256,74.4 255.9,74.5 255.7,74.6 255.6,74.7 255.4,74.8 255.3,75 255.2,75.1 255.1,75.1 255,75.2     254.9,75.2 254.8,75.2 254.7,75.2 254.6,75.1 254.6,75.1 254.6,75 254.5,74.9 254.6,74.7 254.6,74.6 254.7,74.4 254.9,74.3     255,74.2 255.2,74.2 255.3,74.2 255.4,74.1   "></polygon>
+  <polygon class="st0" points="258.9,66.5 258.8,66.4 258.7,66.2 258.6,66.1 258.4,66.3 258.2,66.4 258.1,66.5 258,66.7 258,66.9     257.9,67.1 257.9,67.3 257.9,67.5 258,67.6 258.1,67.8 258.2,67.9 258.3,68 258.5,68.1 258.7,68.1 258.8,68.1 258.9,68.1 259.1,68     259.2,67.9 259.3,67.7 259.4,67.6 259.6,67.4 259.7,67.2 259.8,67.1 260,67 260.1,67 260.2,67 260.3,67 260.4,67 260.5,67.2     260.6,67.3 260.6,67.5 260.5,67.7 260.4,67.9 260.3,68 260.2,68.1 260.1,68.2 260,68.2 259.8,68.3 259.6,68.3 259.5,68.3     259.4,68.3 259.4,68.2 259.4,68.3 259.9,68.8 259.9,68.8 260,68.8 260.4,68.5 260.5,68.4 260.6,68.3 260.7,68.1 260.8,67.9     260.8,67.6 260.8,67.5 260.8,67.3 260.8,67.1 260.8,67 260.7,66.9 260.6,66.8 260.5,66.6 260.4,66.6 260.2,66.5 260.1,66.5     259.9,66.5 259.7,66.6 259.6,66.6 259.5,66.7 259.4,66.8 259.3,66.9 259.2,67.1 259,67.2 258.9,67.4 258.8,67.5 258.7,67.6     258.7,67.7 258.6,67.7 258.5,67.7 258.4,67.7 258.3,67.7 258.3,67.6 258.2,67.6 258.2,67.5 258.2,67.3 258.2,67.2 258.3,67     258.4,66.9 258.5,66.8 258.6,66.7 258.7,66.6 258.9,66.6  "></polygon>
+  <path class="st0" d="M260.1,69.2L260.1,69.2L260.1,69.2l-0.1-0.1l0,0l0,0l0,0l0,0l0,0l-0.1,0l-0.1,0l-0.1,0l-0.6,0l-0.7,0l-0.3,0     l-0.3,0l-0.2,0l-0.1,0l-0.1,0l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l0,0.1l0,0.1l0,0.1l0,0.1l0,0.1l0.1,0.1l0.1,0.1l0.1,0.1l0.1,0.1     l0,0l0,0v-0.1l0-0.1l0-0.1l0-0.1l0-0.1l0,0l0,0l0.2,0.1l0.1,0.1l1,0.9l0.1,0.1l0.1,0.1l0.1,0.1l0,0.1l0,0.1v0.1l0,0.1l0,0.1l0,0.1     l0.1,0.1l0,0l0,0l0,0l0,0l0-0.1l0.2-0.3l0.2-0.4l-0.2-0.4l0,0l0,0l-0.1,0.1l-0.1,0.1l0,0.1l0,0l0,0l0-0.1l-0.1-0.1l-0.1-0.1     l-0.1-0.1l-0.1,0l0,0v-0.1l0.1-0.3L259,70l0.1-0.2l0.1,0l0.1,0l0.6,0l0.1,0l0.1,0l0.1,0l0.1-0.1l0.1-0.1l0,0l0,0l0,0L260.1,69.2z      M258.8,69.8L258.8,69.8l-0.1,0.1l-0.1,0.1l-0.1,0.2l0,0.2l0,0.1l0,0l0,0l-0.1,0l-0.1-0.1l-0.2-0.2l-0.2-0.2l-0.1-0.1l-0.1-0.1     l0-0.1l0,0l0.1,0l0.2,0l0.2,0l0.7,0l0.1,0L258.8,69.8L258.8,69.8L258.8,69.8z"></path>
+  <polygon class="st0" points="255.7,73.3 256.1,72.7 256.1,72.7 256.2,72.7 256.2,72.8 256.2,72.9 256.3,73.1 256.5,73.4     256.6,73.6 256.8,73.8 256.9,73.9 257.1,74.1 257.2,74.1 257.3,74.2 257.5,74.2 257.6,74.2 257.7,74.2 257.8,74.2 258,74.1     258.1,74.1 258.2,73.9 258.4,73.8 258.4,73.7 258.5,73.5 258.5,73.4 258.5,73.2 258.5,73.1 258.4,72.9 258.4,72.8 258.3,72.6     258.3,72.6 258.2,72.5 258.2,72.5 258.2,72.5 258.3,72.5 258.4,72.6 258.5,72.6 258.6,72.6 258.7,72.6 258.8,72.6 258.9,72.5     259,72.5 259.1,72.4 259.1,72.3 258.9,72 258.8,72 258.8,72 258.8,72.1 258.7,72.1 258.6,72.2 258.5,72.1 258.3,72 257.7,71.7     257.3,71.5 257,71.4 256.9,71.2 256.8,71.1 256.7,71 256.6,70.9 256.6,70.9 256.5,71 256.2,71.4 256.2,71.5 256.2,71.6 256.2,71.6     256.4,72 256.6,71.6 256.7,71.5 256.7,71.5 256.7,71.5 256.8,71.6 256.9,71.8 257.3,72 257.6,72.1 257.8,72.3 257.9,72.4 258,72.6     258.2,72.8 258.2,72.9 258.2,73 258.2,73.3 258.1,73.5 258,73.6 257.8,73.7 257.7,73.8 257.5,73.8 257.4,73.8 257.2,73.7     257.1,73.6 256.9,73.5 256.8,73.3 256.6,73.1 256.4,72.8 256.3,72.6 256.2,72.4 256.1,72.1 256,72 256,72 256,72.1 255.9,72.2     255.6,72.6 255.5,72.7 255.5,72.8 255.5,72.8 255.5,73 255.6,73.1 255.6,73.2  "></polygon>
+  <path class="st0" d="M240.9,48.5c0-0.1,0.1-0.2,0.2-0.2c0.1,0,0.2,0.1,0.2,0.2c0,0.1-0.1,0.2-0.2,0.2     C240.9,48.7,240.9,48.6,240.9,48.5"></path>
+  <path class="st0" d="M241.2,48.9c0-0.1,0.1-0.2,0.2-0.2c0.1,0,0.2,0.1,0.2,0.2c0,0.1-0.1,0.2-0.2,0.2     C241.2,49,241.2,48.9,241.2,48.9"></path>
+  <path class="st0" d="M241.2,48.3c0-0.1,0.1-0.2,0.2-0.2c0.1,0,0.2,0.1,0.2,0.2c0,0.1-0.1,0.2-0.2,0.2     C241.3,48.5,241.2,48.4,241.2,48.3"></path>
+  <path class="st0" d="M240.8,48.1c0-0.1,0.1-0.2,0.2-0.2c0.1,0,0.2,0.1,0.2,0.2c0,0.1-0.1,0.2-0.2,0.2     C240.9,48.2,240.8,48.2,240.8,48.1"></path>
+  <path class="st0" d="M240.4,48.4c0-0.1,0.1-0.2,0.2-0.2c0.1,0,0.2,0.1,0.2,0.2c0,0.1-0.1,0.2-0.2,0.2     C240.5,48.6,240.4,48.5,240.4,48.4"></path>
+  <path class="st0" d="M240.6,48.9c0-0.1,0.1-0.2,0.2-0.2c0.1,0,0.2,0.1,0.2,0.2c0,0.1-0.1,0.2-0.2,0.2C240.7,49,240.6,49,240.6,48.9     "></path>
+  <path class="st0" d="M244.4,50.1L244.4,50.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l0,0l0,0l0,0l0.1-0.1l0.1-0.1l0-0.1l0-0.2l0-0.2     v-0.2v-0.2l0-0.2l0-0.1l0-0.1l-0.1-0.1l-0.1-0.2l0-0.1l0-0.1l0-0.2l0-0.2l0-0.1l0-0.1l-0.1-0.1l-0.1-0.2l-0.1-0.2l-0.1-0.1l-0.1,0     l-0.1,0l-0.1,0l0,0l0,0l0-0.1l0-0.1l0-0.1l0-0.1l0-0.1l0-0.1v-0.1l0,0h-0.1l-0.1,0l-0.1,0l-0.1,0l-0.1,0.1l-0.1,0l-0.1,0l0,0l0-0.1     l0-0.1l-0.1-0.2l-0.1-0.1l-0.1-0.1l-0.2-0.1l-0.2,0l-0.2,0l-0.2,0l-0.1,0h-0.1l-0.2,0l-0.2,0l-0.1,0l-0.1,0h-0.2l-0.1,0l-0.1,0     l-0.1,0l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0l-0.1,0l-0.1,0l-0.1,0l-0.1,0l-0.1-0.1l-0.1,0l-0.1,0l0,0l0,0.1v0.1l0,0.1     l0,0.1l0,0.1l0,0.1l0,0.1l0,0l0,0l0,0l-0.1,0l-0.1,0l-0.1,0l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l0,0.1l-0.1,0.2l0,0.1     l0,0.2l-0.1,0.2l0,0.2l-0.1,0.2l0,0.2l0,0.1l0,0.1l0,0.1l0,0.2l0,0.2l0,0.1l0,0.2l0.1,0.1l0.1,0.1l0,0l0,0l0,0l-0.1,0.1l-0.1,0.1     l0,0.1l-0.1,0.1l-0.1,0.1l0,0.1l0,0.1l0.1,0l0.1,0l0.1,0l0.1,0l0.1,0l0.1,0l0,0l0,0l0,0l0,0l0,0.1l0,0.1l0.1,0.1l0.1,0.1l0.1,0.1     l0.1,0.1l0.1,0.1L239,51l0.1,0.1l0.1,0.1l0.2,0.2l0.2,0.2l0.2,0.1l0.2,0.1l0.1,0l0.1,0l0.1,0l0.1,0l0.1-0.1l0-0.1l0,0l0,0l0,0     l0,0.1l0,0.1l0,0.1l0.1,0.1l0.1,0.1l0.1,0.1l0,0l0,0l0.1-0.1l0.1-0.1l0.1-0.1l0-0.1l0-0.1l0-0.1l0,0l0.1,0l0.1,0l0.1,0l0.1,0l0.2,0     l0.2,0l0.2-0.1l0.3-0.1l0.2-0.1l0.2-0.2l0.3-0.2l0.2-0.2l0.1-0.2l0.1-0.1l0.1-0.1l0-0.1l0,0h0l0.1,0l0.1,0l0.1,0l0.1,0l0.1,0l0.1,0     l0-0.1L244.4,50.1L244.4,50.1z M238.2,49.4l-0.2,0l-0.1-0.1l-0.1-0.1l0-0.1l0-0.2l0-0.2l0-0.2l0-0.2l0.1-0.3l0.1-0.4l0.1-0.5     l0.2-0.4l0.2-0.2l0.2-0.1l0.2,0l0.2,0l0.2,0.1l0.1,0.1l0.1,0.2l0.1,0.2l0.1,0.2l0.2,0.3l0.2,0.3l0.1,0.2l0,0.1l0,0.1l0,0.1l0,0     l-0.1,0l0,0l-0.1,0l-0.1-0.1l-0.1,0l-0.1-0.1l-0.1-0.1l-0.1,0l0,0l0,0l0,0l0.1,0.1l0.1,0.1l0.1,0.1l0.1,0.1l0.1,0.1l0.1,0.1     l0.1,0.1v0.1l-0.1,0l-0.1,0.1l-0.1,0.1l-0.2,0.1l-0.3,0.1l-0.3,0.1l-0.2,0.1l-0.3,0.1l-0.3,0.1L238.2,49.4z M240.9,50.5l0,0.3     l0,0.2l0,0.1l0,0.1l0,0.1l-0.1,0.1l-0.1,0.1l-0.2,0.1l-0.1,0l-0.1,0l-0.1,0l-0.1,0l-0.1-0.1l-0.1-0.1l-0.2-0.2l-0.3-0.2l-0.3-0.2     l-0.3-0.3l-0.2-0.2l-0.1-0.2l0-0.1v-0.1l0-0.1l0-0.1l0.1-0.1l0.1-0.1l0.2-0.1l0.1-0.1l0.2,0l0.2-0.1l0.2,0l0.2-0.1l0.2-0.1l0.2-0.1     l0.2-0.1l0.1,0l0.1,0l0.1,0l0,0.1l0,0l0,0.1l0,0.1l0,0l0,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l0,0.1l0,0l0,0l0,0     l0.1-0.1l0.1-0.1l0.2-0.2l0.2-0.2l0.1-0.1l0.1,0l0,0l0,0.1l0,0.1l0,0.1l0,0.2l0,0.2l0,0.3L240.9,50.5z M241,46.9l0,0.1l0,0.1l0,0.1     l0,0.2l0,0.2l0,0.1l-0.1,0l0,0l0,0l0-0.1l0-0.1l0-0.1l-0.1-0.1l-0.1-0.1l-0.2-0.2l-0.1-0.2l-0.1-0.2l-0.1-0.1l-0.1-0.1l-0.1-0.1     l0-0.1l0-0.1l0-0.1v-0.2l0-0.1l0-0.1l0.1-0.1l0.1-0.1l0.2-0.1l0.2-0.1l0.2,0l0.3,0l0.4,0l0.5,0l0.3,0l0.2,0l0.2,0l0.1,0.1l0.1,0.1     l0.1,0.1l0.1,0.1l0,0.2v0.3l-0.1,0.2l-0.1,0.2l-0.1,0.2l-0.1,0.2l-0.2,0.2l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1     l-0.1,0.1l-0.1,0l-0.1,0l0,0l0,0l0-0.3v-0.3l0-0.2l0-0.1l0-0.1L241,46.9L241,46.9L241,46.9z M243.6,50.3l0,0.2l-0.1,0.2l-0.1,0.1     l-0.2,0.2L243,51l-0.2,0.1l-0.3,0.2l-0.3,0.2l-0.2,0.1l-0.2,0l-0.2,0l-0.2-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l0-0.1l0-0.1l0-0.1l0-0.2     l0-0.2l0-0.2l0-0.2l0-0.2l0-0.2v-0.2l0-0.1l0.1,0h0.1l0,0l0,0.1l0,0.1l0,0.1l0.1,0.1l0.1,0.2l0.1,0.2l0.1,0.1l0,0l0,0l0,0l0,0l0,0     v0l0,0l0-0.1l0-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l0-0.1l0-0.1l0.1-0.1l0.1,0h0.1l0.1,0l0.1,0.1L242,49     l0.2,0.1l0.2,0.1l0.2,0.1l0.2,0.1l0.2,0.1l0.2,0.1l0.1,0.1l0.1,0.1l0,0.2L243.6,50.3z M244,49.5l-0.1,0.1l-0.1,0l-0.2,0l-0.2,0     l-0.3-0.1l-0.3-0.2l-0.2-0.1l-0.2-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1,0l0,0l0,0v0l0,0l0.1,0l0.2,0l0.1-0.1     l0.1,0l0.1,0l0.1,0l0.1,0l0,0l0,0l0,0l-0.1,0l-0.1,0l-0.1,0l-0.2,0l-0.1,0.1l-0.1,0l-0.1,0.1h-0.1l0,0l0-0.2l0-0.1l0-0.1l0.1-0.1     l0.1-0.1l0.1-0.1l0.1-0.2l0.1-0.2l0.1-0.2l0.2-0.2l0.2-0.1l0.2-0.1l0.1,0l0.1,0l0.1,0l0.1,0l0.1,0.1l0.1,0.2l0.1,0.2l0.1,0.2     l0.1,0.2l0.1,0.2l0,0.2l0.1,0.2l0.1,0.2l0.1,0.2l0,0.1l0,0.2l0,0.2l0,0.2l0,0.2l-0.1,0.1L244,49.5L244,49.5z"></path>
+  <polygon class="st0" points="242.8,46.4 242.7,46.3 242.8,46.2 242.8,46.1 242.8,46 242.9,45.9 243.1,45.8 243.2,45.7 243.3,45.7     243.3,45.7 243.3,45.8 243.3,45.9 243.2,46 243.2,46.1 243.2,46.1 243.1,46.2 243.1,46.3 243,46.3 242.9,46.4 242.8,46.4  "></polygon>
+  <polygon class="st4" points="242.8,46.4 242.7,46.3 242.8,46.2 242.8,46.1 242.8,46 242.9,45.9 243.1,45.8 243.2,45.7 243.3,45.7     243.3,45.7 243.3,45.8 243.3,45.9 243.2,46 243.2,46.1 243.2,46.1 243.1,46.2 243.1,46.3 243,46.3 242.9,46.4 242.8,46.4  "></polygon>
+  <polygon class="st0" points="243.6,49.8 243.7,50 243.7,50.1 243.8,50.1 243.8,50.2 244,50.2 244.1,50.2 244.2,50.2 244.3,50.2     244.3,50.1 244.3,50.1 244.2,50 244.2,49.9 244.1,49.8 244.1,49.7 244,49.7 244,49.7 243.9,49.7 243.9,49.7 243.8,49.7 243.8,49.7     243.7,49.8  "></polygon>
+  <polygon class="st4" points="243.6,49.8 243.7,50 243.7,50.1 243.8,50.1 243.8,50.2 244,50.2 244.1,50.2 244.2,50.2 244.3,50.2     244.3,50.1 244.3,50.1 244.2,50 244.2,49.9 244.1,49.8 244.1,49.7 244,49.7 244,49.7 243.9,49.7 243.9,49.7 243.8,49.7 243.8,49.7     243.7,49.8  "></polygon>
+  <polygon class="st0" points="240.9,51.3 240.8,51.4 240.8,51.4 240.8,51.5 240.7,51.6 240.8,51.7 240.9,51.9 240.9,51.9 240.9,52     241,52.1 241,52 241.1,52 241.1,51.9 241.2,51.8 241.2,51.7 241.2,51.6 241.1,51.5 241.1,51.5 241,51.4 241,51.3 240.9,51.3   "></polygon>
+  <polygon class="st4" points="240.9,51.3 240.8,51.4 240.8,51.4 240.8,51.5 240.7,51.6 240.8,51.7 240.9,51.9 240.9,51.9 240.9,52     241,52.1 241,52 241.1,52 241.1,51.9 241.2,51.8 241.2,51.7 241.2,51.6 241.1,51.5 241.1,51.5 241,51.4 241,51.3 240.9,51.3   "></polygon>
+  <polygon class="st0" points="237.7,50 237.8,50 238,50 238.1,50 238.2,49.9 238.2,49.8 238.2,49.7 238.2,49.6 238.2,49.5     238.2,49.5 238.1,49.5 238,49.4 238,49.5 237.9,49.6 237.8,49.7 237.8,49.8 237.7,49.9 237.7,49.9  "></polygon>
+  <polygon class="st4" points="237.7,50 237.8,50 238,50 238.1,50 238.2,49.9 238.2,49.8 238.2,49.7 238.2,49.6 238.2,49.5     238.2,49.5 238.1,49.5 238,49.4 238,49.5 237.9,49.6 237.8,49.7 237.8,49.8 237.7,49.9 237.7,49.9  "></polygon>
+  <polygon class="st0" points="239.5,46.1 239.5,46 239.5,45.8 239.4,45.7 239.3,45.7 239.1,45.6 239,45.6 238.9,45.6 238.9,45.5     238.8,45.5 238.8,45.5 238.8,45.6 238.8,45.6 238.8,45.7 238.8,45.8 238.9,45.9 238.9,45.9 238.9,46 239,46 239.1,46.1 239.2,46.1     239.2,46.1 239.3,46.1 239.4,46.2 239.4,46.2 239.5,46.2  "></polygon>
+  <polygon class="st4" points="239.5,46.1 239.5,46 239.5,45.8 239.4,45.7 239.3,45.7 239.1,45.6 239,45.6 238.9,45.6 238.9,45.5     238.8,45.5 238.8,45.5 238.8,45.6 238.8,45.6 238.8,45.7 238.8,45.8 238.9,45.9 238.9,45.9 238.9,46 239,46 239.1,46.1 239.2,46.1     239.2,46.1 239.3,46.1 239.4,46.2 239.4,46.2 239.5,46.2  "></polygon>
+  <polygon class="st0" points="238.6,46.6 238.6,46.8 238.6,47.1 238.5,47.5 238.5,47.7 238.4,48 238.3,48.2 238.1,48.4 238.1,48.5     238.1,48.6 238.2,48.6 238.3,48.5 238.4,48.3 238.5,48.1 238.6,47.9 238.6,47.6 238.7,47.4 238.7,47.2 238.8,47 238.8,46.8     238.8,46.7 238.7,46.6 238.7,46.5 238.6,46.5 238.6,46.5  "></polygon>
+  <polygon class="st0" points="242.1,45.7 241.9,45.8 241.6,45.8 241.2,45.8 241,45.8 240.7,45.8 240.5,45.8 240.2,45.7 240.1,45.7     240.1,45.7 240.1,45.8 240.2,45.8 240.4,45.9 240.6,46 240.8,46 241.1,46 241.4,46 241.6,46 241.7,46 241.9,45.9 242.1,45.9     242.2,45.8 242.2,45.8 242.2,45.7 242.2,45.7   "></polygon>
+  <polygon class="st0" points="243.8,48.9 243.7,48.7 243.6,48.4 243.5,48.1 243.4,47.8 243.4,47.5 243.4,47.3 243.4,47.1     243.4,46.9 243.4,46.9 243.3,46.9 243.3,47 243.2,47.2 243.2,47.4 243.2,47.7 243.3,48 243.3,48.2 243.4,48.4 243.4,48.6     243.5,48.8 243.6,48.9 243.7,49 243.7,49 243.8,49 243.8,49   "></polygon>
+  <polygon class="st0" points="241.6,51.3 241.8,51.2 242,51 242.3,50.7 242.5,50.6 242.8,50.4 243,50.3 243.2,50.3 243.3,50.2     243.3,50.2 243.3,50.1 243.2,50.1 243,50.2 242.8,50.3 242.5,50.4 242.3,50.5 242.1,50.7 241.9,50.8 241.8,50.9 241.7,51     241.6,51.2 241.5,51.2 241.5,51.3 241.5,51.3 241.6,51.4  "></polygon>
+  <polygon class="st0" points="238.6,49.9 238.8,50.1 239,50.2 239.3,50.5 239.5,50.7 239.7,50.9 239.8,51.1 239.9,51.3 240,51.4     240.1,51.4 240.1,51.4 240.1,51.2 240,51.1 239.9,50.9 239.7,50.7 239.6,50.5 239.4,50.3 239.2,50.2 239.1,50 238.9,49.9     238.8,49.9 238.7,49.8 238.6,49.8 238.6,49.9 238.6,49.9  "></polygon>
+  <path class="st0" d="M242.3,65.6l-0.1,0l-0.1,0l-0.1,0l-0.1,0l-0.1,0l-0.1,0.1l-0.1,0.1l-0.1,0l-0.1,0l-0.2,0l-0.1,0l-0.2,0h-0.1     l-0.1,0l-0.1,0l-0.2-0.1l-0.1-0.1l-0.1,0l-0.1,0l-0.1,0l-0.1,0l-0.1,0h-0.1l-0.1,0l0,0l0,0l-0.1,0.1l0,0.1l0,0.1v0.2v0.2l0,0.1v0.2     l0,0.2l0,0.2l-0.1,0.2l0,0.1l0,0.2l0,0.2l0,0.2l0,0.1l0.1,0.1l0.1,0.1l0.1,0.1l0.1,0l0.2,0l0.1,0l0.2-0.1l0.1,0l0.1,0l0.1,0l0.2,0     h0.2l0.2,0l0.2,0l0.2,0l0.2,0l0.1,0l0.2,0l0.2,0l0.2,0l0.2,0l0.2,0l0.1-0.1l0.1-0.1l0.1-0.1l0-0.1l0-0.1l0-0.1l0-0.2l-0.1-0.2     l-0.1-0.2l0-0.1l0-0.2l0-0.2l0-0.2l0-0.2l0-0.2v-0.1l0-0.1l0-0.1l-0.1-0.1L242.3,65.6L242.3,65.6z M240.4,67l0,0.1l0,0.1l-0.1,0.1     l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0l-0.1,0h-0.1l-0.1,0l0,0l0,0l0,0l0.1-0.1l0.1-0.1l0.1,0l0.1-0.1l0.1-0.1l0.1-0.1l0-0.1     l0-0.1l0-0.1l0-0.1v-0.1l0-0.1l0-0.1l0-0.1l0-0.1l-0.1-0.1l-0.1-0.1l-0.1,0l-0.1,0l0,0l0,0l0,0l0,0l0,0.1l0,0.1l0,0.1l0,0.1l0,0     l0,0l0,0l0,0l-0.1,0l-0.1,0l-0.1,0l0-0.1l0-0.1l0-0.1v-0.1v-0.1l0-0.1l0-0.1l0-0.1l0-0.1l0.1-0.1l0.1,0l0.1,0l0.1,0l0.1,0l0.1,0     l0.1,0.1l0.1,0.1l0,0.1l0,0.1l0,0.1l0,0.1L240.4,67z M242.3,66.6L242.3,66.6l0,0.2l0,0.1l0,0.1l-0.1,0l-0.1,0l-0.1,0l0,0l0,0l0,0     l0,0l0-0.1l0-0.1l0-0.1l0-0.1l0,0l0,0l0,0l0,0l-0.1,0l-0.1,0l-0.1,0.1l-0.1,0.1l0,0.1l0,0.1l0,0.1l0,0.1v0.1l0,0.1l0,0.1l0,0.1     l0,0.1l0.1,0.1l0.1,0.1l0.1,0.1l0.1,0l0.1,0.1l0.1,0.1l0,0l0,0l0,0l-0.1,0h-0.1l-0.1,0l-0.1,0l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1     l-0.1-0.1l0-0.1l0-0.1l0-0.1l0-0.1l0-0.1l0-0.1l0-0.1l0.1-0.1l0.1-0.1l0.1,0l0.1,0l0.1,0l0.1,0l0.1,0l0.1,0.1l0,0.1l0,0.1l0,0.1     L242.3,66.6L242.3,66.6z"></path>
+  <path class="st0" d="M250,58.4l-0.1,0.1l-0.3,0.1l-0.3,0.1l-0.2,0.1l-0.3,0.1l-0.2,0h-0.4l-0.3,0l-0.3-0.1l-0.3-0.1l-0.2-0.1     l-0.1,0l-0.2,0h-0.2l-0.1,0l0-0.1l0.1,0l0.5-0.4l0.3-0.3l0.4-0.4l0.3-0.4l0.2-0.3l0.2-0.4l0.2-0.4l0.2-0.4l0.1-0.4l0.1-0.3l0-0.3     v-0.2l0-0.1l-0.1,0l-0.1,0l-0.1,0l-0.2,0.3l-0.2,0.3l-0.3,0.4l-0.3,0.3l-0.3,0.3l-0.3,0.3l-0.3,0.3l-0.3,0.3l-0.4,0.2l-0.4,0.2     l-0.4,0.2l-0.4,0.2l-0.4,0.1l-0.3,0.1l-0.1,0.1l-0.1,0l-0.1-0.1l-0.1-0.1l-0.2,0l-0.1,0l-0.1,0l-0.2-0.2l-0.3-0.3l-0.2-0.2     l-0.2-0.2l-0.2-0.1l-0.2-0.1l-0.1,0l-0.2,0l-0.2,0l-0.1,0l-0.1,0h-0.1l-0.1,0l-0.1,0l-0.2,0l-0.2,0l-0.2,0l-0.3,0h-0.2l-0.2,0     l-0.3,0.1l-0.2,0.1l-0.2,0.2l-0.2,0.2l-0.2,0.2l-0.1,0.2l-0.1,0.1l-0.2,0.1l-0.2,0l-0.1,0l-0.1,0l-0.3-0.1l-0.4-0.2l-0.4-0.1     l-0.3-0.2l-0.4-0.3l-0.3-0.2l-0.3-0.2l-0.3-0.2l-0.2-0.2l-0.3-0.3l-0.3-0.3l-0.2-0.3l-0.2-0.3l-0.1-0.2l-0.1-0.2l0-0.1l-0.1-0.1     l-0.1,0h-0.1l-0.1,0.1l-0.1,0.2l0,0.2l0,0.3l0.1,0.3l0.1,0.4l0.2,0.4l0.2,0.4l0.2,0.4l0.2,0.4l0.3,0.4l0.3,0.3l0.3,0.3l0.2,0.2     l0.2,0.2l0.1,0.1l0,0l-0.1,0.1h-0.1H235l-0.3,0.1l-0.3,0.1l-0.3,0.1l-0.3,0.1l-0.3,0l-0.2,0l-0.2,0l-0.2,0l-0.3-0.1l-0.2-0.1     l-0.2-0.1l-0.1-0.1l0,0h0l0,0.1l0,0.2l0.1,0.2l0.1,0.2l0.2,0.2l0.3,0.2l0.3,0.1l0.2,0l0.3,0l0.3,0l0.2,0l0.1,0l0,0.1l-0.1,0.1     l-0.2,0.1l-0.2,0h-0.2l-0.2,0l-0.2,0h-0.1l0.2,0.2l0.2,0.2l0.2,0.2l0.2,0.1l0.1,0h0.1l0.1-0.1l0.2-0.2l0.2-0.2l0.1-0.1l0-0.1v-0.1     l0.1,0v0.1l-0.1,0.1l-0.1,0.2l-0.1,0.2l-0.1,0.1L234,61l0,0l0,0.1l0.2,0.2l0.1,0.1l0.1,0l0.1-0.1l0.2-0.2l0.2-0.2l0.1-0.1l0.1,0     l0.1,0l0,0.1l0,0.1l-0.1,0.1l-0.2,0.2l-0.2,0.2l-0.1,0.1l0,0l0,0.1l0.3,0.2L235,62l0.1,0.1l0.1-0.1l0.2-0.2l0.2-0.2l0.1-0.2     l0.2-0.2l0.1-0.1l0.2,0l0.2,0l0.1,0.1l0,0.1v0.2l-0.1,0.2l-0.1,0.4l0,0.3l0,0.4l0,0.3l0,0.2l0.1,0.2l0.1,0.3l0.2,0.3l0.2,0.3     l0.2,0.4l0.2,0.3l0.2,0.4l0.2,0.4l0.2,0.3l0.2,0.4l0.1,0.3l0.2,0.4l0.1,0.4l0,0.3v0.2l0,0.2l0,0.2l0,0.2l0.1,0.3l0.2,0.2l0.3,0.2     l0.3,0l0.3,0l0.3,0l0.3,0l0.2-0.1l0.2,0h0.2l0.2,0l0.3,0.1l0.3,0l0.3,0l0.4,0l0.2,0l0.2-0.2l0.2-0.3l0.1-0.3l0.1-0.2l0-0.2l0-0.3     v-0.3l0-0.2l0-0.2v-0.2l0-0.2l0-0.2l0.1-0.2l0.1-0.3l0.1-0.2L244,66l0.3-0.3l0.3-0.3l0.2-0.3l0.2-0.4l0.2-0.4l0.2-0.4l0.1-0.4     l0-0.3v-0.4l0-0.3l0-0.3l0-0.3l0-0.2l0-0.1l0.1-0.1l0.1-0.1l0.2,0l0.2,0l0.2,0.1l0.2,0.2l0.2,0.2l0.1,0.1l0.1,0.1l0.1,0l0.2,0     l0.1-0.1l0.2-0.2l0.2-0.2l0.1-0.1l-0.2-0.1l-0.2-0.2l-0.2-0.1l-0.1-0.1l-0.1,0l0-0.1h0.4l0.1,0l0.2,0.2l0.2,0.2l0.1,0.1l0.1,0     l0.1,0l0.5-0.3l0-0.1l0,0l-0.2-0.2l-0.2-0.1l-0.1-0.1l-0.1-0.1l0-0.1l0-0.1h0.1l0.1,0l0.4,0.2l0.2,0.1l0.2,0l0.1,0l0.1,0l0.2-0.2     l0.2-0.3l0.1-0.2l0-0.1l-0.1,0h-0.2H249l-0.2,0l-0.1,0l0-0.1l0.1-0.1l0.2,0l0.2,0l0.2,0l0.2-0.2l0.2-0.2l0.1-0.2l0.1-0.2l0.1-0.2     L250,58.4L250,58.4z M238.9,57.9L238.9,57.9L238.9,57.9l0.1,0.1l0.1,0l0.1,0l0.1,0l0.1-0.1l0.2-0.1l0.1-0.1l0.1-0.1l0.1-0.1     l0.1-0.1l0,0l0,0l0,0v0.1l0,0.1l-0.1,0.1l0,0.1l-0.1,0.1l-0.1,0.1l0,0.1l0,0.1l0,0v0.1l0,0.1l0,0.1l0.1,0l0.1,0l0.1-0.1l0.1-0.2     l0.1-0.2l0.1-0.2l0.1-0.1l0-0.1l0-0.1l0,0l0-0.1l0,0l0.1,0l0,0l0,0.1l0,0.1l0,0.1l0,0.1l0,0.1l0,0.1l0,0.1l0,0.1l0,0.1l0,0.1l0.1,0     l0.1,0l0.2,0l0.1,0l0.1,0l0.1,0l0.1,0l0.1,0l0,0V58l0-0.1l0-0.1l0-0.1l0-0.1l0-0.1v-0.1l0-0.1l0-0.1l0-0.1l0-0.1l0,0l0,0l0,0l0,0.1     l0,0.1l0,0.1l0,0.1l0,0.1l0,0.1l0,0.1l0,0.1l0,0.1l0.1,0.1l0.1,0l0.1,0l0.1,0l0.1,0l0.1,0l0,0l0,0l0-0.1l0-0.1l0-0.1l0-0.1l0-0.1     l0-0.1v-0.1l0-0.1l0-0.1l0,0l0,0l0,0l0,0.1l0,0.1l0,0.1l0,0.1l0,0.1l0,0.1l0,0.1l0,0l0,0l0.1,0l0.1,0l0.1-0.1l0.1-0.1l0.1-0.1     l0-0.1l0-0.1l0-0.1l0,0l0,0l0,0l0,0.1l0,0.1l0,0.1l0,0.1l0,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0l-0.1,0l-0.1,0l-0.1,0l0,0l0,0     l0,0h0l0,0l0,0.1l0,0.1l-0.1,0l-0.1,0l-0.1,0h-0.1l-0.1,0l0,0l0,0l0,0l-0.1,0.1l-0.1,0l-0.1,0l-0.1,0l-0.1,0l-0.1,0l-0.1,0l-0.1,0     l-0.1,0l-0.1-0.1l0,0l0,0l0,0h0l0,0l0,0l0,0l0,0l-0.1,0l-0.1,0l-0.1,0l-0.1,0l-0.1-0.1l-0.1-0.1l0-0.1l0-0.1l0,0l0,0h0l0,0l0,0.1     l-0.1,0l-0.1,0l-0.1,0l-0.1,0l-0.1-0.1l-0.1,0l-0.1-0.1l0-0.1L238.9,57.9L238.9,57.9z M238.2,60.4L238.2,60.4l0-0.1l0-0.1l0-0.1     l0-0.1l0-0.1v-0.1v-0.2l0-0.1l0-0.1l0-0.1V59l0-0.2l0-0.2l0.1-0.2l0,0l0,0l0,0l0,0.1v0.1v0.1l0,0.1l0,0.1l0.1,0.1l0,0.2l0,0.1     l0,0.1l0,0l0.1,0l0.1,0l0.1-0.1l0.1-0.1l0.1-0.2l0.1-0.2l0,0l0,0l0,0.1v0.1l0,0.1l0,0.3l0,0.3l0,0.3l0,0.3l0,0.1l0,0l0,0l0,0     l0.1-0.1l0.1-0.1l0.1-0.2l0.1-0.2l0.1-0.2l0.1-0.2l0-0.2l0-0.1l0-0.1l0,0l0,0l0,0.1l0,0.1l0.1,0.2l0.1,0.2l0.1,0.2l0.1,0.2l0,0.1     l0,0.3v0.3v0.2l0,0l0,0l0.1-0.1l0.1-0.1l0.1-0.1l0.1-0.2l0.1-0.2l0.1-0.2l0-0.2l0-0.2v-0.2l0-0.1l0-0.1l0,0l0-0.1l0,0l0.1,0     l0.1,0.1l0.1,0.1l0,0.2l0,0.2l0,0.2v0.4l0,0.2l0.1,0.1l0.1,0.1l0.1,0.1l0.2,0.1l0.1,0.1l0,0l0.1,0l0,0v-0.1l0-0.1l0-0.1l-0.1-0.1     l-0.1-0.2l-0.1-0.2l0-0.2v-0.3l0-0.2l0-0.1l0-0.1l0-0.1l0.1,0l0,0.1l0,0.1l0,0.1l0,0.2l0,0.1l0.1,0.1l0.1,0.1l0.1,0.1l0.1,0.1     l0.1,0.1l0.1,0.1l0.1,0.1l0.1,0.1l0,0l0-0.1l0-0.1l0-0.2l0-0.2l0-0.1l0-0.1l0-0.2l-0.1-0.2l-0.1-0.3l-0.1-0.2l0-0.1l0.1,0l0.1,0     l0,0l0.1,0.1l0.1,0.1l0.1,0.1l0.2,0.2l0.2,0.2l0.3,0.2l0.2,0.2l0.1,0.1l0,0l0-0.1l0-0.1l0-0.1l0-0.1l0-0.1l-0.1-0.2l-0.1-0.2l0-0.2     l0-0.2l0-0.2l0-0.1l0,0l0,0l0,0.1l0.1,0.1l0.1,0.1l0.1,0.2l0.1,0.2l0.1,0.2l0.1,0.2l0,0.2l0,0.2l0,0.2l-0.1,0.1l-0.1,0.2L244,61     l0,0l0,0l0-0.1l0-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.2-0.1l-0.2-0.2l0,0l0,0v0.1l0,0.1l0,0.2l0,0.2l0,0.2l-0.1,0.2l-0.1,0.1l0,0     l0-0.1l0-0.1l0-0.1l-0.1-0.1l-0.1-0.2l-0.2-0.2l-0.1-0.1l-0.1,0v0l0,0.1l0,0.1l0,0.1l0,0.1V61l0,0.1l0,0.1l0,0.1l0,0.1l-0.1,0l0,0     l-0.1,0l-0.1-0.1l-0.1-0.1l-0.2-0.1l-0.2-0.1l-0.1-0.1l-0.1-0.2l-0.1-0.1l-0.1,0l0,0l0,0.1l0,0.1l-0.1,0.1l-0.2,0.2l-0.1,0.2     l-0.1,0.1l-0.2,0.1l-0.1,0.1l-0.1,0v-0.1l0-0.1l0-0.1l0-0.1l0-0.1l0-0.2l0-0.1l0-0.1l0-0.2l0-0.2l0-0.2l0-0.1l0,0l0,0l0,0.1l0,0.1     l0,0.2l-0.1,0.2l-0.2,0.2l-0.2,0.2l-0.3,0.2l-0.2,0.1l-0.1,0l0,0l0-0.1l0-0.1l0.1-0.1l0-0.1l0-0.1l0-0.1v-0.1v-0.2l0-0.1l0-0.2     v-0.2h0l0,0l-0.1,0.1l-0.1,0.1l-0.2,0.2l-0.2,0.1l-0.2,0.2l-0.1,0.1L238.2,60.4L238.2,60.4z M236.5,58.7l-0.3-0.1l-0.3-0.2     l-0.3-0.2l-0.3-0.2l-0.3-0.2l-0.3-0.2l-0.2-0.3l-0.2-0.2l-0.2-0.3l-0.2-0.2l-0.2-0.3l-0.2-0.3l-0.2-0.4l-0.1-0.4l-0.1-0.4v-0.2     l0-0.1h0.1l0,0l0,0.1l0.1,0.1l0.1,0.1l0.1,0.1l0.1,0.1l0.1,0.1l0.1,0.1l0.1,0.1l0.1,0.2l0.2,0.2l0.2,0.2l0.2,0.2l0.2,0.2l0.2,0.2     l0.2,0.2l0.3,0.2l0.3,0.2l0.3,0.2l0.3,0.1l0.3,0.1l0.3,0.1l0.2,0l0.1,0l0.1,0l0,0.1l0,0.1l-0.1,0.1l-0.1,0.2l-0.1,0.1l-0.1,0.1     l-0.1,0.2l-0.1,0.2H237l-0.2-0.1L236.5,58.7z M238.7,63.2l-0.2,0l-0.1,0l-0.1,0l-0.2,0l-0.1,0l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1     l0-0.1l-0.1-0.1l0-0.1l0-0.1l0-0.1l0-0.1h0.1l0.1,0l0.1,0l0.1,0l0.1,0l0.1,0l0.1,0l0,0l0,0l0,0.1l0,0.1l0,0.1l0,0.1l0,0.1l0.1,0.1     l0.1,0.1l0.1,0.1l0.1,0l0.1,0l0.1,0l0.1,0l0.1-0.1l0.1-0.1l0-0.1l0-0.1l0-0.1l0-0.1l0-0.1l0,0l0.1,0l0.1,0l0,0l0,0.1v0l0,0.1l0,0.1     l0,0.1l0,0.1l0,0l0,0.1l0,0.1l0,0.1l0,0l-0.1,0l-0.1,0l-0.1,0l-0.1,0L238.7,63.2z M244.4,62.1l0,0.1l0,0.1l0,0.1l-0.1,0.1l0,0.1     l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0l-0.2,0l-0.1,0l-0.1,0l-0.2,0l-0.1,0l-0.1,0l-0.1,0l-0.1,0l-0.1,0l0,0l0-0.1l0-0.1     l0.1,0l0,0l0.1-0.1l0.1,0l0-0.1l0-0.1l0,0l0.1,0l0,0h0.1l0,0v0l0,0l0,0.1l0,0.1l0.1,0.1l0.1,0l0.1,0l0.1,0l0.1,0l0.1-0.1l0.1-0.1     l0.1-0.1l0-0.1l0-0.1l0-0.1l0-0.1l0-0.1l0,0l0,0l0.1,0l0.1,0l0.1,0l0.1,0l0.1,0L244.4,62.1L244.4,62.1L244.4,62.1z M245.3,60.4     l0,0.2l-0.1,0.2l-0.1,0.2l-0.1,0.2l-0.1,0.1l-0.2,0.2l-0.2,0.1l-0.2,0.1l-0.2,0.1l-0.2,0.1l-0.2,0.1l-0.3,0.1l-0.3,0.1l-0.2,0.1     l-0.2,0.1l-0.1,0.2l-0.1,0.2l-0.1,0.2l-0.1,0.2l0,0.3l0,0.2l0,0.2l0.1,0.3l0.1,0.2l0.1,0.3l0.1,0.3l0.1,0.3l0.1,0.2l0,0.2l0,0.2     l0,0.2l0,0.2l0,0.2l0,0.2l0.1,0.2l0.1,0.2l0.1,0.2l0,0.2v0.1l0,0.3l-0.1,0.2l-0.1,0.2l-0.2,0.1l-0.2,0.1h-0.3l-0.3-0.1l-0.3-0.1     l-0.3-0.1l-0.2,0l-0.2,0l-0.2,0l-0.1,0l-0.2,0.1l-0.2,0l-0.3,0.1l-0.2,0h-0.2l-0.2,0l-0.2-0.1l-0.2-0.1l-0.1-0.2l-0.1-0.2l0-0.2     l0-0.2l0-0.2l0-0.2l0-0.2l0.1-0.3l0-0.2l0-0.3l0-0.2v-0.2l0-0.2l0-0.1l0.1-0.1l0.1-0.2l0.1-0.2l0.1-0.3l0.1-0.3l0.1-0.4l0-0.4v-0.4     l-0.1-0.3l-0.1-0.3l-0.1-0.3l-0.1-0.2l-0.2-0.1l-0.1-0.1l-0.2-0.1l-0.3-0.1l-0.3,0l-0.3,0l-0.3,0l-0.3-0.1l-0.2-0.1l-0.2-0.2     l-0.1-0.2l-0.1-0.3l-0.1-0.3v-0.3l0-0.2l0-0.2l0.1-0.3l0.1-0.3l0.2-0.3l0,0l0,0.1l0,0.1l0,0.1l0,0.1l0,0.1l0,0.2l-0.1,0.2l0,0.3     l0,0.2v0.3l0,0.2l0.1,0.2l0.1,0.2l0.2,0.1l0.3,0.1l0.3,0.1l0.3,0l0.3,0l0.2,0l0.2,0l0.3,0.1l0.2,0.1l0.2,0.1l0.3,0.1l0.2,0l0.2,0     l0.3-0.1l0.2,0l0.3,0l0.3,0l0.3,0l0.2,0l0.2,0l0.3,0l0.2,0l0.2-0.1L243,62l0.2-0.1l0.2-0.1l0.3-0.1l0.3-0.1l0.3-0.1l0.3-0.1     l0.2-0.2l0.1-0.2l0.2-0.3l0.1-0.3l0-0.2v-0.3l0-0.2l0-0.2l0-0.1l0,0l0,0.1l0,0.1l0,0.1l0,0.1l0,0.2l0,0.2V60.4z M246.3,58.4     l-0.4,0.2l-0.3,0.2l-0.3,0.1L245,59l-0.1,0l0-0.1l0-0.1l-0.1-0.1l-0.1-0.2l-0.1-0.2l-0.1-0.2l-0.1-0.1l0.1,0l0.1,0l0.1,0l0.2-0.1     l0.2-0.1l0.4-0.2l0.3-0.1l0.2-0.1l0.3-0.2l0.3-0.2l0.2-0.2l0.2-0.1l0.3-0.2l0.2-0.2l0.2-0.2l0.2-0.2l0.1-0.2l0.1-0.1l0.1-0.1     l0.1-0.1l0.1-0.1l0.1-0.2l0.1-0.1l0.1-0.1l0.1-0.1l0.1,0l0.1,0.1l0,0.1l-0.1,0.2l-0.1,0.2l-0.1,0.3l-0.1,0.3l-0.1,0.3l-0.2,0.3     l-0.2,0.3l-0.2,0.2l-0.1,0.2l-0.2,0.2l-0.3,0.3l-0.3,0.2l-0.3,0.2L246.3,58.4z"></path>
+  <polygon class="st0" points="241.8,62.4 241.5,62.4 241.3,62.4 241.1,62.4 240.9,62.5 240.7,62.5 240.6,62.5 240.5,62.5     240.3,62.5 240.1,62.5 239.9,62.5 239.7,62.5 239.7,62.5 239.6,62.4 239.7,62.7 239.8,62.9 239.9,63.1 239.9,63.3 239.9,63.6     239.9,63.8 239.9,64.2 239.8,64.5 239.8,64.7 239.7,64.9 239.6,65.1 239.5,65.2 239.5,65.3 239.6,65.3 239.7,65.3 240,65.3     240.2,65.4 240.5,65.5 240.7,65.6 240.9,65.7 241.3,65.6 241.5,65.5 241.7,65.4 241.9,65.4 242.1,65.3 242.3,65.3 242.4,65.3     242.5,65.3 242.4,65.2 242.3,64.9 242.2,64.7 242.1,64.4 242.1,64.2 242,64 242,63.7 242,63.5 242,63.3 242.1,63.1 242.2,62.9     242.2,62.7 242.3,62.6 242.4,62.5 242.4,62.5 242.1,62.5  "></polygon>
+  <path class="st0" d="M235.5,50.9L235.5,50.9l-0.1-0.2l-0.1-0.2l-0.2-0.3v-0.3l-0.2,0V50h0l-0.1,0l-0.1,0l-0.2,0.1l-0.2,0.1l-0.4,0     l-0.3-0.1l-0.2-0.1l-0.2-0.1l-0.4,0l-0.3,0l-0.1,0l-0.1,0.1l-0.1,0.1l-0.1,0l-0.1,0v0.3l0,0.1l0,0.1l0.1,0.1l0,0.1l0.1,0.1l0,0.1     l0,0.1l0,0.1l-0.1,0l-0.1,0l-0.1,0v0l0,0l0,0.1v0l0.2,0l0.1,0l0.1,0l0.1,0l0.1,0l0.1,0l0.6,0.1l0.8,0.1l0.6,0l0.8,0.1v-0.3     L235.5,50.9z M235.4,51.2L235.4,51.2l-0.5,0l-0.6,0l-0.6,0l-0.6-0.1l-0.4,0l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l0-0.1l0-0.1     l0.1-0.1l0.1-0.1l0.1,0l0.1,0h0.4l0.2,0l0.2,0.1l0.2,0.1l0.2,0l0.2,0h0.2h0.1l0.2,0l0.2,0l0.1,0l0.1,0h0.1l0,0l0.1,0.2l0.1,0.2     l0.1,0.2l0.1,0.1L235.4,51.2L235.4,51.2L235.4,51.2L235.4,51.2z"></path>
+  <polygon class="st0" points="235.6,50.8 235.6,51 235.6,50.8   "></polygon>
+  <polygon class="st0" points="235.6,51 235.6,51.1 235.6,51.1   "></polygon>
+  <polygon class="st0" points="228.8,51.1 228.8,51.1 228.8,51   "></polygon>
+  <polygon class="st0" points="228.8,50.8 228.8,51 228.8,50.8   "></polygon>
+  <path class="st0" d="M232.1,51.1L232.1,51.1l-0.2-0.1l0-0.1l0-0.1l0-0.1l0.1-0.1l0-0.1l0-0.1l0-0.1l0-0.1v-0.3l-0.1,0l-0.1,0     l-0.1-0.1l-0.1-0.1l-0.1,0l-0.3,0l-0.4,0l-0.2,0.1l-0.2,0.1l-0.3,0.1l-0.4,0l-0.2-0.1l-0.2-0.1l-0.1,0l-0.1,0h0v-0.1l-0.2,0v0.3     l-0.2,0.3l-0.1,0.2l-0.1,0.1l0,0.1l-0.1,0.2v0.3l0.8-0.1l0.6,0l0.8-0.1l0.6-0.1l0.1,0l0.1,0l0.1,0l0.1,0.1l0.1,0l0.2,0v0l0-0.1     L232.1,51.1z M231.8,50.8l-0.1,0.1l-0.4,0l-0.6,0.1l-0.6,0l-0.6,0l-0.4,0l0,0l0,0l0,0l0,0l0-0.1L229,51l0.1-0.2l0.1-0.2l0.1-0.2     l0,0h0.1l0.1,0l0.1,0l0.2,0l0.2,0h0.1h0.2l0.2,0l0.2,0l0.2-0.1l0.2-0.1l0.2,0h0.4l0.1,0l0.1,0l0.1,0.1l0.1,0.1l0,0.1l0,0.1     l-0.1,0.1l-0.1,0.1L231.8,50.8z"></path>
+</g>
+</svg>
+            </p>
+          
+                      <p class="title">Department of Chemical and Petroleum Engineering</p>
+          
+                      <ul class="links">
+                              <li><a href="tel:403.220.5751">403.220.5751</a></li>
+                              <li><a href="mailto:cpe-general@ucalgary.ca">cpe-general@ucalgary.ca</a></li>
+                          </ul>
+          
+        </div>
+                  <div id="pre-footer-links" class="col-md-3">
+
+                        <ul class="social">
+                                                                        
+                                                              <li><a class="btn-social" href="https://www.facebook.com/SchulichEngineering" target="_blank" rel="noopener noreferrer"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve" class="svg facebook  injected-svg" data-url="/modules/ucalgary/ucws_common/ucws_section_information/templates/images/social-icon-facebook-round.svg">
+<path class="background" fill="#ffffff" d="M16,1A15,15,0,1,0,31,16,15,15,0,0,0,16,1Z"></path>
+<path class="icon" fill="#fca311" d="M19.73,16H17.29v8.7H13.67V16H12V12.93h1.72v-2a3.39,3.39,0,0,1,3.65-3.65H20v3H18.06a0.74,0.74,0,0,0-.77.84v1.81H20Z"></path>
+</svg></a></li>
+                                                                        
+                                                                        
+                                                                        
+                    <li><a class="btn-social" href="https://twitter.com/SchulichENGG" target="_blank" rel="noopener noreferrer"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve" class="svg twitter  injected-svg" data-url="/modules/ucalgary/ucws_common/ucws_section_information/templates/images/social-icon-twitter-round.svg">
+<path class="background" fill="#ffffff" d="M16,1A15,15,0,1,0,31,16,15,15,0,0,0,16,1Z"></path>
+<path class="icon" fill="#fca311" d="M22.69,12.57c0,0.15,0,.3,0,0.45A9.82,9.82,0,0,1,7.59,21.29a6.94,6.94,0,0,0,5.11-1.43,3.46,3.46,0,0,1-3.22-2.4,3.31,3.31,0,0,0,.65.06A3.39,3.39,0,0,0,11,17.4,3.45,3.45,0,0,1,8.26,14a0.29,0.29,0,0,1,0,0,3.41,3.41,0,0,0,1.56.43A3.45,3.45,0,0,1,8.76,9.79a9.8,9.8,0,0,0,7.11,3.61,3.46,3.46,0,0,1,5.88-3.15A6.83,6.83,0,0,0,24,9.41a3.47,3.47,0,0,1-1.52,1.91,6.89,6.89,0,0,0,2-.54,7,7,0,0,1-1.72,1.78"></path>
+</svg></a></li>
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                  <li><a class="btn-social" href="https://www.linkedin.com/school/schulich-school-of-engineering/" target="_blank" rel="noopener noreferrer"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve" class="svg linkedin  injected-svg" data-url="/modules/ucalgary/ucws_common/ucws_section_information/templates/images/social-icon-linkedin-round.svg">
+<path class="background" fill="#ffffff" d="M16,1A15,15,0,1,0,31,16,15,15,0,0,0,16,1Z"></path>
+<path class="icon" fill="#fca311" d="M17,14.78l0,0v0h0ZM24.39,24h-3.6V18.21c0-1.44-.52-2.43-1.82-2.43a2,2,0,0,0-1.85,1.31A2.41,2.41,0,0,0,17,18v6h-3.6s0-9.73,0-10.74H17v1.52A3.57,3.57,0,0,1,20.25,13c2.37,0,4.14,1.53,4.14,4.83V24ZM9.62,11.75h0A1.86,1.86,0,1,1,9.65,8a1.86,1.86,0,1,1,0,3.71M11.42,24H7.83V13.22h3.6V24Z"></path>
+</svg></a></li>
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                <li><a class="btn-social" href="https://www.instagram.com/schulichengineer/" target="_blank" rel="noopener noreferrer"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve" class="svg instagram  injected-svg" data-url="/modules/ucalgary/ucws_common/ucws_section_information/templates/images/social-icon-instagram-round.svg">
+<path class="background" fill="#ffffff" d="M16,1A15,15,0,1,0,31,16,15,15,0,0,0,16,1Z"></path>
+<path class="icon" fill="#fca311" d="M21.23,7.47H10.77a3.3,3.3,0,0,0-3.3,3.3V21.23a3.3,3.3,0,0,0,3.3,3.3H21.23a3.3,3.3,0,0,0,3.3-3.3V10.77A3.3,3.3,0,0,0,21.23,7.47Zm0.95,2h0.38v2.89H19.67V9.44h2.52Zm-8.61,4.82A3,3,0,1,1,13,16,3,3,0,0,1,13.57,14.25Zm9.3,7a1.63,1.63,0,0,1-1.63,1.63H10.77a1.63,1.63,0,0,1-1.63-1.63v-7h2.55a4.67,4.67,0,1,0,8.64,0h2.55v7Z"></path>
+</svg></a></li>
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                <li><a class="btn-social" href="https://www.youtube.com/user/echannelSSE/" target="_blank" rel="noopener noreferrer"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve" class="svg youtube  injected-svg" data-url="/modules/ucalgary/ucws_common/ucws_section_information/templates/images/social-icon-youtube-round.svg">
+<path class="background" fill="#ffffff" d="M16,1A15,15,0,1,0,31,16,15,15,0,0,0,16,1Z"></path>
+<g>
+  <path class="icon" fill="#fca311" d="M17.65,18.35a0.29,0.29,0,0,0-.29.22,2.63,2.63,0,0,0,0,.61v1.24a2.33,2.33,0,0,0,0,.59,0.31,0.31,0,0,0,.3.23A0.3,0.3,0,0,0,18,21a2.56,2.56,0,0,0,0-.64V19.17a2.13,2.13,0,0,0,0-.59A0.3,0.3,0,0,0,17.65,18.35Z"></path>
+  <path class="icon" fill="#fca311" d="M12.34,11.55v2.5h0.81V11.52L14.05,8H13.36c-0.2.93-.46,1.82-0.6,2.46L12,8H11.3l1,3.52v0Z"></path>
+  <path class="icon" fill="#fca311" d="M20.83,18.11a0.3,0.3,0,0,0-.3.2,0.59,0.59,0,0,0,0,.38v0.68h0.66V18.7a0.62,0.62,0,0,0,0-.36A0.29,0.29,0,0,0,20.83,18.11Z"></path>
+  <path class="icon" fill="#fca311" d="M14.46,13.74a0.8,0.8,0,0,0,.38.29,1.73,1.73,0,0,0,.66.11A1.37,1.37,0,0,0,16.1,14a0.94,0.94,0,0,0,.41-0.36,1.46,1.46,0,0,0,.21-0.54,7.42,7.42,0,0,0,.05-1V11.33a4,4,0,0,0-.06-0.78,1.42,1.42,0,0,0-.2-0.47,1.07,1.07,0,0,0-.41-0.36,1.41,1.41,0,0,0-.66-0.15,1.22,1.22,0,0,0-.75.22,1.15,1.15,0,0,0-.38.57,4.13,4.13,0,0,0-.11,1.08v0.84a5.23,5.23,0,0,0,.07,1A1.32,1.32,0,0,0,14.46,13.74Zm0.68-2.81a1.82,1.82,0,0,1,.05-0.59,0.3,0.3,0,0,1,.58,0,2.12,2.12,0,0,1,0,.59v1.93a1.57,1.57,0,0,1-.05.53,0.3,0.3,0,0,1-.29.22,0.3,0.3,0,0,1-.29-0.24,1.73,1.73,0,0,1-.05-0.57V10.93Z"></path>
+  <path class="icon" fill="#fca311" d="M23.09,16.57a2.43,2.43,0,0,0-2.21-2.1c-3.26-.14-6.5-0.14-9.75,0a2.45,2.45,0,0,0-2.22,2.1,38.48,38.48,0,0,0,0,5.24,2.44,2.44,0,0,0,2.22,2.09c3.25,0.14,6.49.14,9.75,0a2.42,2.42,0,0,0,2.21-2.09A38.15,38.15,0,0,0,23.09,16.57ZM13,16.9H12.07v5.18h-1V16.9H10.18v-1H13v1Zm2.67,5.19H14.73V21.82l-0.28-.07a0.8,0.8,0,0,1-.27.32,0.56,0.56,0,0,1-.34.1,0.66,0.66,0,0,1-.37-0.1,0.54,0.54,0,0,1-.21-0.25,1.2,1.2,0,0,1-.1-0.37c0-.14,0-0.42,0-0.84V17.4h0.92v2.95a3.72,3.72,0,0,0,0,.72,0.29,0.29,0,0,0,.3.22,0.3,0.3,0,0,0,.31-0.23,5.2,5.2,0,0,0,0-.75V17.4h0.92v4.68Zm3.24-3.38v2.44s0,0.27-.05.44a0.78,0.78,0,0,1-.23.42,0.57,0.57,0,0,1-.41.17,0.54,0.54,0,0,1-.32-0.1,1.07,1.07,0,0,1-.29-0.33l-0.2-.33-0.07.38-0.05.28H16.4V15.92h0.91v2.23l0.28-.43a1,1,0,0,1,.29-0.3,0.6,0.6,0,0,1,.32-0.09,0.74,0.74,0,0,1,.37.08,0.6,0.6,0,0,1,.22.23,0.79,0.79,0,0,1,.09.32A3.22,3.22,0,0,1,18.9,18.71Zm3.16,1.17H20.49v1a1.45,1.45,0,0,0,0,.48,0.3,0.3,0,0,0,.29.19,0.33,0.33,0,0,0,.33-0.22,1.85,1.85,0,0,0,.05-0.54V20.32h0.85v0.22a3.84,3.84,0,0,1,0,.67,1.43,1.43,0,0,1-.2.47,1,1,0,0,1-.37.37,1.3,1.3,0,0,1-.59.12,1.54,1.54,0,0,1-.61-0.12,0.94,0.94,0,0,1-.4-0.33,1.31,1.31,0,0,1-.21-0.47,3.65,3.65,0,0,1-.06-0.64V19.18A3.3,3.3,0,0,1,19.71,18a1,1,0,0,1,.41-0.5,1.24,1.24,0,0,1,.66-0.17,1.3,1.3,0,0,1,.76.21,1.08,1.08,0,0,1,.41.56,4.57,4.57,0,0,1,.13,1.24v0.51Z"></path>
+  <path class="icon" fill="#fca311" d="M17.58,13.79a0.58,0.58,0,0,0,.22.26,0.68,0.68,0,0,0,.39.1A0.63,0.63,0,0,0,18.56,14a0.86,0.86,0,0,0,.26-0.33l0.29,0.12v0.22h1V9.59H19.11v2.93a2.18,2.18,0,0,1,0,.65,0.32,0.32,0,0,1-.32.27,0.31,0.31,0,0,1-.31-0.26,1.5,1.5,0,0,1,0-.62v-3H17.48v2.95c0,0.44,0,.74,0,0.89A1.34,1.34,0,0,0,17.58,13.79Z"></path>
+</g>
+</svg></a></li>
+                                                            </ul>
+
+          </div>
+              </div>
+    </div>
+  </div>
+
+  <script>
+    if (typeof ga === "function") {
+      ga('create', 'UA-8926733-1', {'name': 'DepartmentofChemicalandPetroleumEngineering'});
+      ga('DepartmentofChemicalandPetroleumEngineering.send', 'pageview');
+    }
+  </script>
+
+  </div>
+
+
+        
+    
+  <div id="footer" class="row">
+    <div class="container">
+      <div class="row">
+        <div id="footer-special" class="col-md-4 col-md-push-4">
+                      <a href="https://ucalgary.ca/giving/campaign-success" target="_blank" rel="noopener noreferrer"><img src="CPE_files/energized-by-you.png" alt="Energized By You"></a>
+                  </div>
+        <div id="footer-links" class="col-md-4 col-md-pull-4">
+          <p class="small social">
+                                          <a class="btn-social" href="https://www.facebook.com/universityofcalgary" target="_blank" rel="noopener noreferrer"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve" class="svg facebook  injected-svg" data-url="/themes/ucalgary/ucws_theme/images/social-icon-facebook.svg">
+<rect class="background" fill="transparent" width="32" height="32"></rect>
+<path class="icon" fill="#FFFFFF" d="M32,0v32h-9.9V19.6h4.2l0.6-4.8h-4.8v-3.1c0-1.4,0.4-2.4,2.4-2.4l2.6,0V5c-0.4-0.1-2-0.2-3.7-0.2c-3.7,0-6.2,2.3-6.2,6.4v3.6h-4.2v4.8h4.2V32H0V0H32z"></path>
+</svg></a>
+                              <a class="btn-social" href="https://www.twitter.com/ucalgary" target="_blank" rel="noopener noreferrer"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve" class="svg twitter  injected-svg" data-url="/themes/ucalgary/ucws_theme/images/social-icon-twitter.svg">
+<rect class="background" fill="transparent" width="32" height="32"></rect>
+<path class="icon" fill="#FFFFFF" d="M25.3,12.4c0,0.2,0,0.4,0,0.6c0,5.7-4.3,12.2-12.2,12.2c-2.4,0-4.7-0.7-6.6-1.9   c0.3,0,0.7,0.1,1,0.1c2,0,3.9-0.7,5.3-1.8c-1.9,0-3.5-1.3-4-3c0.3,0.1,0.5,0.1,0.8,0.1c0.4,0,0.8-0.1,1.1-0.2   c-2-0.4-3.4-2.1-3.4-4.2c0,0,0,0,0-0.1c0.6,0.3,1.2,0.5,1.9,0.5c-1.2-0.8-1.9-2.1-1.9-3.6C7.4,10.3,7.6,9.6,8,9   c2.1,2.6,5.3,4.3,8.8,4.5c-0.1-0.3-0.1-0.6-0.1-1c0-2.4,1.9-4.3,4.3-4.3c1.2,0,2.3,0.5,3.1,1.4c1-0.2,1.9-0.5,2.7-1   c-0.3,1-1,1.8-1.9,2.4c0.9-0.1,1.7-0.3,2.5-0.7C26.9,11.1,26.2,11.8,25.3,12.4 M0,0v32h32V0H0z"></path>
+</svg></a>
+                              <a class="btn-social" href="https://www.linkedin.com/company/university-of-calgary" target="_blank" rel="noopener noreferrer"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve" class="svg linkedin  injected-svg" data-url="/themes/ucalgary/ucws_theme/images/social-icon-linkedin.svg">
+<rect class="background" fill="transparent" width="32" height="32"></rect>
+<path class="icon" fill="#FFFFFF" d="M0,0v32h32V0H0z M9,27H5V12h4V27z M7.1,9.9c-1.5,0-2.8-1.2-2.8-2.8c0-1.5,1.2-2.8,2.8-2.8   c1.5,0,2.8,1.2,2.8,2.8C9.9,8.7,8.6,9.9,7.1,9.9z M27,27h-4v-7.2c0-1.8-0.4-4-2.8-4c-2.5,0-3.2,1.9-3.2,3.9V27h-5V12h5v2h0.1   c0.6-1,2-2.4,4.4-2.4c4.8,0,5.6,3.2,5.6,7.3V27z"></path>
+</svg></a>
+                              <a class="btn-social" href="https://www.instagram.com/ucalgary" target="_blank" rel="noopener noreferrer"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve" class="svg instagram  injected-svg" data-url="/themes/ucalgary/ucws_theme/images/social-icon-instagram.svg">
+<rect class="background" fill="transparent" width="32" height="32"></rect>
+<path class="icon" fill="#FFFFFF" d="M25.1,9.9L25.1,9.9c0.6,0,1.2,0,1.8,0c0.9,0,1.5-0.6,1.5-1.5c0-1.1,0-2.2,0-3.2   c0-0.9-0.6-1.5-1.5-1.6c-1.1,0-2.3,0-3.4,0c-0.9,0-1.5,0.6-1.5,1.6c0,1.1,0,2.2,0,3.4c0,0.8,0.6,1.4,1.3,1.4   C23.8,9.9,24.5,9.9,25.1,9.9 M16,22.2c0.3,0,0.5,0,0.8,0c1.8-0.2,3.3-1,4.4-2.5c1-1.3,1.4-2.8,1.2-4.4c-0.1-1.3-0.7-2.5-1.7-3.5   c-1.1-1.2-2.6-1.9-4.2-2c-1.6-0.1-3,0.3-4.3,1.2c-1.3,0.9-2.2,2.2-2.5,3.8c-0.4,1.9,0.1,3.6,1.3,5.1C12.3,21.4,14,22.1,16,22.2    M25.6,13.5c0.1,0.6,0.2,1.1,0.3,1.6c0.2,1.7,0,3.3-0.7,4.9c-0.6,1.4-1.5,2.6-2.7,3.6c-1.1,0.9-2.3,1.6-3.7,1.9   c-1.4,0.4-2.7,0.5-4.1,0.3c-1.8-0.2-3.5-0.9-4.9-2c-1.5-1.1-2.5-2.6-3.1-4.3c-0.6-1.6-0.7-3.3-0.4-5c0.1-0.3,0.1-0.6,0.2-0.9H3.6   c0,0.1,0,0.2,0,0.3c0,4.4,0,8.7,0,13.1c0,0.9,0.6,1.4,1.4,1.4c7.3,0,14.7,0,22,0c0.8,0,1.4-0.6,1.4-1.4c0-4.4,0-8.7,0-13.1v-0.3   H25.6z M0,0h32v32H0V0z"></path>
+</svg></a>
+                              <a class="btn-social" href="https://www.youtube.com/c/UCalgaryCa" target="_blank" rel="noopener noreferrer"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve" class="svg youtube  injected-svg" data-url="/themes/ucalgary/ucws_theme/images/social-icon-youtube.svg">
+<rect class="background" fill="transparent" width="32" height="32"></rect>
+<path class="icon" fill="#FFFFFF" d="M23.4,21.3v-0.9c0-0.6,0-0.5,0.1-0.6c0.1-0.2,0.2-0.3,0.5-0.3c0.2,0,0.4,0.1,0.5,0.4   c0,0.1,0.1,0,0.1,0.6v1.1h-1.1V21.3z M23.4,22.4H26v-0.8c0-0.8-0.1-1.6-0.2-2c-0.1-0.4-0.4-0.7-0.7-0.9c-0.3-0.2-0.7-0.3-1.2-0.3   c-0.4,0-0.8,0.1-1.1,0.3c-0.3,0.2-0.5,0.5-0.7,0.8c-0.1,0.4-0.2,0.9-0.2,1.9v2.4c0,0.3,0,0.8,0.1,1c0.1,0.3,0.2,0.6,0.3,0.8   c0.1,0.2,0.4,0.4,0.7,0.5c0.3,0.1,0.6,0.2,1,0.2c0.4,0,0.7-0.1,1-0.2c0.2-0.1,0.5-0.3,0.6-0.6c0.2-0.3,0.3-0.5,0.3-0.8   C26,24.4,26,24,26,23.5v-0.4h-1.4V24c0,0.4,0,0.7-0.1,0.9c-0.1,0.2-0.3,0.4-0.6,0.4c-0.2,0-0.4-0.1-0.5-0.3c0-0.1-0.1-0.3-0.1-0.8   V22.4z M19.3,23.2c0,0.7,0,0.9-0.1,1.1c-0.1,0.2-0.2,0.4-0.5,0.4c-0.2,0-0.4-0.1-0.5-0.4c0-0.1-0.1-0.3-0.1-1v-2c0-0.7,0-0.9,0.1-1   c0.1-0.2,0.2-0.4,0.5-0.4c0.2,0,0.4,0.1,0.5,0.4c0,0.1,0.1,0.3,0.1,1V23.2z M20.6,18.7c-0.1-0.2-0.2-0.3-0.4-0.4   c-0.2-0.1-0.4-0.1-0.6-0.1c-0.2,0-0.4,0-0.5,0.1c-0.2,0.1-0.3,0.3-0.5,0.5l-0.5,0.7v-3.7h-1.5V26h1.4l0.1-0.5l0.1-0.6l0.3,0.5   c0.1,0.2,0.3,0.4,0.5,0.5c0.2,0.1,0.3,0.2,0.5,0.2c0.3,0,0.5-0.1,0.7-0.3c0.2-0.2,0.3-0.4,0.4-0.7c0.1-0.3,0.1-0.8,0.1-0.7v-4   c0,0,0.1-0.4,0-1.2C20.8,19.1,20.7,18.9,20.6,18.7 M13.9,23.1c0,0.9,0,1.1,0,1.2c-0.1,0.2-0.2,0.4-0.5,0.4c-0.3,0-0.4-0.1-0.5-0.4   c0-0.1-0.1-0.3-0.1-1.2v-4.9h-1.5v5.3c0,0.7,0,1.2,0,1.4c0,0.2,0.1,0.4,0.2,0.6c0.1,0.2,0.2,0.3,0.3,0.4c0.2,0.1,0.4,0.2,0.6,0.2   c0.2,0,0.4-0.1,0.6-0.2c0.2-0.1,0.3-0.3,0.4-0.5l0.5,0.1l0,0.4h1.5v-7.7h-1.5V23.1z M6.4,17.5h1.5V26h1.6v-8.6H11v-1.6H6.4V17.5z    M15.1,12.1c0.2,0,0.4-0.1,0.5-0.4c0-0.1,0.1-0.3,0.1-0.9V7.6c0-0.6,0-0.9-0.1-1c-0.1-0.2-0.3-0.4-0.5-0.4c-0.2,0-0.4,0.1-0.5,0.4   c0,0.1-0.1,0.3-0.1,1v3.1c0,0.6,0,0.8,0.1,0.9C14.7,11.9,14.9,12.1,15.1,12.1 M27.7,25.6c-0.2,1.8-1.8,3.3-3.7,3.5   c-5.4,0.2-10.7,0.2-16.1,0c-1.8-0.1-3.5-1.6-3.7-3.5c-0.2-2.9-0.2-5.8,0-8.7c0.2-1.8,1.8-3.3,3.7-3.5c5.4-0.2,10.7-0.2,16.1,0   c1.8,0.1,3.5,1.6,3.7,3.5C27.9,19.8,27.9,22.7,27.7,25.6 M9.4,2.8l1.3,4.1c0.2-1.1,0.7-2.5,1-4.1h1.1l-1.5,5.8l0,0.1v4.1H9.9V8.6   l0,0L8.2,2.8H9.4z M13,8.5c0-0.8,0.1-1.4,0.2-1.8c0.1-0.4,0.3-0.7,0.6-0.9c0.3-0.2,0.7-0.4,1.2-0.4c0.4,0,0.8,0.1,1.1,0.2   c0.3,0.2,0.5,0.4,0.7,0.6C17,6.5,17.1,6.7,17.2,7c0.1,0.3,0.1,0.7,0.1,1.3v1.3c0,0.8,0,1.3-0.1,1.7c-0.1,0.3-0.2,0.6-0.3,0.9   c-0.2,0.3-0.4,0.5-0.7,0.6c-0.3,0.1-0.6,0.2-1,0.2c-0.4,0-0.8-0.1-1.1-0.2c-0.3-0.1-0.5-0.3-0.6-0.5c-0.1-0.2-0.3-0.5-0.3-0.8   c-0.1-0.3-0.1-0.9-0.1-1.6V8.5z M18.4,5.4H20v4.9c0,0.9,0,0.9,0.1,1c0,0.1,0.1,0.4,0.5,0.4c0.4,0,0.5-0.3,0.5-0.4   c0-0.1,0.1-0.1,0.1-1.1V5.4h1.6v7.4h-1.6l0-0.4l-0.5-0.2c-0.1,0.2-0.3,0.4-0.4,0.5c-0.2,0.1-0.4,0.2-0.6,0.2   c-0.3,0-0.5-0.1-0.7-0.2c-0.2-0.1-0.3-0.2-0.4-0.4c-0.1-0.2-0.1-0.4-0.1-0.6c0-0.2,0-0.7,0-1.5V5.4z M0,0v32h32V0H0z"></path>
+</svg></a>
+                                    </p>
+          <p class="small legalese">
+                          <a href="https://www.ucalgary.ca/sites/default/files/ucgy/groups/Marketing/digital-privacy-statement.pdf" target="_blank" rel="noopener noreferrer">Digital Privacy Statement</a><br>
+              <a href="https://www.ucalgary.ca/policies/files/policies/privacy-policy.pdf" target="_blank" rel="noopener noreferrer">Privacy Policy</a><br>
+              <a href="https://ucalgarysurvey.qualtrics.com/SE/?SID=SV_2lcAqNmIryzHpZ3" target="_blank" rel="noopener noreferrer">Website feedback</a>
+                      </p>
+        </div>
+        <div id="footer-deets" class="col-md-4">
+          <p class="small address">
+                          University of Calgary<br>
+              2500 University Drive NW<br>
+              Calgary Alberta <span class="postal-code">T2N 1N4</span><br>
+              CANADA
+                      </p>
+          <p class="small copyright">
+                          Copyright © 2020
+                      </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </footer>
+
+  
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/163","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"clientside_validation_jquery":{"validate_all_ajax_forms":2,"force_validate_on_blur":false},"colorbox":{"opacity":"0.85","current":"{current} of {total}","previous":"\u00ab Prev","next":"Next \u00bb","close":"Close","maxWidth":"98%","maxHeight":"98%","fixed":true,"mobiledetect":false,"mobiledevicewidth":null},"data":{"extlink":{"extTarget":true,"extTargetNoOverride":false,"extNofollow":false,"extFollowNoOverride":false,"extClass":"0","extLabel":"(link is external)","extImgClass":false,"extSubdomains":false,"extExclude":"","extInclude":"(.*\\.pdf)|(iac01\\.*)|(homepages\\.*)|(www2\\.*)|(people\\.ucalgary\\.ca\\~*)|(webapps2\\.ucalgary\\.ca\\~*)|(webapps3\\.ucalgary\\.ca\\~*)|(webapp6\\.ucalgary\\.ca\\~*)|(csh\\.ucalgary\\.ca\\~*)|(d2l\\.ucalgary\\.ca\\~*)","extCssExclude":"","extCssExplicit":"","extAlert":false,"extAlertText":"This link will take you to an external web site. We are not responsible for their content.","mailtoClass":"0","mailtoLabel":"(link sends email)"}},"eu_cookie_compliance":{"popup_enabled":true,"popup_agreed_enabled":false,"popup_hide_agreed":false,"popup_clicking_confirmation":false,"popup_scrolling_confirmation":false,"popup_html_info":"\u003Cdiv class=\u0022eu-cookie-compliance-banner eu-cookie-compliance-banner-info eu-cookie-compliance-banner--default\u0022\u003E\n  \u003Cdiv class=\u0022popup-content info eu-cookie-compliance-content\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022 class=\u0022eu-cookie-compliance-message\u0022\u003E\n      \u003Cp\u003EBy continuing to use this site, you permit us to place cookies on your browser and agree to our use of cookies as explained in our Digital Privacy Statement. Please review the \u003Ca href=\u0022https:\/\/www.ucalgary.ca\/sites\/default\/files\/ucgy\/groups\/Marketing\/digital-privacy-statement.pdf\u0022\u003EDigital Privacy Statement\u003C\/a\u003E for details and instructions on changing your cookie preferences.\u003C\/p\u003E\n          \u003C\/div\u003E\n\n    \n    \u003Cdiv id=\u0022popup-buttons\u0022 class=\u0022eu-cookie-compliance-buttons\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022agree-button eu-cookie-compliance-default-button\u0022\u003EClose\u003C\/button\u003E\n          \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E","use_mobile_message":false,"mobile_popup_html_info":"\u003Cdiv class=\u0022eu-cookie-compliance-banner eu-cookie-compliance-banner-info eu-cookie-compliance-banner--default\u0022\u003E\n  \u003Cdiv class=\u0022popup-content info eu-cookie-compliance-content\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022 class=\u0022eu-cookie-compliance-message\u0022\u003E\n      \n          \u003C\/div\u003E\n\n    \n    \u003Cdiv id=\u0022popup-buttons\u0022 class=\u0022eu-cookie-compliance-buttons\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022agree-button eu-cookie-compliance-default-button\u0022\u003EClose\u003C\/button\u003E\n          \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E","mobile_breakpoint":768,"popup_html_agreed":false,"popup_use_bare_css":false,"popup_height":"auto","popup_width":"100%","popup_delay":1000,"popup_link":"\/sites\/default\/files\/digital-privacy-statement.pdf","popup_link_new_window":true,"popup_position":false,"fixed_top_position":true,"popup_language":"en","store_consent":true,"better_support_for_screen_readers":false,"cookie_name":"","reload_page":false,"domain":"ucalgary.ca","domain_all_sites":false,"popup_eu_only_js":false,"cookie_lifetime":100,"cookie_session":null,"disagree_do_not_show_popup":false,"method":"default","whitelisted_cookies":"","withdraw_markup":"\u003Cbutton type=\u0022button\u0022 class=\u0022eu-cookie-withdraw-tab\u0022\u003E\u003C\/button\u003E\n\u003Cdiv class=\u0022eu-cookie-withdraw-banner\u0022\u003E\n  \u003Cdiv class=\u0022popup-content info eu-cookie-compliance-content\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022 class=\u0022eu-cookie-compliance-message\u0022\u003E\n      \n    \u003C\/div\u003E\n    \u003Cdiv id=\u0022popup-buttons\u0022 class=\u0022eu-cookie-compliance-buttons\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022eu-cookie-withdraw-button\u0022\u003E\u003C\/button\u003E\n    \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E","withdraw_enabled":false,"withdraw_button_on_info_popup":false,"cookie_categories":[],"enable_save_preferences_button":true,"fix_first_cookie_category":true,"select_all_categories_by_default":false},"user":{"uid":0,"permissionsHash":"db6c53583e432c8581976f72550ea04dc47660b21174ea352e5b8bc6dcd85fda"}}</script>
+<script src="CPE_files/js_q1iFf7JIgN7UCBj3Kah0xk6snx4_AReABdTHKtb3llU.js"></script>
+<script src="CPE_files/page.js" async=""></script>
+<script src="CPE_files/js_1emTCt0D9dWFvjWgp5Nj8w_cB0DdyIK9OnO-fZOv2Nc.js"></script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"2f1f7a5441","applicationID":"300377436","transactionName":"ZFQHZhNQDEoDUUdZDF0eJFEVWA1XTUJSVwZsUgRRCVQ=","queueTime":0,"applicationTime":25,"atts":"SBMEEFtKH0Q=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+
+<div id="cboxOverlay" style="display: none;"></div><div id="colorbox" class="" role="dialog" tabindex="-1" style="display: none;"><div id="cboxWrapper"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div id="cboxTitle" style="float: left;"></div><div id="cboxCurrent" style="float: left;"></div><button type="button" id="cboxPrevious"></button><button type="button" id="cboxNext"></button><button type="button" id="cboxSlideshow"></button><div id="cboxLoadingOverlay" style="float: left;"></div><div id="cboxLoadingGraphic" style="float: left;"></div></div><div id="cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none; max-width: none;"></div></div></body></html>
